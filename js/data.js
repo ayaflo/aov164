@@ -11,7 +11,7 @@
  * 8. Tách Gốc (Chạy độc lập song song không cần gỡ game gốc)
  */
 
-const STORAGE_KEY_SINGLE_MOD = 'TAN_CUTOS_AOV_MOD_DATA_V10';
+const STORAGE_KEY_SINGLE_MOD = 'TAN_CUTOS_AOV_MOD_DATA_V11';
 
 const DEFAULT_SINGLE_MOD = {
   // Thương hiệu & Tiêu đề
@@ -43,8 +43,8 @@ const DEFAULT_SINGLE_MOD = {
   changelogUrl: "#changelog",
 
   // Direct Link Video Demo
-  videoUrl: "https://commondatastorage.googleapis.com/gtv-videos-bucket/sample/ForBiggerBlazes.mp4",
-  videoPoster: "https://images.unsplash.com/photo-1511512578047-dfb367046420?auto=format&fit=crop&w=1600&q=85",
+  videoUrl: "https://youtu.be/aUE925m8jlU",
+  videoPoster: "https://img.youtube.com/vi/aUE925m8jlU/maxresdefault.jpg",
   videoDuration: "01:30",
   videoDescription: "Video test Hack Map, Cam Xa x3.0, Mod Full Skin và mở nhạc SoundCloud quẩy cực mượt.",
 
@@ -69,7 +69,7 @@ const DEFAULT_SINGLE_MOD = {
           tabLabel: "1. Hack Map",
           title: "1. Hack Map Toàn Bản Đồ (Hiển Thị Vị Trí Địch)",
           desc: "Hiển thị vị trí, biểu tượng avatar tướng, thanh máu và hướng di chuyển của toàn bộ 5 tướng địch trong bụi cỏ và sương mù theo thời gian thực.",
-          image: "https://images.unsplash.com/photo-1542751371-adc38448a05e?auto=format&fit=crop&w=1200&q=85",
+          image: "https://file.garden/atbpnHNCfPVO2vdb/Screenshot_2026-10-22-19-08-08-38_8cc629c7e5f500a4ce672df3661b99b6.jpg",
           highlight: "Phát hiện ngay lập tức hướng gank của rừng và mid đối phương, không bao giờ bị bắt lẻ."
         },
         {
@@ -79,7 +79,7 @@ const DEFAULT_SINGLE_MOD = {
           tabLabel: "2. Cam Xa",
           title: "2. Cam Xa Siêu Rộng (Drone View / Mở Rộng Tầm Nhìn)",
           desc: "Thanh trượt tùy chỉnh góc nhìn camera trên cao từ x0.0 cho đến x30.0, phóng tầm nhìn bao quát toàn bộ đường lane, hang Rồng và hang Tà Thần César.",
-          image: "https://images.unsplash.com/photo-1511512578047-dfb367046420?auto=format&fit=crop&w=1200&q=85",
+          image: "https://file.garden/atbpnHNCfPVO2vdb/Screenshot_2026-10-22-19-08-08-38_8cc629c7e5f500a4ce672df3661b99b6.jpg",
           highlight: "Quan sát toàn bộ giao tranh từ khoảng cách xa, kiểm soát thế trận dễ dàng."
         }
       ]
@@ -96,7 +96,7 @@ const DEFAULT_SINGLE_MOD = {
           tabLabel: "3. Aim Chiêu",
           title: "3. Aim Game (Tung Chiêu Tự Trúng 100%)",
           desc: "Hệ thống tự động khóa tâm và dẫn hướng chuẩn xác cho mọi kỹ năng định hướng: Elsu ngắm bắn viễn trình, Grakk kéo, Enzo Móc...",
-          image: "https://images.unsplash.com/photo-1538481199705-c710c4e965fc?auto=format&fit=crop&w=1200&q=85",
+          image: "https://file.garden/atbpnHNCfPVO2vdb/Screenshot_2026-10-22-19-08-08-38_8cc629c7e5f500a4ce672df3661b99b6.jpg",
           highlight: "Tự tính toán trước bước chạy của kẻ địch để xả chiêu trúng đích tuyệt đối."
         },
         {
@@ -106,7 +106,7 @@ const DEFAULT_SINGLE_MOD = {
           tabLabel: "5. Hồi Chiêu Địch",
           title: "5. Hiển Thị Thời Gian Hồi Chiêu Của Địch",
           desc: "Đếm ngược chính xác từng giây thời gian hồi chiêu 1, chiêu 2, chiêu cuối (Ultimate) và các phép bổ trợ (Tốc biến, Bộc phá, Cấp cứu, Trừng trị) trên đầu tướng địch.",
-          image: "https://images.unsplash.com/photo-1563089145-599997674d42?auto=format&fit=crop&w=1200&q=85",
+          image: "https://file.garden/atbpnHNCfPVO2vdb/Screenshot_2026-10-22-19-08-08-38_8cc629c7e5f500a4ce672df3661b99b6.jpg",
           highlight: "Biết rõ đối thủ có còn Tốc biến hay Ulti hay không để lao vào dồn sát thương an toàn."
         },
         {
@@ -116,7 +116,7 @@ const DEFAULT_SINGLE_MOD = {
           tabLabel: "6. Tự Bộc Phá",
           title: "6. Tự Động Bộc Phá (Auto Execute Khi Địch Yếu Máu)",
           desc: "Máy tự động quét lượng máu thực tế của kẻ địch so với sát thương chuẩn của Bộc Phá. Ngay khi máu đối thủ chạm ngưỡng chết, hệ thống tự động giật Bộc Phá ăn mạng tức thì.",
-          image: "https://images.unsplash.com/photo-1518709268805-4e9042af9f23?auto=format&fit=crop&w=1200&q=85",
+          image: "https://file.garden/atbpnHNCfPVO2vdb/Screenshot%202026-10-22%20230555.png",
           highlight: "Tốc độ kích hoạt trong mili-giây, không bỏ lỡ bất kỳ mạng hạ gục nào."
         }
       ]
@@ -133,7 +133,7 @@ const DEFAULT_SINGLE_MOD = {
           tabLabel: "4. Full Skin",
           title: "4. Mod Full Skin (Mở Khóa Mọi Trang Phục SSS)",
           desc: "Trải nghiệm miễn phí toàn bộ kho skin đắt giá nhất Liên Quân: Thứ Nguyên Vệ Thần, Tuyệt Sắc, Anime Collab (Sailor Moon, Bleach, Sword Art Online), đầy đủ hiệu ứng biến về và voice âm thanh.",
-          image: "https://images.unsplash.com/photo-1550745165-9bc0b252726f?auto=format&fit=crop&w=1200&q=85",
+          image: "https://file.garden/atbpnHNCfPVO2vdb/Screenshot_2026-10-22-19-06-24-06_8cc629c7e5f500a4ce672df3661b99b6.jpg",
           highlight: "Hiển thị mượt mà trên máy bạn, tăng cảm hứng leo rank Thách Đấu."
         },
         {
@@ -143,7 +143,7 @@ const DEFAULT_SINGLE_MOD = {
           tabLabel: "7. SoundCloud",
           title: "7. Nghe Nhạc SoundCloud (Vừa Chơi Vừa Nghe Nhạc)",
           desc: "Tích hợp cửa sổ widget nổi SoundCloud ngay trong trận: Cho phép gõ tìm kiếm bài hát, nghe playlist Remix, Vinahouse, Phonk, Lofi không giới hạn mà không bị văng game hay giảm FPS.",
-          image: "https://images.unsplash.com/photo-1552824796-7c98031d7986?auto=format&fit=crop&w=1200&q=85",
+          image: "https://file.garden/atbpnHNCfPVO2vdb/Screenshot%202026-10-22%20230620.png",
           highlight: "Tùy chỉnh âm lượng độc lập với âm thanh game, phím điều khiển mini tiện lợi."
         },
         {
@@ -153,7 +153,7 @@ const DEFAULT_SINGLE_MOD = {
           tabLabel: "8. Tách Gốc",
           title: "8. Tách Gốc Độc Lập (Chạy Song Song Không Cần Gỡ Game Gốc)",
           desc: "Bản mod được đóng gói với Package Name độc lập hoàn toàn (Clone Version). Bạn có thể cài đặt và khởi chạy bản mod trực tiếp trên máy mà không cần phải gỡ cài đặt bản game Liên Quân gốc chính thức từ Garena hay Google Play Store.",
-          image: "https://images.unsplash.com/photo-1511512578047-dfb367046420?auto=format&fit=crop&w=1200&q=85",
+          image: "https://file.garden/atbpnHNCfPVO2vdb/Screenshot_2026-10-22-18-57-52-10_b783bf344239542886fee7b48fa4b892.jpg",
           highlight: "Cài đặt song song 2 bản Liên Quân trên cùng 1 điện thoại: 1 bản gốc sạch để đánh giải/giao lưu và 1 bản mod để leo rank."
         }
       ]

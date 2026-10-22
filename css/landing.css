@@ -390,29 +390,30 @@ body.landing-page {
   }
 }
 
-/* Lớp ảnh nền direct link - Rõ nét, sáng và sinh động */
+/* Lớp ảnh nền direct link - Cân bằng độ sáng và độ tương phản */
 .hero-stage-bg {
   position: absolute;
   inset: 0;
   background-size: cover;
   background-position: center 25%;
   background-repeat: no-repeat;
-  filter: brightness(0.82) saturate(1.15) contrast(1.05);
+  filter: brightness(0.55) saturate(1.1) contrast(1.05);
   transform: scale(1.02);
   transition: background-image 0.5s ease;
   z-index: 0;
   pointer-events: none;
 }
 
-/* Lớp phủ chuyển màu nhẹ nhàng bảo đảm nhìn rõ trọn vẹn ảnh nền */
+/* Lớp phủ chuyển màu dịu mắt giúp chữ và nút bấm nổi khối rõ rệt */
 .hero-stage-overlay {
   position: absolute;
   inset: 0;
-  background: linear-gradient(180deg,
-    rgba(7, 9, 14, 0.42) 0%,
-    rgba(7, 9, 14, 0.22) 35%,
-    rgba(7, 9, 14, 0.5) 75%,
-    #07090e 100%);
+  background: radial-gradient(circle at 50% 40%, rgba(7, 10, 16, 0.35) 0%, rgba(7, 10, 16, 0.72) 75%, #07090e 100%),
+              linear-gradient(180deg,
+                rgba(7, 9, 14, 0.6) 0%,
+                rgba(7, 9, 14, 0.28) 35%,
+                rgba(7, 9, 14, 0.68) 75%,
+                #07090e 100%);
   z-index: 1;
   pointer-events: none;
 }

@@ -124,14 +124,6 @@
             <span class="btn-text-full">Tải Ngay APK</span>
             <span class="btn-text-mobile">Tải APK</span>
           </a>
-
-          <!-- Live Config Gear (Đổi direct link video & download) -->
-          <button class="btn-gear-config" id="btnOpenConfig" title="Cấu hình Direct Link (Video & Download)">
-            <svg width="17" height="17" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10.325 4.317c.426-1.756 2.924-1.756 3.35 0a1.724 1.724 0 002.573 1.066c1.543-.94 3.31.826 2.37 2.37a1.724 1.724 0 001.065 2.572c1.756.426 1.756 2.924 0 3.35a1.724 1.724 0 00-1.066 2.573c.94 1.543-.826 3.31-2.37 2.37a1.724 1.724 0 00-2.572 1.065c-.426 1.756-2.924 1.756-3.35 0a1.724 1.724 0 00-2.573-1.066c-1.543.94-3.31-.826-2.37-2.37a1.724 1.724 0 00-1.065-2.572c-1.756-.426-1.756-2.924 0-3.35a1.724 1.724 0 001.066-2.573c-.94-1.543.826-3.31 2.37-2.37.996.608 2.296.07 2.572-1.065z" />
-              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 12a3 3 0 11-6 0 3 3 0 016 0z" />
-            </svg>
-          </button>
         </div>
       </div>
     </div>
@@ -384,8 +376,7 @@
             <!-- Error fallback state -->
             <div class="video-error-state" id="videoErrorState">
               <p class="video-error-title">Không thể tải luồng video direct link này</p>
-              <p style="font-size: 0.85rem; color: var(--text-secondary); margin-bottom: 12px;">Link video có thể bị chặn CORS hoặc không còn tồn tại trên server lưu trữ.</p>
-              <button class="btn-copy-sha" id="btnChangeVideoLink">Đổi Direct Link Video</button>
+              <p style="font-size: 0.85rem; color: var(--text-secondary); margin-bottom: 4px;">Link video có thể bị chặn hoặc không còn tồn tại trên server lưu trữ.</p>
             </div>
           </div>
 
@@ -397,7 +388,6 @@
             </div>
             <div class="video-link-actions">
               <button class="btn-copy-sha" id="btnCopyVideoLink">Sao Chép Link</button>
-              <button class="btn-copy-sha" id="btnQuickEditVideo" style="border-color: var(--gold-light); color: var(--gold-light);">Đổi Link Này</button>
             </div>
           </div>
         </div>
@@ -554,9 +544,6 @@
       <div class="footer-bottom-row">
         <div>© 2026 Tấn Cutos. All rights reserved. Sẵn sàng triển khai Vercel.</div>
         <div style="display: flex; align-items: center; gap: 16px;">
-          <button id="footerEditLinksBtn" style="background: none; border: none; color: var(--gold-light); cursor: pointer; font-size: 0.82rem; font-weight: 600;">
-            ⚙ Cấu Hình Direct Link
-          </button>
           <span>v5.2.0 Midnight</span>
         </div>
       </div>
@@ -572,81 +559,6 @@
       <span class="mobile-bar-sub" id="mobileBarSub">v5.2.0 · 98.5 MB · No Root</span>
     </div>
     <a href="#download" class="btn-mobile-download" id="mobileBarDownloadBtn">Tải Về APK</a>
-  </div>
-
-  <!-- ========================================================
-       11. DIRECT LINK CONFIG MODAL
-       Cho phép Tấn Cutos dễ dàng dán direct link video & download mới
-       ======================================================== -->
-  <div class="config-modal-overlay" id="configModal">
-    <div class="config-modal-box">
-      <div class="config-modal-header">
-        <h3 class="config-modal-title">Cấu Hình Direct Link & Nội Dung</h3>
-        <button class="config-modal-close" id="btnCloseConfigModal">
-          <svg width="22" height="22" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12" />
-          </svg>
-        </button>
-      </div>
-
-      <form id="configForm">
-        <div class="config-form-group">
-          <label class="config-label">Tên Bản Mod</label>
-          <input type="text" class="config-input" id="cfgModTitle" required>
-        </div>
-
-        <div class="config-form-group">
-          <label class="config-label">Tên Game</label>
-          <input type="text" class="config-input" id="cfgGameName" required>
-        </div>
-
-        <div class="config-form-group">
-          <label class="config-label">Direct Link Ảnh Nền Phần Đầu (Hero Background)</label>
-          <input type="url" class="config-input" id="cfgHeroBgImage" placeholder="https://domain.com/background.jpg" required>
-          <small style="display:block; margin-top:4px; font-size:0.75rem; color:var(--text-muted)">
-            Link trực tiếp ảnh nền độ phân giải cao hiển thị phía sau phần đầu tiên.
-          </small>
-        </div>
-
-        <div class="config-form-group">
-          <label class="config-label">Direct Link Video Demo (MP4 / WebM)</label>
-          <input type="url" class="config-input" id="cfgVideoUrl" placeholder="https://domain.com/video.mp4" required>
-          <small style="display:block; margin-top:4px; font-size:0.75rem; color:var(--text-muted)">
-            Link trực tiếp tới file video MP4. Trình phát trên web sẽ phát trực tiếp video từ link này.
-          </small>
-        </div>
-
-        <div class="config-form-group">
-          <label class="config-label">Direct Link Tải APK (Download URL)</label>
-          <input type="url" class="config-input" id="cfgDownloadUrl" placeholder="https://domain.com/mod.apk" required>
-        </div>
-
-        <div class="config-form-group">
-          <label class="config-label">Link Dự Phòng (Mirror URL)</label>
-          <input type="url" class="config-input" id="cfgMirrorUrl" placeholder="https://mega.nz/...">
-        </div>
-
-        <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 12px;">
-          <div class="config-form-group">
-            <label class="config-label">Phiên Bản (Version)</label>
-            <input type="text" class="config-input" id="cfgVersion" placeholder="5.2.0">
-          </div>
-          <div class="config-form-group">
-            <label class="config-label">Dung Lượng (File Size)</label>
-            <input type="text" class="config-input" id="cfgFileSize" placeholder="98.5 MB">
-          </div>
-        </div>
-
-        <div class="config-modal-footer">
-          <button type="button" class="btn-copy-sha" id="btnResetDefaultConfig" style="color: var(--accent-rose);">
-            Khôi Phục Mặc Định
-          </button>
-          <button type="submit" class="btn-download-primary" style="padding: 10px 24px; min-width: auto;">
-            Lưu Thay Đổi
-          </button>
-        </div>
-      </form>
-    </div>
   </div>
 
   <!-- Scripts -->

@@ -11,7 +11,7 @@
  * 8. Tách Gốc (Chạy độc lập song song không cần gỡ game gốc)
  */
 
-const STORAGE_KEY_SINGLE_MOD = 'TAN_CUTOS_AOV_MOD_DATA_V8';
+const STORAGE_KEY_SINGLE_MOD = 'TAN_CUTOS_AOV_MOD_DATA_V9';
 
 const DEFAULT_SINGLE_MOD = {
   // Thương hiệu & Tiêu đề
@@ -214,27 +214,22 @@ const DEFAULT_SINGLE_MOD = {
     }
   ],
 
-  // Hướng dẫn cài đặt 4 bước
+  // Hướng dẫn cài đặt 3 bước nhanh chóng (Không cần cấp quyền cửa sổ nổi)
   installSteps: [
     {
       step: "01",
       title: "Tải File Cài Đặt APK",
-      desc: "Nhấn nút 'Tải APK Trực Tiếp' ở phía trên để tải bản mod Tấn Cutos AOV Menu VIP mới nhất."
+      desc: "Nhấn nút 'Tải APK Trực Tiếp' ở phía trên để tải bản mod Tấn Cutos AOV Menu VIP mới nhất về máy."
     },
     {
       step: "02",
-      title: "Bật Cài Đặt Nguồn Không Xác Định",
-      desc: "Vào Cài đặt máy > Bảo mật > Cho phép trình duyệt hoặc ứng dụng quản lý tệp cài đặt file APK."
+      title: "Cài Đặt File APK Trực Tiếp",
+      desc: "Mở file vừa tải về và tiến hành cài đặt. Nếu máy hỏi bảo mật, chọn 'Cho phép cài đặt từ nguồn này' để hoàn tất cài đặt trong tích tắc."
     },
     {
       step: "03",
-      title: "Cấp Quyền Cửa Sổ Nổi (Overlay)",
-      desc: "Mở ứng dụng mod, cấp quyền 'Hiển thị trên ứng dụng khác' để logo menu mod có thể nổi trong game."
-    },
-    {
-      step: "04",
-      title: "Vào Game & Kích Hoạt Tính Năng",
-      desc: "Mở Liên Quân Mobile, chạm vào logo Tấn Cutos để bật Hack Map, Cam Xa, Aim Chiêu và mở nhạc SoundCloud quẩy trận!"
+      title: "Khởi Chạy Bản Mod & Vào Trận",
+      desc: "Mở bản mod vừa cài đặt (chạy độc lập song song không ảnh hưởng game gốc) và vào trận tận hưởng trọn bộ 8 tính năng VIP!"
     }
   ],
 

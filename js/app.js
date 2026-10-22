@@ -307,7 +307,7 @@ document.addEventListener('DOMContentLoaded', () => {
     `).join('');
   }
 
-  // 7. Render 4 Bước Hướng Dẫn Cài Đặt
+  // 7. Render 3 Bước Hướng Dẫn Cài Đặt
   function renderInstallGuide() {
     const grid = document.getElementById('installGrid');
     if (!grid || !modData.installSteps) return;

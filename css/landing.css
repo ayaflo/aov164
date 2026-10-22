@@ -1753,24 +1753,24 @@ body.landing-page {
 }
 
 /* ========================================================
-   7. INSTALL GUIDE 4 STEPS (#install)
+   7. INSTALL GUIDE 3 STEPS (#install)
    ======================================================== */
 .install-grid {
   display: grid;
   grid-template-columns: 1fr;
-  gap: 16px;
+  gap: 20px;
   margin-top: 32px;
 }
 
-@media (min-width: 640px) {
+@media (min-width: 640px) and (max-width: 899px) {
   .install-grid {
     grid-template-columns: repeat(2, 1fr);
   }
 }
 
-@media (min-width: 1024px) {
+@media (min-width: 900px) {
   .install-grid {
-    grid-template-columns: repeat(4, 1fr);
+    grid-template-columns: repeat(3, 1fr);
   }
 }
 

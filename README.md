@@ -6,7 +6,7 @@ Giao diện tích hợp **Ảnh nền phần đầu tiên lấy từ direct link
 
 ---
 
-## ⚡ TRỌN BỘ 7 TÍNH NĂNG VIP LIÊN QUÂN MOBILE
+## ⚡ TRỌN BỘ 8 TÍNH NĂNG VIP LIÊN QUÂN MOBILE
 
 1. 🗺️ **Hack Map (Hiển thị vị trí địch)**:
    - Hiển thị vị trí, avatar tướng, thanh máu và hướng di chuyển của toàn bộ 5 tướng địch trong bụi cỏ và sương mù theo thời gian thực.
@@ -22,6 +22,8 @@ Giao diện tích hợp **Ảnh nền phần đầu tiên lấy từ direct link
    - Tự động đo lường máu thực tế của kẻ địch so với sát thương chuẩn của Bộc Phá, tự bấm Bộc Phá kết liễu ngay khi địch chạm ngưỡng chết trong mili-giây.
 7. 🎵 **Nghe Nhạc SoundCloud (Vừa chơi vừa nghe nhạc)**:
    - Tích hợp cửa sổ widget nổi SoundCloud ngay trong trận: Tìm kiếm bài hát, nghe playlist Remix, Vinahouse, Phonk, Lofi mượt mà không văng game và không giảm 1 FPS nào.
+8. 🔄 **Tách Gốc Độc Lập (Chạy song song không cần gỡ game gốc)**:
+   - Bản mod được đóng gói với Package Name độc lập hoàn toàn (Clone Version). Bạn có thể cài đặt và chạy song song 2 bản Liên Quân trên cùng 1 điện thoại mà không cần gỡ cài đặt bản game gốc chính thức từ Garena hoặc Google Play Store.
 
 ---
 
@@ -37,12 +39,12 @@ Giao diện tích hợp **Ảnh nền phần đầu tiên lấy từ direct link
    - Kiểu chữ 2 tông màu: Trắng bạch kim (`TẤN`) kết hợp Vàng kim vương giả (`CUTOS`) và vương miện VIP.
 4. **Trạng Thái Phát Hành & Tải Về Trực Tiếp**:
    - Phiên bản build APK, trạng thái phát hành Public Release.
-   - Bảng thông số: Bản game hỗ trợ (Liên Quân 1.55.1), yêu cầu Android (No Root), ngày cập nhật.
-   - Khung mã băm **SHA256 Checksum** kèm nút sao chép nhanh 1 chạm.
+   - Bảng thông số: Bản game hỗ trợ (Liên Quân 1.64.1.7 Mùa Mới Nhất), yêu cầu Android (No Root), ngày cập nhật.
 5. **Thanh Tải Nhanh Nổi Chân Màn Hình Điện Thoại (Sticky Mobile Bottom Bar)**:
    - Tự động trượt lên khi cuộn trang, hỗ trợ safe-area-inset cho iPhone và Android.
-6. **Bộ Cấu Hình Trực Quan (Live Config Modal)**:
-   - Bấm vào biểu tượng bánh răng ⚙ trên góc phải hoặc chân trang để thay đổi: **Tên bản mod, Tên game, Link Ảnh Nền Phần Đầu, Direct Link Video MP4, Direct Link Tải APK, Link Dự Phòng, Phiên bản, Dung lượng, SHA256**. Áp dụng tức thì mà không cần sửa code!
+6. **Bảng Quản Trị Riêng Biệt Cho Admin (/admin)**:
+   - Trang quản trị bảo mật riêng biệt tại `/admin` (`admin.html`), yêu cầu đăng nhập tài khoản/mật khẩu quản trị viên (`admin` / `tancutos2026`).
+   - Quản trị viên toàn quyền đổi ảnh từng tính năng trong 8 mục VIP, thay đổi direct link video, link tải APK, ảnh nền hero, câu hỏi FAQ và sao lưu JSON an toàn.
 
 ---
 
@@ -54,7 +56,7 @@ Dự án đã được cấu hình sẵn file `vercel.json` để triển khai t
 1. Đẩy thư mục mã nguồn này lên GitHub:
    ```bash
    git add .
-   git commit -m "Tan Cutos - Mod Menu Lien Quan Mobile voi anh nen direct link va 7 tinh nang VIP"
+   git commit -m "Tan Cutos - Mod Menu Lien Quan Mobile 1.64.1.7 voi 8 tinh nang VIP va Tach Goc doc lap"
    git push origin main
    ```
 2. Truy cập [vercel.com](https://vercel.com) và đăng nhập bằng tài khoản GitHub.

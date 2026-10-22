@@ -1,6 +1,6 @@
 /**
  * TẤN CUTOS - Dữ Liệu Bản Mod Game Liên Quân Mobile (Arena of Valor)
- * Tích hợp đầy đủ 7 tính năng VIP độc quyền theo yêu cầu:
+ * Tích hợp đầy đủ 8 tính năng VIP độc quyền theo yêu cầu:
  * 1. Hack map (hiển thị vị trí địch)
  * 2. Cam xa (mở rộng tầm nhìn)
  * 3. Aim Game (Tung chiêu tự trúng)
@@ -8,9 +8,10 @@
  * 5. Hiển thị thời gian hồi chiêu của địch
  * 6. Tự động bộc phá (tự động xài bổ trợ khi địch còn yếu máu)
  * 7. Nghe nhạc (chọn nhạc trên SoundCloud và mở vừa chơi vừa nghe)
+ * 8. Tách Gốc (Chạy độc lập song song không cần gỡ game gốc)
  */
 
-const STORAGE_KEY_SINGLE_MOD = 'TAN_CUTOS_AOV_MOD_DATA_V6';
+const STORAGE_KEY_SINGLE_MOD = 'TAN_CUTOS_AOV_MOD_DATA_V7';
 
 const DEFAULT_SINGLE_MOD = {
   // Thương hiệu & Tiêu đề
@@ -19,7 +20,7 @@ const DEFAULT_SINGLE_MOD = {
   modTitle: "AOV VIP MENU",
   gameName: "Liên Quân Mobile (Arena of Valor)",
   tagline: "Bản Mod Menu Liên Quân Mobile Độc Quyền Số 1 Android",
-  subtitle: "Trọn bộ 7 tính năng VIP: Hack Map, Cam Xa, Aim Chiêu Tự Trúng, Mod Full Skin, Hồi Chiêu Địch, Tự Động Bộc Phá và Nghe Nhạc SoundCloud. Hỗ trợ Android nguyên bản không cần Root máy, tối ưu mượt mà 60-120 FPS.",
+  subtitle: "Trọn bộ 8 tính năng VIP: Hack Map, Cam Xa, Aim Chiêu Tự Trúng, Mod Full Skin, Hồi Chiêu Địch, Tự Động Bộc Phá, Nghe Nhạc SoundCloud và Tách Gốc Độc Lập (chạy song song không cần gỡ game gốc). Hỗ trợ Android nguyên bản không cần Root máy, tối ưu mượt mà 60-120 FPS.",
   
   // Ảnh nền phần đầu tiên (Hero Background Direct Link)
   heroBackgroundImage: "https://images.unsplash.com/photo-1542751371-adc38448a05e?auto=format&fit=crop&w=2000&q=85",
@@ -50,12 +51,13 @@ const DEFAULT_SINGLE_MOD = {
   // Nhật ký cập nhật phiên bản (What changed in this release)
   changelog: [
     "Cập nhật tương thích phiên bản Liên Quân Mobile 1.64.1.7 Mùa mới nhất của Garena.",
+    "Bổ sung tính năng Tách Gốc Độc Lập: Cài đặt và chạy song song 2 bản Liên Quân trên cùng 1 máy không cần gỡ bản game gốc.",
     "Nâng cấp thuật toán Aim Chiêu tự động tính toán hướng di chuyển và tốc độ chạy của mục tiêu.",
     "Bổ sung Widget nghe nhạc SoundCloud nổi: Nghe nhạc remix, vinahouse, lofi trực tiếp trong game không giật lag.",
     "Tối ưu chạy nền mượt mà: Lưu ý nên chơi cẩn thận, tránh để bị người khác nghi ngờ và tố cáo nhiều."
   ],
 
-  // 7 TÍNH NĂNG ĐỘC QUYỀN ĐƯỢC CHIA THÀNH 3 MODULE TƯƠNG TÁC
+  // 8 TÍNH NĂNG ĐỘC QUYỀN ĐƯỢC CHIA THÀNH 3 MODULE TƯƠNG TÁC
   featureModules: [
     {
       id: "vision",
@@ -123,8 +125,8 @@ const DEFAULT_SINGLE_MOD = {
     },
     {
       id: "utility",
-      eyebrow: "MODULE 3: TRANG PHỤC & GIẢI TRÍ SOUNDCLOUD",
-      title: "4. Mod Full Skin SSS & 7. Trình Nghe Nhạc SoundCloud In-Game",
+      eyebrow: "MODULE 3: TIỆN ÍCH, TRANG PHỤC & ĐỘC LẬP TÁCH GỐC",
+      title: "4. Full Skin, 7. SoundCloud & 8. Tách Gốc Chạy Song Song",
       subfeatures: [
         {
           id: "fullSkin",
@@ -145,6 +147,16 @@ const DEFAULT_SINGLE_MOD = {
           desc: "Tích hợp cửa sổ widget nổi SoundCloud ngay trong trận: Cho phép gõ tìm kiếm bài hát, nghe playlist Remix, Vinahouse, Phonk, Lofi không giới hạn mà không bị văng game hay giảm FPS.",
           image: "https://images.unsplash.com/photo-1552824796-7c98031d7986?auto=format&fit=crop&w=1200&q=85",
           highlight: "Tùy chỉnh âm lượng độc lập với âm thanh game, phím điều khiển mini tiện lợi."
+        },
+        {
+          id: "tachGoc",
+          name: "8. Tách Gốc (Chạy Độc Lập)",
+          badge: "Độc Quyền",
+          tabLabel: "8. Tách Gốc",
+          title: "8. Tách Gốc Độc Lập (Chạy Song Song Không Cần Gỡ Game Gốc)",
+          desc: "Bản mod được đóng gói với Package Name độc lập hoàn toàn (Clone Version). Bạn có thể cài đặt và khởi chạy bản mod trực tiếp trên máy mà không cần phải gỡ cài đặt bản game Liên Quân gốc chính thức từ Garena hay Google Play Store.",
+          image: "https://images.unsplash.com/photo-1511512578047-dfb367046420?auto=format&fit=crop&w=1200&q=85",
+          highlight: "Cài đặt song song 2 bản Liên Quân trên cùng 1 điện thoại: 1 bản gốc sạch để đánh giải/giao lưu và 1 bản mod để leo rank."
         }
       ]
     }
@@ -246,6 +258,10 @@ const DEFAULT_SINGLE_MOD = {
     {
       q: "Tính năng nghe nhạc SoundCloud trong game hoạt động ra sao?",
       a: "Tính năng này mở một widget audio siêu nhẹ chạy nền song song với game. Bạn có thể tìm kiếm bài hát theo tên hoặc mở danh sách phát Remix/Vinahouse/Phonk trên SoundCloud mà không bị xung đột âm thanh hay giảm FPS."
+    },
+    {
+      q: "Bản mod Tách Gốc có cần gỡ bản game Liên Quân gốc trên máy không?",
+      a: "Hoàn toàn KHÔNG cần gỡ. Bản mod Tách Gốc hoạt động với mã gói độc lập (Clone Version), cho phép bạn cài đặt và chạy song song đồng thời bản game gốc chính thức của Garena và bản mod Tấn Cutos trên cùng 1 thiết bị Android mà không hề bị ghi đè hay xung đột dữ liệu."
     },
     {
       q: "Video demo trên web có phải là video từ direct link không?",

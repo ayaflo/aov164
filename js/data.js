@@ -10,7 +10,7 @@
  * 7. Nghe nhạc (chọn nhạc trên SoundCloud và mở vừa chơi vừa nghe)
  */
 
-const STORAGE_KEY_SINGLE_MOD = 'TAN_CUTOS_AOV_MOD_DATA_V4';
+const STORAGE_KEY_SINGLE_MOD = 'TAN_CUTOS_AOV_MOD_DATA_V5';
 
 const DEFAULT_SINGLE_MOD = {
   // Thương hiệu & Tiêu đề
@@ -25,31 +25,31 @@ const DEFAULT_SINGLE_MOD = {
   heroBackgroundImage: "https://images.unsplash.com/photo-1542751371-adc38448a05e?auto=format&fit=crop&w=2000&q=85",
   
   // Thông tin phiên bản & Phát hành (Release Status)
-  version: "5.2.0 VIP",
-  versionBuild: "v5.2.0-aov-byteguard-antiban",
+  version: "1.64.1.7 VIP",
+  versionBuild: "v1.64.1.7-aov-byteguard-antiban",
   releaseStatus: "Bản phát hành chính thức (Public Release)",
-  supportedGameVersion: "Liên Quân Mobile 1.55.1 (Bản Garena Mới Nhất)",
+  supportedGameVersion: "Liên Quân Mobile 1.64.1.7 (Bản Garena Mới Nhất)",
   androidReq: "Android 8.0 – 15+ (No Root)",
   updatedDate: "22/10/2026",
-  fileSize: "98.5 MB",
-  fileName: "tan-cutos-aov-menu-vip-v5.2.0.apk",
+  fileSize: "219 MB",
+  fileName: "hoangtan_aov_1.64.apk",
   sha256: "e4d9b28a8f15c327914e6b5d983416a048a127bc0f7112d8479e0134bc582a99",
   virusTotalScore: "0/72 Clean (Sạch 100%)",
   
   // Direct Link Download & Video
-  downloadUrl: "https://dl.tancutos.vip/releases/aov/tan-cutos-aov-menu-vip-v5.2.0.apk",
-  mirrorDownloadUrl: "https://mega.nz/file/tancutos-aov-vip-v520",
+  downloadUrl: "https://dl.tancutos.vip/releases/aov/hoangtan_aov_1.64.apk",
+  mirrorDownloadUrl: "https://mega.nz/file/tancutos-aov-vip-16417",
   changelogUrl: "#changelog",
   
   // Direct Link Video Demo
   videoUrl: "https://commondatastorage.googleapis.com/gtv-videos-bucket/sample/ForBiggerBlazes.mp4",
   videoPoster: "https://images.unsplash.com/photo-1511512578047-dfb367046420?auto=format&fit=crop&w=1600&q=85",
   videoDuration: "01:30",
-  videoDescription: "Video quay trực tiếp từ điện thoại Android thực tế trong trận đấu hạng Liên Quân Mobile: Test Hack Map, Cam Xa x3.0, Elsu Aim vẩy súng trúng 100%, Tự Bộc Phá và mở nhạc SoundCloud quẩy cực mượt.",
+  videoDescription: "Video test Hack Map, Cam Xa x3.0, Mod Full Skin và mở nhạc SoundCloud quẩy cực mượt.",
   
   // Nhật ký cập nhật phiên bản (What changed in this release)
   changelog: [
-    "Cập nhật tương thích phiên bản Liên Quân Mobile 1.55.1 Mùa mới nhất của Garena.",
+    "Cập nhật tương thích phiên bản Liên Quân Mobile 1.64.1.7 Mùa mới nhất của Garena.",
     "Nâng cấp thuật toán Aim Chiêu tự động tính toán hướng di chuyển và tốc độ chạy của mục tiêu.",
     "Bổ sung Widget nghe nhạc SoundCloud nổi: Nghe nhạc remix, vinahouse, lofi trực tiếp trong game không giật lag.",
     "Tối ưu Antiban Bypass v5.0: Tự động làm sạch log báo cáo trận đấu, chống khóa acc 1 ngày / 3 tháng / 10 năm tuyệt đối."

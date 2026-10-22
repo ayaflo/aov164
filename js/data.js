@@ -11,22 +11,22 @@
  * 8. Tách Gốc (Chạy độc lập song song không cần gỡ game gốc)
  */
 
-const STORAGE_KEY_SINGLE_MOD = 'TAN_CUTOS_AOV_MOD_DATA_V9';
+const STORAGE_KEY_SINGLE_MOD = 'TAN_CUTOS_AOV_MOD_DATA_V10';
 
 const DEFAULT_SINGLE_MOD = {
   // Thương hiệu & Tiêu đề
   brandName: "Tấn Cutos",
   brandKicker: "Tấn Cutos VIP · Mùa Giải Mới 2026",
-  modTitle: "AOV VIP MENU",
+  modTitle: "AOV MOD MENU",
   gameName: "Liên Quân Mobile (Arena of Valor)",
   tagline: "Bản Mod Menu Liên Quân Mobile Độc Quyền Số 1 Android",
   subtitle: "Trọn bộ 8 tính năng VIP: Hack Map, Cam Xa, Aim Chiêu Tự Trúng, Mod Full Skin, Hồi Chiêu Địch, Tự Động Bộc Phá, Nghe Nhạc SoundCloud và Tách Gốc Độc Lập (chạy song song không cần gỡ game gốc). Hỗ trợ Android nguyên bản không cần Root máy, tối ưu mượt mà 60-120 FPS.",
-  
+
   // Ảnh nền phần đầu tiên (Hero Background Direct Link)
-  heroBackgroundImage: "https://images.unsplash.com/photo-1542751371-adc38448a05e?auto=format&fit=crop&w=2000&q=85",
-  
+  heroBackgroundImage: "https://i.ytimg.com/vi/6XAjI4qxjB0/maxresdefault.jpg",
+
   // Thông tin phiên bản & Phát hành (Release Status)
-  version: "1.64.1.7 VIP",
+  version: "1.64.1.7 MOD",
   versionBuild: "v1.64.1.7-aov-elite-edition",
   releaseStatus: "Bản phát hành chính thức (Public Release)",
   supportedGameVersion: "Liên Quân Mobile 1.64.1.7 (Bản Garena Mới Nhất)",
@@ -36,25 +36,23 @@ const DEFAULT_SINGLE_MOD = {
   fileName: "hoangtan_aov_1.64.apk",
   sha256: "e4d9b28a8f15c327914e6b5d983416a048a127bc0f7112d8479e0134bc582a99",
   virusTotalScore: "0/72 Clean (Sạch 100%)",
-  
+
   // Direct Link Download & Video
-  downloadUrl: "https://dl.tancutos.vip/releases/aov/hoangtan_aov_1.64.apk",
-  mirrorDownloadUrl: "https://mega.nz/file/tancutos-aov-vip-16417",
+  downloadUrl: "https://drive.google.com/uc?export=download&id=13pPkllSv0_udSoSTmR9x6ILzQvXWiDQ_",
+  mirrorDownloadUrl: "https://drive.google.com/uc?export=download&id=13pPkllSv0_udSoSTmR9x6ILzQvXWiDQ_",
   changelogUrl: "#changelog",
-  
+
   // Direct Link Video Demo
   videoUrl: "https://commondatastorage.googleapis.com/gtv-videos-bucket/sample/ForBiggerBlazes.mp4",
   videoPoster: "https://images.unsplash.com/photo-1511512578047-dfb367046420?auto=format&fit=crop&w=1600&q=85",
   videoDuration: "01:30",
   videoDescription: "Video test Hack Map, Cam Xa x3.0, Mod Full Skin và mở nhạc SoundCloud quẩy cực mượt.",
-  
+
   // Nhật ký cập nhật phiên bản (What changed in this release)
   changelog: [
     "Tách Gốc Độc Lập (Clone Edition): Cài đặt và chạy độc lập trực tiếp trên máy mà không cần phải xóa hay gỡ cài đặt bản game Liên Quân gốc chính thức (chạy song song 2 bản mượt mà).",
-    "Cập nhật tương thích phiên bản Liên Quân Mobile 1.64.1.7 Mùa mới nhất của Garena.",
     "Nâng cấp thuật toán Aim Chiêu tự động tính toán hướng di chuyển và tốc độ chạy của mục tiêu.",
-    "Bổ sung Widget nghe nhạc SoundCloud nổi: Nghe nhạc remix, vinahouse, lofi trực tiếp trong game không giật lag.",
-    "Tối ưu chạy nền mượt mà: Lưu ý nên chơi cẩn thận, tránh để bị người khác nghi ngờ và tố cáo nhiều."
+    "Bổ sung Widget nghe nhạc SoundCloud nổi: Nghe nhạc remix, vinahouse, lofi trực tiếp trong game không giật lag."
   ],
 
   // 8 TÍNH NĂNG ĐỘC QUYỀN ĐƯỢC CHIA THÀNH 3 MODULE TƯƠNG TÁC
@@ -80,7 +78,7 @@ const DEFAULT_SINGLE_MOD = {
           badge: "Khả Dụng",
           tabLabel: "2. Cam Xa",
           title: "2. Cam Xa Siêu Rộng (Drone View / Mở Rộng Tầm Nhìn)",
-          desc: "Thanh trượt tùy chỉnh góc nhìn camera trên cao từ x1.5, x2.0, x2.5 đến x4.0, phóng tầm nhìn bao quát toàn bộ đường lane, hang Rồng và hang Tà Thần César.",
+          desc: "Thanh trượt tùy chỉnh góc nhìn camera trên cao từ x0.0 cho đến x30.0, phóng tầm nhìn bao quát toàn bộ đường lane, hang Rồng và hang Tà Thần César.",
           image: "https://images.unsplash.com/photo-1511512578047-dfb367046420?auto=format&fit=crop&w=1200&q=85",
           highlight: "Quan sát toàn bộ giao tranh từ khoảng cách xa, kiểm soát thế trận dễ dàng."
         }
@@ -97,7 +95,7 @@ const DEFAULT_SINGLE_MOD = {
           badge: "VIP PRO",
           tabLabel: "3. Aim Chiêu",
           title: "3. Aim Game (Tung Chiêu Tự Trúng 100%)",
-          desc: "Hệ thống tự động khóa tâm và dẫn hướng chuẩn xác cho mọi kỹ năng định hướng: Elsu ngắm bắn viễn trình, Grakk kéo, Tulen Lôi Quang, Hayate phi tiêu...",
+          desc: "Hệ thống tự động khóa tâm và dẫn hướng chuẩn xác cho mọi kỹ năng định hướng: Elsu ngắm bắn viễn trình, Grakk kéo, Enzo Móc...",
           image: "https://images.unsplash.com/photo-1538481199705-c710c4e965fc?auto=format&fit=crop&w=1200&q=85",
           highlight: "Tự tính toán trước bước chạy của kẻ địch để xả chiêu trúng đích tuyệt đối."
         },

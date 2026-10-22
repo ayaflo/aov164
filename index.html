@@ -3,564 +3,630 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Hoàng Tấn Mods - Kho Mod Game Android Đẳng Cấp & Chuyên Nghiệp</title>
-  
-  <!-- SEO & Social Meta Tags -->
-  <meta name="description" content="Nền tảng chia sẻ bản Mod Game Android cao cấp, an toàn tuyệt đối từ Hoàng Tấn Mods. Đầy đủ ảnh chụp mô tả sắc nét từ direct link, mod menu, vô hạn tiền và link tải trực tiếp tốc độ cao.">
-  <meta name="keywords" content="hoang tan mods, hoàng tấn mods, mod game android, apk mod, mod menu, game android mod, tai mod game, gta sa mod, carx street mod">
-  <meta name="author" content="Hoàng Tấn Mods">
-  <meta property="og:title" content="Hoàng Tấn Mods - Kho Mod Game Android Chuyên Nghiệp">
-  <meta property="og:description" content="Trải nghiệm các bản mod game Android đỉnh cao với hình ảnh mô tả trực quan và link tải tốc độ cao.">
+  <title>Magic NTE - Bản Mod Game Android Độc Quyền | Hoàng Tấn Mods</title>
+  <meta name="description" content="Magic NTE là bản mod game Android độc quyền từ Hoàng Tấn Mods hỗ trợ Map TP, Quest TP, God Mode bất tử, No Cooldown và Antiban Bypass an toàn 100%. Tải APK trực tiếp và xem video demo gameplay 60 FPS.">
+  <meta name="keywords" content="Magic NTE, Neverness to Everness Mod, Mod Game Android, Hoang Tan Mods, Map TP, Quest TP, God Mode, APK Direct Link">
+  <meta name="theme-color" content="#070a10">
+
+  <!-- Open Graph / Facebook -->
   <meta property="og:type" content="website">
-  <meta name="theme-color" content="#07090e">
+  <meta property="og:title" content="Magic NTE - Bản Mod Game Android Độc Quyền | Hoàng Tấn Mods">
+  <meta property="og:description" content="Xem video demo direct link và tải bản mod Android Magic NTE miễn phí, không cần root, chống khóa acc 100%.">
+  <meta property="og:image" content="https://images.unsplash.com/photo-1542751371-adc38448a05e?auto=format&fit=crop&w=1200&q=85">
 
   <!-- Favicon -->
-  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='%23f59e0b'><path d='M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5'/></svg>">
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='%23f59e0b'><polygon points='12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2'/></svg>">
 
-  <!-- Google Fonts: Outfit (Luxury Display), Be Vietnam Pro (Flawless Vietnamese Typography), JetBrains Mono -->
+  <!-- Google Fonts: Outfit & Be Vietnam Pro & JetBrains Mono -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,400&family=JetBrains+Mono:wght@500;600&family=Outfit:wght@500;600;700;800;900&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600;700&family=Outfit:wght@500;600;700;800;900&display=swap" rel="stylesheet">
 
   <!-- Stylesheets -->
   <link rel="stylesheet" href="css/variables.css">
-  <link rel="stylesheet" href="css/main.css">
-  <link rel="stylesheet" href="css/cards.css">
-  <link rel="stylesheet" href="css/modal.css">
-  <link rel="stylesheet" href="css/admin.css">
+  <link rel="stylesheet" href="css/landing.css">
+
+  <!-- Schema.org SoftwareApplication -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "SoftwareApplication",
+    "name": "Magic NTE Android Mod",
+    "operatingSystem": "Android 11–15+",
+    "applicationCategory": "GameApplication",
+    "description": "Bản mod game Android Neverness to Everness độc quyền hỗ trợ Quest TP, Map TP, God Mode và No Cooldown.",
+    "softwareVersion": "1.0.10",
+    "fileSize": "122.4 MB"
+  }
+  </script>
 </head>
-<body>
+<body class="landing-page">
 
-  <!-- Ambient Luxury Glow Background -->
-  <div class="ambient-glow">
-    <div class="glow-orb-1"></div>
-    <div class="glow-orb-2"></div>
-    <div class="glow-orb-3"></div>
-  </div>
+  <!-- Ambient Glow Atmosphere -->
+  <div class="hero-glow-orb"></div>
 
-  <!-- Site Header -->
-  <header class="site-header">
-    <div class="container">
-      <div class="nav-wrapper">
-        <a href="#" class="brand-logo" id="brandLogoBtn">
-          <div class="logo-icon">
-            <svg fill="currentColor" viewBox="0 0 24 24">
-              <path d="M12 2L1 7l11 5 9-4.09V17h2V7L12 2zm0 7.7L4.2 6.15 12 2.6l7.8 3.55L12 9.7zM3 10.5v6.5l9 5 9-5v-6.5l-9 5-9-5z"/>
+  <!-- ========================================================
+       1. STICKY HEADER / NAVBAR
+       ======================================================== -->
+  <header class="site-header" id="siteHeader">
+    <div class="landing-container">
+      <div class="header-inner">
+        <!-- Logo -->
+        <a href="#" class="brand-link">
+          <div class="brand-icon-box">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
+              <path d="M12 2L1 21h22L12 2zm0 4.16L19.46 19H4.54L12 6.16z"/>
             </svg>
           </div>
-          <div class="brand-info">
-            <span class="brand-name">Hoàng Tấn Mods</span>
-            <span class="brand-tagline">Luxe Gaming Vault</span>
+          <div class="brand-text-wrap">
+            <span class="brand-title" id="navBrandName">Hoàng Tấn Mods</span>
+            <span class="brand-sub" id="navBrandSub">Midnight VIP</span>
           </div>
         </a>
 
-        <nav class="nav-actions">
-          <a href="#modsSection" class="nav-btn active">
-            <svg width="18" height="18" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6a2 2 0 012-2h2a2 2 0 012 2v2a2 2 0 01-2 2H6a2 2 0 01-2-2V6zM14 6a2 2 0 012-2h2a2 2 0 012 2v2a2 2 0 01-2 2h-2a2 2 0 01-2-2V6zM4 16a2 2 0 012-2h2a2 2 0 012 2v2a2 2 0 01-2 2H6a2 2 0 01-2-2v-2zM14 16a2 2 0 012-2h2a2 2 0 012 2v2a2 2 0 01-2 2h-2a2 2 0 01-2-2v-2z" />
-            </svg>
-            Tất Cả Mods
-          </a>
-
-          <a href="#" class="nav-btn" id="navFavoritesBtn">
-            <svg width="18" height="18" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z" />
-            </svg>
-            Yêu Thích
-          </a>
-
-          <button class="nav-btn primary" id="navAddModBtn">
-            <svg width="18" height="18" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M12 4v16m8-8H4" />
-            </svg>
-            Thêm Mod Mới
-          </button>
+        <!-- Navigation Anchors -->
+        <nav class="nav-links">
+          <a href="#download" class="nav-anchor">Tải Về (Download)</a>
+          <a href="#demo" class="nav-anchor">Video Demo</a>
+          <a href="#features" class="nav-anchor">Tính Năng</a>
+          <a href="#roadmap" class="nav-anchor">Lộ Trình</a>
+          <a href="#install" class="nav-anchor">Hướng Dẫn</a>
+          <a href="#faq" class="nav-anchor">FAQ</a>
         </nav>
+
+        <!-- Header Actions -->
+        <div class="header-actions">
+          <a href="https://t.me/+iymwkzMj05g1MGI1" target="_blank" rel="noopener noreferrer" class="btn-header-community" title="Tham gia Telegram">
+            <svg width="16" height="16" fill="currentColor" viewBox="0 0 24 24">
+              <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm4.64 6.8c-.15 1.58-.8 5.42-1.13 7.19-.14.75-.42 1-.68 1.03-.58.05-1.02-.38-1.58-.75-.88-.58-1.38-.94-2.23-1.5-.99-.65-.35-1.01.22-1.59.15-.15 2.71-2.48 2.76-2.69a.2.2 0 00-.05-.18c-.06-.05-.14-.03-.21-.02-.09.02-1.49.95-4.22 2.79-.4.27-.76.41-1.08.4-.36-.01-1.04-.2-1.55-.37-.63-.2-1.12-.31-1.08-.66.02-.18.27-.36.74-.55 2.92-1.27 4.86-2.11 5.83-2.51 2.78-1.16 3.35-1.36 3.73-1.36.08 0 .27.02.39.12.1.08.13.19.14.27-.01.06.01.24 0 .38z"/>
+            </svg>
+            <span>Telegram</span>
+          </a>
+
+          <a href="#download" class="btn-header-download" id="headerDownloadBtn">
+            <svg width="16" height="16" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-4l-4 4m0 0l-4-4m4 4V4" />
+            </svg>
+            <span>Tải Ngay APK</span>
+          </a>
+
+          <!-- Live Config Gear (Để đổi direct link video & download) -->
+          <button class="btn-gear-config" id="btnOpenConfig" title="Cấu hình Direct Link (Video & Download)">
+            <svg width="18" height="18" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10.325 4.317c.426-1.756 2.924-1.756 3.35 0a1.724 1.724 0 002.573 1.066c1.543-.94 3.31.826 2.37 2.37a1.724 1.724 0 001.065 2.572c1.756.426 1.756 2.924 0 3.35a1.724 1.724 0 00-1.066 2.573c.94 1.543-.826 3.31-2.37 2.37a1.724 1.724 0 00-2.572 1.065c-.426 1.756-2.924 1.756-3.35 0a1.724 1.724 0 00-2.573-1.066c-1.543.94-3.31-.826-2.37-2.37a1.724 1.724 0 00-1.065-2.572c-1.756-.426-1.756-2.924 0-3.35a1.724 1.724 0 001.066-2.573c-.94-1.543.826-3.31 2.37-2.37.996.608 2.296.07 2.572-1.065z" />
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 12a3 3 0 11-6 0 3 3 0 016 0z" />
+            </svg>
+          </button>
+        </div>
       </div>
     </div>
   </header>
 
-  <!-- Hero Section -->
-  <section class="hero-section">
-    <div class="container">
-      <div class="hero-badge">
-        <span class="hero-badge-dot"></span>
-        Hệ Thống Mod Game Android VIP #1
-      </div>
-
-      <h1 class="hero-title">
-        Kho Mod Game Android <br>
-        <span class="gold-text">Chuyên Nghiệp & Sang Trọng</span>
-      </h1>
-
-      <p class="hero-subtitle">
-        Khám phá bộ sưu tập bản mod game Android tuyển chọn. Hình ảnh chụp thực tế từ direct link, 
-        kiểm định sạch mã độc VirusTotal 100%, tích hợp tải trực tiếp không quảng cáo rút gọn.
-      </p>
-
-      <!-- Stats Bar -->
-      <div class="stats-row">
-        <div class="stat-item">
-          <span class="stat-number">500+</span>
-          <span class="stat-label">Bản Mod Android</span>
-        </div>
-        <div class="stat-divider"></div>
-        <div class="stat-item">
-          <span class="stat-number">100%</span>
-          <span class="stat-label">Kiểm Định An Toàn</span>
-        </div>
-        <div class="stat-divider"></div>
-        <div class="stat-item">
-          <span class="stat-number">24/7</span>
-          <span class="stat-label">Cập Nhật Phiên Bản</span>
-        </div>
-        <div class="stat-divider"></div>
-        <div class="stat-item">
-          <span class="stat-number">1.2M+</span>
-          <span class="stat-label">Lượt Tải Trực Tiếp</span>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- Search & Filter Controls -->
-  <section class="controls-section">
-    <div class="container">
-      <div class="controls-card">
-        <div class="search-row">
-          <div class="search-box">
-            <svg class="search-icon" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" />
-            </svg>
-            <input type="text" id="searchInput" class="search-input" placeholder="Tìm kiếm tên game, nhà phát triển hoặc tính năng mod (ví dụ: GTA, CarX, vô hạn tiền, mod menu)..." />
-            <button class="clear-search-btn" id="clearSearchBtn" title="Xóa tìm kiếm">
-              <svg width="18" height="18" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12" />
-              </svg>
-            </button>
+  <main>
+    <!-- ========================================================
+         2. HERO MIDNIGHT STAGE
+         ======================================================== -->
+    <section class="hero-stage">
+      <div class="landing-container">
+        <div class="hero-content">
+          <div class="hero-kicker-badge" id="heroKicker">
+            <span class="kicker-dot"></span>
+            <span id="heroKickerText">Hoàng Tấn Mods · Midnight Release</span>
           </div>
 
-          <div class="sort-box">
-            <span class="sort-label">Sắp xếp:</span>
-            <select id="sortSelect" class="sort-select">
-              <option value="popular">Đánh giá cao nhất</option>
-              <option value="latest">Mới cập nhật</option>
-              <option value="downloads">Lượt tải nhiều nhất</option>
-              <option value="name">Tên game (A - Z)</option>
-            </select>
-          </div>
-        </div>
+          <h1 class="hero-main-title">
+            <span class="hero-title-highlight" id="heroModTitle">MAGIC NTE</span>
+            <span class="hero-title-game" id="heroGameName">Neverness to Everness</span>
+          </h1>
 
-        <!-- Categories horizontal bar -->
-        <div class="categories-bar">
-          <button class="category-chip active" data-category="all">
-            <svg width="16" height="16" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h7" />
-            </svg>
-            Tất Cả Thể Loại
-          </button>
-          <button class="category-chip" data-category="action">⚔️ Hành Động</button>
-          <button class="category-chip" data-category="rpg">🧙‍♂️ Nhập Vai RPG</button>
-          <button class="category-chip" data-category="racing">🏎️ Đua Xe</button>
-          <button class="category-chip" data-category="open-world">🌆 Thế Giới Mở</button>
-          <button class="category-chip" data-category="strategy">🛡️ Chiến Thuật</button>
-          <button class="category-chip" data-category="simulation">🎮 Mô Phỏng</button>
-        </div>
-      </div>
-    </div>
-  </section>
+          <p class="hero-summary-text" id="heroSubtitle">
+            Bản mod Android độc quyền <strong>#1</strong> hỗ trợ đầy đủ <strong>Map TP, Quest TP, God Mode</strong> và <strong>Antiban Bypass</strong>. Không cần Root máy, tốc độ mượt mà 60-120 FPS.
+          </p>
 
-  <!-- Mods Grid Section -->
-  <section class="mods-section" id="modsSection">
-    <div class="container">
-      <div class="section-header-row">
-        <div class="section-title-wrap">
-          <span class="section-badge">DANH SÁCH TUYỂN CHỌN</span>
-          <h2 class="section-title">Các Bản Mod Nổi Bật</h2>
-        </div>
-        <span class="results-count" id="resultsCount">Đang tải...</span>
-      </div>
-
-      <!-- The dynamic cards grid -->
-      <div class="mods-grid" id="modsGrid">
-        <!-- Rendered by app.js -->
-      </div>
-    </div>
-  </section>
-
-  <!-- MOD DETAIL MODAL -->
-  <div class="modal-overlay" id="modDetailModal">
-    <div class="modal-container">
-      <button class="modal-close-btn" id="modalCloseBtn" title="Đóng cửa sổ">
-        <svg width="20" height="20" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12" />
-        </svg>
-      </button>
-
-      <!-- Modal Hero Header -->
-      <div class="modal-header-hero">
-        <div class="modal-title-wrap">
-          <img id="modalAppIcon" class="modal-app-icon" src="" alt="icon" />
-          <div class="modal-header-text">
-            <h2 class="modal-title" id="modalTitle">Tên Game Mod</h2>
-            <div class="modal-meta-row">
-              <span id="modalDeveloper">Nhà phát triển</span>
-              <span>•</span>
-              <span class="card-version-pill" id="modalVersion">v1.0.0</span>
-              <span>•</span>
-              <div class="modal-rating">
-                <svg width="16" height="16" fill="currentColor" viewBox="0 0 20 20">
-                  <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
-                </svg>
-                <span id="modalRating">4.9 / 5.0</span>
-              </div>
-              <span>•</span>
-              <span id="modalDownloads">1.2M lượt tải</span>
-            </div>
-          </div>
-        </div>
-      </div>
-
-      <!-- Modal Scrollable Body -->
-      <div class="modal-body">
-        
-        <!-- Multi-Screenshot Gallery Section (Direct Link Images) -->
-        <div class="gallery-section">
-          <div class="gallery-section-title">
-            <span>Ảnh Chụp Mô Tả Thực Tế (Direct Link Preview)</span>
-            <span class="gallery-counter" id="galleryCounter">Ảnh 1 / 4</span>
-          </div>
-
-          <div class="gallery-main-view">
-            <img id="modalMainScreenshot" class="gallery-main-img" src="" alt="Main Screenshot" title="Nhấp để phóng to toàn màn hình" />
-            
-            <button class="gallery-nav-btn gallery-prev" id="galleryPrevBtn" title="Ảnh trước">
-              <svg width="22" height="22" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M15 19l-7-7 7-7" />
-              </svg>
-            </button>
-            <button class="gallery-nav-btn gallery-next" id="galleryNextBtn" title="Ảnh tiếp theo">
-              <svg width="22" height="22" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M9 5l7 7-7 7" />
-              </svg>
-            </button>
-
-            <div class="gallery-zoom-hint">
-              <svg width="14" height="14" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0zM10 7v6m3-3H7" />
-              </svg>
-              Nhấp ảnh để phóng to Lightbox
-            </div>
-          </div>
-
-          <!-- Hộp thông tin tính năng tương ứng với ảnh chụp direct link đang xem -->
-          <div class="gallery-feature-spotlight" id="galleryFeatureSpotlight">
-            <div class="spotlight-top">
-              <span class="spotlight-badge" id="spotlightBadge">Tính Năng #1</span>
-              <h4 class="spotlight-title" id="spotlightTitle">Tên Tính Năng Mod</h4>
-            </div>
-            <p class="spotlight-desc" id="spotlightDesc">Lời mô tả chi tiết về tính năng mod đang được chụp thực tế trong ảnh trên.</p>
-          </div>
-
-          <!-- Thumbnails Row -->
-          <div class="gallery-thumbs-row" id="modalThumbsRow">
-            <!-- Populated dynamically -->
-          </div>
-        </div>
-
-        <!-- Download Action Card -->
-        <div class="modal-download-section">
-          <div class="download-header">
-            <div class="download-title-wrap">
-              <h3 class="download-title">Tải Về Bản Mod An Toàn</h3>
-              <span class="download-sub">Tốc độ cao, đường truyền riêng biệt, không link rút gọn phiền phức</span>
-            </div>
-            <div class="security-tag">
-              <svg width="16" height="16" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z" />
-              </svg>
-              Đã Quét Sạch Virus & Malware 100%
-            </div>
-          </div>
-
-          <div class="download-buttons-grid">
-            <a id="btnDownloadApk" href="#" target="_blank" rel="noopener noreferrer" class="btn-download-primary">
+          <div class="hero-cta-group">
+            <a href="#download" class="btn-hero-download" id="heroDownloadBtn">
               <svg width="22" height="22" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-4l-4 4m0 0l-4-4m4 4V4" />
               </svg>
-              Tải Trực Tiếp APK (Direct VIP)
+              <span>Tải Bản Android (APK)</span>
             </a>
 
-            <a id="btnDownloadMirror" href="#" target="_blank" rel="noopener noreferrer" class="btn-download-mirror">
-              <svg width="18" height="18" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 15a4 4 0 004 4h9a5 5 0 10-.1-9.999 5.002 5.002 0 00-9.78 2.096A4.001 4.001 0 003 15z" />
+            <a href="#demo" class="btn-hero-demo">
+              <svg width="20" height="20" fill="currentColor" viewBox="0 0 24 24">
+                <path d="M8 5v14l11-7z"/>
               </svg>
-              Link Dự Phòng (Drive)
+              <span>Xem Video Demo</span>
             </a>
 
-            <a id="btnDownloadObb" href="#" target="_blank" rel="noopener noreferrer" class="btn-download-mirror" style="display: none;">
-              <svg width="18" height="18" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 8h14M5 8a2 2 0 110-4h14a2 2 0 110 4M5 8v10a2 2 0 002 2h10a2 2 0 002-2V8m-9 4h4" />
+            <div class="platform-incoming-pill">
+              <svg width="16" height="16" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <rect x="5" y="2" width="14" height="20" rx="2" ry="2" stroke-width="2"/>
+                <line x1="12" y1="18" x2="12.01" y2="18" stroke-width="2"/>
               </svg>
-              Tải Gói OBB / Data
+              <span>Android 11–15+ (No Root) · iOS & PC Sắp Ra Mắt</span>
+            </div>
+          </div>
+
+          <div class="hero-social-links">
+            <a href="https://t.me/+iymwkzMj05g1MGI1" target="_blank" rel="noopener noreferrer" class="btn-social btn-social-telegram">
+              <svg width="18" height="18" fill="currentColor" viewBox="0 0 24 24">
+                <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm4.64 6.8c-.15 1.58-.8 5.42-1.13 7.19-.14.75-.42 1-.68 1.03-.58.05-1.02-.38-1.58-.75-.88-.58-1.38-.94-2.23-1.5-.99-.65-.35-1.01.22-1.59.15-.15 2.71-2.48 2.76-2.69a.2.2 0 00-.05-.18c-.06-.05-.14-.03-.21-.02-.09.02-1.49.95-4.22 2.79-.4.27-.76.41-1.08.4-.36-.01-1.04-.2-1.55-.37-.63-.2-1.12-.31-1.08-.66.02-.18.27-.36.74-.55 2.92-1.27 4.86-2.11 5.83-2.51 2.78-1.16 3.35-1.36 3.73-1.36.08 0 .27.02.39.12.1.08.13.19.14.27-.01.06.01.24 0 .38z"/>
+              </svg>
+              <span>Kênh Telegram VIP</span>
+            </a>
+
+            <a href="https://discord.gg/SUSJ2UTqxq" target="_blank" rel="noopener noreferrer" class="btn-social btn-social-discord">
+              <svg width="18" height="18" fill="currentColor" viewBox="0 0 24 24">
+                <path d="M20.317 4.37a19.791 19.791 0 00-4.885-1.515.074.074 0 00-.079.037c-.21.375-.444.864-.608 1.25a18.27 18.27 0 00-5.487 0 12.64 12.64 0 00-.617-1.25.077.077 0 00-.079-.037A19.736 19.736 0 003.677 4.37a.07.07 0 00-.032.027C.533 9.046-.32 13.58.099 18.057a.082.082 0 00.031.057 19.9 19.9 0 005.993 3.03.078.078 0 00.084-.028c.462-.63.874-1.295 1.226-1.994.021-.041.001-.09-.041-.106a13.107 13.107 0 01-1.872-.892.077.077 0 01-.008-.128 10.2 10.2 0 00.372-.292.074.074 0 01.077-.01c3.929 1.793 8.18 1.793 12.061 0a.074.074 0 01.078.01c.12.098.246.198.373.292a.077.077 0 01-.006.127 12.299 12.299 0 01-1.873.894.077.077 0 00-.041.107c.36.698.772 1.362 1.225 1.993a.076.076 0 00.084.028 19.839 19.839 0 006.002-3.03.077.077 0 00.032-.054c.5-5.177-.838-9.674-3.549-13.66a.061.061 0 00-.031-.028zM8.02 15.33c-1.183 0-2.157-1.085-2.157-2.419 0-1.333.956-2.419 2.157-2.419 1.21 0 2.176 1.096 2.157 2.42 0 1.333-.956 2.418-2.157 2.418zm7.975 0c-1.183 0-2.157-1.085-2.157-2.419 0-1.333.955-2.419 2.157-2.419 1.21 0 2.176 1.096 2.157 2.42 0 1.333-.946 2.418-2.157 2.418z"/>
+              </svg>
+              <span>Máy Chủ Discord</span>
             </a>
           </div>
         </div>
+      </div>
+    </section>
 
-        <!-- Details Grid: Description, Features & Specs -->
-        <div class="modal-grid-details">
-          <div class="modal-desc-box">
-            <h4 class="modal-desc-title">
-              <svg width="20" height="20" fill="none" viewBox="0 0 24 24" stroke="currentColor" style="color: var(--gold-light);">
-                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 16h-1v-4h-1m1-4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
-              </svg>
-              Mô Tả Bản Mod & Thông Tin Chi Tiết
-            </h4>
-            <p class="modal-desc-text" id="modalDescription"></p>
+    <!-- ========================================================
+         3. RELEASE & DOWNLOAD SECTION (#download)
+         ======================================================== -->
+    <section class="section" id="download">
+      <div class="landing-container">
+        <div class="download-grid">
+          <!-- Left Info Column -->
+          <div class="download-info-wrap">
+            <span class="eyebrow">Trạng Thái Bản Phát Hành</span>
+            <h2 class="section-title">Bản Android Sẵn Sàng Tải Về</h2>
+            <p class="section-desc mt-3">
+              Tải bản build APK đã được kiểm định đầy đủ chữ ký số. Kiểm tra phiên bản, dung lượng và mã băm SHA256 trước khi cài đặt. Tải trực tiếp không quảng cáo rút gọn link.
+            </p>
 
-            <h4 class="modal-desc-title" style="margin-top: 24px;">
-              <svg width="20" height="20" fill="currentColor" viewBox="0 0 20 20" style="color: var(--gold-light);">
-                <path fill-rule="evenodd" d="M11.3 1.046A1 1 0 0112 2v5h4a1 1 0 01.82 1.573l-7 10A1 1 0 018 18v-5H4a1 1 0 01-.82-1.573l7-10a1 1 0 011.12-.38z" clip-rule="evenodd" />
-              </svg>
-              Tính Năng Mod Menu Đã Kích Hoạt
-            </h4>
-            <div class="mod-features-checklist" id="modalFeaturesList">
-              <!-- Checklist features -->
-            </div>
-          </div>
-
-          <!-- Specs Panel & Installation Guide -->
-          <div style="display: flex; flex-direction: column; gap: 20px;">
-            <div class="specs-panel">
-              <h4 class="modal-desc-title">Thông Số Kỹ Thuật</h4>
-              <div class="specs-table" id="modalSpecsTable">
-                <!-- Populated dynamically -->
-              </div>
-            </div>
-
-            <div class="install-guide-box">
-              <div class="install-guide-title">
-                <svg width="18" height="18" fill="none" viewBox="0 0 24 24" stroke="currentColor" style="color: var(--accent-cyan);">
-                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5H7a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2V7a2 2 0 00-2-2h-2M9 5a2 2 0 002 2h2a2 2 0 002-2M9 5a2 2 0 012-2h2a2 2 0 012 2" />
+            <div style="margin-top: 28px; display: flex; flex-direction: column; gap: 12px;">
+              <div style="display: flex; align-items: center; gap: 10px; color: var(--accent-emerald); font-weight: 600; font-size: 0.95rem;">
+                <svg width="20" height="20" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M5 13l4 4L19 7" />
                 </svg>
-                Hướng Dẫn Cài Đặt
+                <span>Kiểm định sạch VirusTotal 0/72 Antivirus</span>
               </div>
-              <p class="install-steps" id="modalInstallGuide"></p>
+              <div style="display: flex; align-items: center; gap: 10px; color: var(--accent-cyan); font-weight: 600; font-size: 0.95rem;">
+                <svg width="20" height="20" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M12 15v2m-6 4h12a2 2 0 002-2v-6a2 2 0 00-2-2H6a2 2 0 00-2 2v6a2 2 0 002 2zm10-10V7a4 4 0 00-8 0v4h8z" />
+                </svg>
+                <span>Tích hợp ByteGuard Antiban Bypass v4.2</span>
+              </div>
+              <div style="display: flex; align-items: center; gap: 10px; color: var(--gold-light); font-weight: 600; font-size: 0.95rem;">
+                <svg width="20" height="20" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M13 10V3L4 14h7v7l9-11h-7z" />
+                </svg>
+                <span>Hỗ trợ không cần Root máy (No Root)</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Right Release Card Column -->
+          <div class="release-card">
+            <div class="release-header">
+              <div>
+                <span class="release-meta-title">Phiên bản Magic NTE</span>
+                <h3 class="release-mod-version" id="releaseModVersion">Magic NTE 1.0.10</h3>
+                <p class="release-build-tag" id="releaseBuildTag">1.0.10-api36-runtime-profile</p>
+              </div>
+
+              <span class="release-status-badge">
+                <svg width="8" height="8" fill="currentColor" viewBox="0 0 8 8"><circle cx="4" cy="4" r="4"/></svg>
+                <span id="releaseStatusText">Bản phát hành chính thức</span>
+              </span>
+            </div>
+
+            <!-- Specs Grid -->
+            <div class="release-specs-grid">
+              <div class="spec-box">
+                <div class="spec-box-label">Game Hỗ Trợ</div>
+                <div class="spec-box-value" id="specGameVersion">NTE 1.4.1.88728</div>
+              </div>
+              <div class="spec-box">
+                <div class="spec-box-label">Yêu Cầu Android</div>
+                <div class="spec-box-value" id="specAndroidReq">Android 11–15+</div>
+              </div>
+              <div class="spec-box">
+                <div class="spec-box-label">Ngày Cập Nhật</div>
+                <div class="spec-box-value" id="specUpdatedDate">22/10/2026</div>
+              </div>
+            </div>
+
+            <!-- Changelog Box -->
+            <div class="changelog-box">
+              <div class="changelog-box-title">Nhật ký thay đổi phiên bản mới</div>
+              <ul class="changelog-list" id="changelogList">
+                <!-- Populated dynamically by app.js -->
+              </ul>
+            </div>
+
+            <!-- File details & SHA256 -->
+            <div class="file-info-line" id="fileInfoLine">
+              122.4 MB · com.multi.appspace-1.0.10-api36-runtime-profile-aosp-byteguard-release-20261010.apk
+            </div>
+
+            <div class="sha256-row">
+              <div class="sha256-text-wrap">
+                <span class="sha256-label">SHA256:</span>
+                <span class="sha256-value" id="sha256Value">9218fe7fd5cdb14a5d7f276d220f7a005fb6b89665fa7015d05bad0bf44cfd72</span>
+              </div>
+              <button class="btn-copy-sha" id="btnCopySha">Sao Chép</button>
+            </div>
+
+            <!-- Download Action Buttons -->
+            <div class="download-action-row">
+              <a href="#" target="_blank" rel="noopener noreferrer" class="btn-download-primary" id="btnDownloadApkMain">
+                <svg width="20" height="20" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-4l-4 4m0 0l-4-4m4 4V4" />
+                </svg>
+                <span>Tải APK Trực Tiếp</span>
+              </a>
+
+              <a href="#" target="_blank" rel="noopener noreferrer" class="btn-download-mirror" id="btnDownloadMirror">
+                <svg width="18" height="18" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 16H6a2 2 0 01-2-2V6a2 2 0 012-2h8a2 2 0 012 2v2m-6 12h8a2 2 0 002-2v-8a2 2 0 00-2-2h-8a2 2 0 00-2 2v8a2 2 0 002 2z" />
+                </svg>
+                <span>Link Dự Phòng</span>
+              </a>
             </div>
           </div>
         </div>
-
       </div>
-    </div>
-  </div>
+    </section>
 
-  <!-- FULLSCREEN LIGHTBOX MODAL -->
-  <div class="lightbox-modal" id="lightboxModal">
-    <button class="lightbox-close" id="lightboxClose" title="Đóng phóng to">✕</button>
-    <button class="lightbox-nav lightbox-prev" id="lightboxPrev" title="Ảnh trước">‹</button>
-    <div class="lightbox-content-box">
-      <img id="lightboxImg" class="lightbox-img" src="" alt="Fullscreen screenshot" />
-      <div class="lightbox-caption-card" id="lightboxCaptionCard">
-        <div class="lightbox-caption-header">
-          <span class="lightbox-feat-badge" id="lightboxFeatBadge">Tính Năng #1</span>
-          <h4 class="lightbox-caption-title" id="lightboxCaptionTitle">Tên Tính Năng</h4>
-        </div>
-        <p class="lightbox-caption-desc" id="lightboxCaptionDesc">Lời mô tả chi tiết về tính năng chụp trong ảnh.</p>
-      </div>
-    </div>
-    <button class="lightbox-nav lightbox-next" id="lightboxNext" title="Ảnh kế tiếp">›</button>
-  </div>
-
-  <!-- ADD / EDIT MOD MODAL -->
-  <div class="modal-overlay" id="addModModal">
-    <div class="modal-container" style="max-width: 800px;">
-      <button class="modal-close-btn" id="addModCloseBtn" title="Đóng">
-        <svg width="20" height="20" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12" />
-        </svg>
-      </button>
-
-      <div class="modal-header-hero">
-        <h3 class="modal-title">Thêm Bản Mod Game Mới</h3>
-        <p style="color: var(--text-secondary); font-size: 0.88rem; margin-top: 4px;">
-          Dán các liên kết ảnh trực tiếp (direct links) và link tải về để đưa bản mod lên trang web ngay lập tức.
-        </p>
-      </div>
-
-      <div class="modal-body" style="padding: 24px 32px;">
-        <form id="addModForm">
-          <div class="form-grid">
-            <div class="form-group">
-              <label class="form-label">Tên Game Mod <span class="required">*</span></label>
-              <input type="text" id="newModTitle" class="form-input" placeholder="Ví dụ: GTA San Andreas Definitive VIP" required />
-            </div>
-
-            <div class="form-group">
-              <label class="form-label">Nhà Phát Triển / Tác Giả</label>
-              <input type="text" id="newModDev" class="form-input" placeholder="Ví dụ: Rockstar / Apex Team" />
-            </div>
-
-            <div class="form-group">
-              <label class="form-label">Thể Loại <span class="required">*</span></label>
-              <select id="newModCategory" class="form-select" required>
-                <option value="action">Hành Động (Action)</option>
-                <option value="rpg">Nhập Vai (RPG)</option>
-                <option value="racing">Đua Xe (Racing)</option>
-                <option value="open-world">Thế Giới Mở (Open World)</option>
-                <option value="strategy">Chiến Thuật (Strategy)</option>
-                <option value="simulation">Mô Phỏng (Simulation)</option>
-              </select>
-            </div>
-
-            <div class="form-group">
-              <label class="form-label">Phiên Bản (Version)</label>
-              <input type="text" id="newModVersion" class="form-input" placeholder="Ví dụ: v2.5.0" />
-            </div>
-
-            <div class="form-group">
-              <label class="form-label">Dung Lượng File</label>
-              <input type="text" id="newModSize" class="form-input" placeholder="Ví dụ: 1.8 GB hoặc 450 MB" />
-            </div>
-
-            <div class="form-group">
-              <label class="form-label">Yêu Cầu Android</label>
-              <input type="text" id="newModAndroid" class="form-input" placeholder="Ví dụ: Android 8.0+" />
-            </div>
-
-            <div class="form-group full-width">
-              <label class="form-label">Ảnh Bìa Chính (Direct Link) <span class="required">*</span></label>
-              <input type="url" id="newModCover" class="form-input" placeholder="https://example.com/cover-image.jpg" required />
-              <span class="form-hint">Liên kết ảnh trực tiếp kết thúc bằng .jpg, .png, .webp hoặc link CDN Imgur, Unsplash.</span>
-            </div>
-
-            <div class="form-group full-width">
-              <label class="form-label">Nhiều Ảnh Chụp Mô Tả Thực Tế (Direct Links) <span class="required">*</span></label>
-              <textarea id="modScreenshotsInput" class="form-textarea" placeholder="Dán các direct link ảnh chụp màn hình (mỗi dòng 1 link hoặc phân cách bằng dấu phẩy)&#10;https://i.imgur.com/screenshot1.jpg&#10;https://i.imgur.com/screenshot2.jpg&#10;https://i.imgur.com/screenshot3.jpg" required></textarea>
-              <span class="form-hint">Hệ thống sẽ tự động tạo trình chiếu carousel và bộ phóng to toàn màn hình cho các ảnh này.</span>
-              
-              <!-- Thumbnail preview of typed screenshot links -->
-              <div class="admin-preview-thumbs" id="adminThumbsPreview"></div>
-            </div>
-
-            <div class="form-group">
-              <label class="form-label">Link Tải Trực Tiếp APK (Direct Download Link) <span class="required">*</span></label>
-              <input type="url" id="newModDownloadUrl" class="form-input" placeholder="https://download.domain.com/game.apk" required />
-            </div>
-
-            <div class="form-group">
-              <label class="form-label">Link Dự Phòng (Google Drive / MediaFire)</label>
-              <input type="url" id="newModMirrorUrl" class="form-input" placeholder="https://drive.google.com/..." />
-            </div>
-
-            <div class="form-group full-width">
-              <label class="form-label">Các Tính Năng Mod (Phân cách bằng dấu phẩy)</label>
-              <input type="text" id="newModFeatures" class="form-input" placeholder="Mod Menu VIP, Vô Hạn Tiền & Vàng, Bất Tử, Anti-Ban 100%" />
-            </div>
-
-            <div class="form-group full-width">
-              <label class="form-label">Mô Tả Bản Mod</label>
-              <textarea id="newModDesc" class="form-textarea" placeholder="Nhập tóm tắt mô tả nội dung bản mod, các điểm nổi bật và lưu ý..."></textarea>
-            </div>
-          </div>
-
-          <div class="form-actions-row">
-            <button type="button" class="btn-secondary" id="btnExportJson">
-              <svg width="16" height="16" fill="none" viewBox="0 0 24 24" stroke="currentColor" style="display:inline-block; vertical-align:middle; margin-right:4px;">
-                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-4l-4 4m0 0l-4-4m4 4V4" />
-              </svg>
-              Xuất Dữ Liệu JSON
-            </button>
-            <button type="button" class="btn-secondary" id="btnResetData">Đặt Lại Dữ Liệu Gốc</button>
-            <button type="button" class="btn-secondary" id="cancelAddModBtn">Hủy</button>
-            <button type="submit" class="btn-primary-gold">
-              <svg width="18" height="18" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M5 13l4 4L19 7" />
-              </svg>
-              Đăng Bản Mod Lên Web
-            </button>
-          </div>
-        </form>
-      </div>
-    </div>
-  </div>
-
-  <!-- Site Footer -->
-  <footer class="site-footer">
-    <div class="container">
-      <div class="footer-top">
-        <div>
-          <div class="brand-logo">
-            <div class="logo-icon">
-              <svg fill="currentColor" viewBox="0 0 24 24">
-                <path d="M12 2L1 7l11 5 9-4.09V17h2V7L12 2zm0 7.7L4.2 6.15 12 2.6l7.8 3.55L12 9.7zM3 10.5v6.5l9 5 9-5v-6.5l-9 5-9-5z"/>
-              </svg>
-            </div>
-            <div class="brand-info">
-              <span class="brand-name">Hoàng Tấn Mods</span>
-              <span class="brand-tagline">Luxe Gaming Vault</span>
-            </div>
-          </div>
-          <p class="footer-brand-desc">
-            Kho lưu trữ các bản Mod Game Android sang trọng, chuyên nghiệp và uy tín hàng đầu bởi Hoàng Tấn Mods.
-            Mỗi bản mod đều được đính kèm ảnh chụp thực tế chất lượng cao và liên kết tải trực tiếp không quảng cáo.
+    <!-- ========================================================
+         4. DEMO SECTION WITH DIRECT LINK VIDEO PLAYER (#demo)
+         ======================================================== -->
+    <section class="section section-alt" id="demo">
+      <div class="landing-container">
+        <div class="video-section-header">
+          <span class="eyebrow">Video Trải Nghiệm Thực Tế</span>
+          <h2 class="section-title">Xem Video Demo Trên Android</h2>
+          <p class="section-desc">
+            Video quay trực tiếp từ điện thoại không qua biên tập cắt ghép, hiển thị rõ tính năng Map TP, Quest TP và God Mode hoạt động mượt mà 60 FPS.
           </p>
-          <div class="footer-badges">
-            <span class="trust-badge">
-              <svg width="14" height="14" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
-              </svg>
-              100% VirusTotal Clean
-            </span>
-            <span class="trust-badge">
-              <svg width="14" height="14" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
-              </svg>
-              Direct Link High-Speed
-            </span>
-            <span class="trust-badge">
-              <svg width="14" height="14" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
-              </svg>
-              No Root Required
-            </span>
+        </div>
+
+        <div class="video-player-wrap">
+          <div class="video-player-container" id="videoPlayerContainer">
+            <!-- HTML5 Video Element with Direct Link -->
+            <video class="video-element" id="demoVideo" playsinline preload="metadata" poster="">
+              <source id="videoSource" src="" type="video/mp4">
+              Trình duyệt của bạn không hỗ trợ thẻ video HTML5.
+            </video>
+
+            <!-- Big Center Play Overlay -->
+            <div class="video-overlay-play" id="videoOverlayPlay" title="Bấm để phát video">
+              <div class="video-play-disc">
+                <svg viewBox="0 0 24 24" fill="currentColor">
+                  <path d="M8 5v14l11-7z"/>
+                </svg>
+              </div>
+            </div>
+
+            <!-- Custom Video Controls Bar -->
+            <div class="video-controls-bar" id="videoControlsBar">
+              <!-- Progress Slider -->
+              <div class="video-progress-container">
+                <div class="video-progress-fill" id="videoProgressFill"></div>
+                <input type="range" class="video-progress-slider" id="videoProgressSlider" min="0" max="100" step="0.1" value="0">
+              </div>
+
+              <!-- Controls row -->
+              <div class="video-controls-row">
+                <div class="video-controls-left">
+                  <button class="video-btn" id="videoPlayPauseBtn" title="Phát (Play)">
+                    <svg width="20" height="20" fill="currentColor" viewBox="0 0 24 24">
+                      <path d="M8 5v14l11-7z"/>
+                    </svg>
+                  </button>
+
+                  <div class="video-time-display">
+                    <span id="videoTimeCurrent">00:00</span> / <span id="videoTimeDuration">01:45</span>
+                  </div>
+                </div>
+
+                <div class="video-controls-right">
+                  <span class="video-quality-tag">
+                    <svg width="12" height="12" fill="currentColor" viewBox="0 0 24 24">
+                      <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 15l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z"/>
+                    </svg>
+                    Direct MP4 1080p
+                  </span>
+
+                  <button class="video-btn" id="videoMuteBtn" title="Bật/Tắt âm thanh">
+                    <svg width="20" height="20" fill="currentColor" viewBox="0 0 24 24">
+                      <path d="M3 9v6h4l5 5V4L7 9H3zm13.5 3c0-1.77-1.02-3.29-2.5-4.03v8.05c1.48-.73 2.5-2.25 2.5-4.02zM14 3.23v2.06c2.89.86 5 3.54 5 6.71s-2.11 5.85-5 6.71v2.06c4.01-.91 7-4.49 7-8.77s-2.99-7.86-7-8.77z"/>
+                    </svg>
+                  </button>
+
+                  <button class="video-btn" id="videoFullscreenBtn" title="Toàn màn hình">
+                    <svg width="20" height="20" fill="currentColor" viewBox="0 0 24 24">
+                      <path d="M7 14H5v5h5v-2H7v-3zm-2-4h2V7h3V5H5v5zm12 7h-3v2h5v-5h-2v3zM14 5v2h3v3h2V5h-5z"/>
+                    </svg>
+                  </button>
+                </div>
+              </div>
+            </div>
+
+            <!-- Error fallback state -->
+            <div class="video-error-state" id="videoErrorState">
+              <p class="video-error-title">Không thể tải luồng video direct link này</p>
+              <p style="font-size: 0.85rem; color: var(--text-secondary); margin-bottom: 12px;">Link video có thể bị chặn CORS hoặc không còn tồn tại trên server lưu trữ.</p>
+              <button class="btn-copy-sha" id="btnChangeVideoLink">Đổi Direct Link Video</button>
+            </div>
+          </div>
+
+          <!-- Video Direct Link Information Bar -->
+          <div class="video-direct-link-card">
+            <div class="video-link-info">
+              <span class="video-link-badge">Direct Video Link</span>
+              <span class="video-link-url" id="videoActiveUrlDisplay">https://commondatastorage.googleapis.com/...</span>
+            </div>
+            <div class="video-link-actions">
+              <button class="btn-copy-sha" id="btnCopyVideoLink">Sao Chép Link</button>
+              <button class="btn-copy-sha" id="btnQuickEditVideo" style="border-color: var(--gold-light); color: var(--gold-light);">Đổi Link Này</button>
+            </div>
           </div>
         </div>
+      </div>
+    </section>
 
-        <div>
-          <h4 class="footer-title">Thể Loại Nổi Bật</h4>
-          <ul class="footer-links">
-            <li><a href="#" onclick="document.querySelector('[data-category=action]').click(); return false;">Mod Game Hành Động</a></li>
-            <li><a href="#" onclick="document.querySelector('[data-category=rpg]').click(); return false;">Mod Game Nhập Vai RPG</a></li>
-            <li><a href="#" onclick="document.querySelector('[data-category=racing]').click(); return false;">Mod Game Đua Xe VIP</a></li>
-            <li><a href="#" onclick="document.querySelector('[data-category=open-world]').click(); return false;">Mod Game Thế Giới Mở</a></li>
-            <li><a href="#" onclick="document.querySelector('[data-category=strategy]').click(); return false;">Mod Game Chiến Thuật Private</a></li>
-          </ul>
+    <!-- ========================================================
+         5. INTERACTIVE FEATURE MODULES (#features)
+         ======================================================== -->
+    <section class="section" id="features">
+      <div class="landing-container">
+        <div style="max-width: 650px;">
+          <span class="eyebrow">Tính Năng Độc Quyền</span>
+          <h2 class="section-title">Hệ Thống Tiện Ích VIP</h2>
+          <p class="section-desc mt-2">
+            Mỗi tính năng đều được tối ưu chuyên sâu cho nền tảng Android, cho phép kích hoạt tức thời qua bảng điều khiển nổi trong game.
+          </p>
         </div>
 
-        <div>
-          <h4 class="footer-title">Về Chúng Tôi & Hỗ Trợ</h4>
-          <ul class="footer-links">
-            <li><a href="#" onclick="alert('Liên hệ Telegram @HoangTanMods để yêu cầu mod game theo sở thích.'); return false;">Yêu cầu Bản Mod Game</a></li>
-            <li><a href="#" onclick="alert('Hướng dẫn: Sau khi tải file APK, mở cài đặt thiết bị và bật Cho phép nguồn không xác định.'); return false;">Hướng Dẫn Cài Đặt APK / OBB</a></li>
-            <li><a href="#" onclick="alert('Tất cả bản mod trên Hoàng Tấn Mods đều được test quét qua VirusTotal và cam kết không chứa mã độc.'); return false;">Chính Sách Bảo Mật</a></li>
-            <li><a href="https://vercel.com" target="_blank" rel="noopener noreferrer">Được Tối Ưu Cho Vercel</a></li>
-          </ul>
+        <div class="features-container" id="featuresContainer">
+          <!-- Dynamically generated feature modules with interactive tabs & live screenshots -->
+        </div>
+      </div>
+    </section>
+
+    <!-- ========================================================
+         6. ROADMAP & INCOMING FEATURES (#roadmap)
+         ======================================================== -->
+    <section class="section section-alt" id="roadmap">
+      <div class="landing-container">
+        <div style="max-width: 700px;">
+          <span class="eyebrow">Lộ Trình Cập Nhật</span>
+          <h2 class="section-title">Tính Năng Trong Kế Hoạch</h2>
+          <p class="section-desc mt-2">
+            Các tính năng được cộng đồng người chơi bình chọn và yêu cầu nhiều nhất, đang trong quá trình phát triển và kiểm định bảo mật.
+          </p>
+        </div>
+
+        <div class="roadmap-grid" id="roadmapGrid">
+          <!-- Populated dynamically by app.js -->
+        </div>
+      </div>
+    </section>
+
+    <!-- ========================================================
+         7. INSTALLATION GUIDE 4 STEPS (#install)
+         ======================================================== -->
+    <section class="section" id="install">
+      <div class="landing-container">
+        <div style="text-align: center; max-width: 700px; margin: 0 auto 30px;">
+          <span class="eyebrow">Cài Đặt Dễ Dàng</span>
+          <h2 class="section-title">4 Bước Cài Đặt Android Không Cần Root</h2>
+          <p class="section-desc" style="margin: 12px auto 0;">
+            Chỉ mất 2 phút để thiết lập và mở khóa toàn bộ quyền năng trong game.
+          </p>
+        </div>
+
+        <div class="install-grid" id="installGrid">
+          <!-- Populated dynamically by app.js -->
+        </div>
+      </div>
+    </section>
+
+    <!-- ========================================================
+         8. COMMUNITY & SUPPORT (#community)
+         ======================================================== -->
+    <section class="section section-alt" id="community">
+      <div class="landing-container">
+        <div style="text-align: center; max-width: 700px; margin: 0 auto 30px;">
+          <span class="eyebrow">Cộng Đồng & Hỗ Trợ 24/7</span>
+          <h2 class="section-title">Đồng Hành Cùng Hoàng Tấn Mods</h2>
+          <p class="section-desc" style="margin: 12px auto 0;">
+            Khi game có bản cập nhật mới, tham gia cộng đồng để nhận thông báo vá lỗi và link tải phiên bản mới nhất nhanh nhất.
+          </p>
+        </div>
+
+        <div class="community-grid">
+          <div class="community-card">
+            <div>
+              <h3 class="community-card-title">Kênh Telegram VIP</h3>
+              <p class="community-card-desc">
+                Cập nhật link tải APK direct link siêu tốc, thông báo bảo trì, hướng dẫn vượt lỗi và nhận key kích hoạt tính năng mới sớm nhất.
+              </p>
+            </div>
+            <a href="https://t.me/+iymwkzMj05g1MGI1" target="_blank" rel="noopener noreferrer" class="btn-social btn-social-telegram" style="justify-content: center; padding: 14px;">
+              <svg width="20" height="20" fill="currentColor" viewBox="0 0 24 24">
+                <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm4.64 6.8c-.15 1.58-.8 5.42-1.13 7.19-.14.75-.42 1-.68 1.03-.58.05-1.02-.38-1.58-.75-.88-.58-1.38-.94-2.23-1.5-.99-.65-.35-1.01.22-1.59.15-.15 2.71-2.48 2.76-2.69a.2.2 0 00-.05-.18c-.06-.05-.14-.03-.21-.02-.09.02-1.49.95-4.22 2.79-.4.27-.76.41-1.08.4-.36-.01-1.04-.2-1.55-.37-.63-.2-1.12-.31-1.08-.66.02-.18.27-.36.74-.55 2.92-1.27 4.86-2.11 5.83-2.51 2.78-1.16 3.35-1.36 3.73-1.36.08 0 .27.02.39.12.1.08.13.19.14.27-.01.06.01.24 0 .38z"/>
+              </svg>
+              <span>Tham Gia Telegram Hoàng Tấn</span>
+            </a>
+          </div>
+
+          <div class="community-card">
+            <div>
+              <h3 class="community-card-title">Máy Chủ Discord & Zalo</h3>
+              <p class="community-card-desc">
+                Khu vực thảo luận, giao lưu giữa các game thủ Android, chia sẻ tọa độ rương báu bí mật và hỗ trợ cài đặt 1-1 cho người mới bắt đầu.
+              </p>
+            </div>
+            <a href="https://discord.gg/SUSJ2UTqxq" target="_blank" rel="noopener noreferrer" class="btn-social btn-social-discord" style="justify-content: center; padding: 14px;">
+              <svg width="20" height="20" fill="currentColor" viewBox="0 0 24 24">
+                <path d="M20.317 4.37a19.791 19.791 0 00-4.885-1.515.074.074 0 00-.079.037c-.21.375-.444.864-.608 1.25a18.27 18.27 0 00-5.487 0 12.64 12.64 0 00-.617-1.25.077.077 0 00-.079-.037A19.736 19.736 0 003.677 4.37a.07.07 0 00-.032.027C.533 9.046-.32 13.58.099 18.057a.082.082 0 00.031.057 19.9 19.9 0 005.993 3.03.078.078 0 00.084-.028c.462-.63.874-1.295 1.226-1.994.021-.041.001-.09-.041-.106a13.107 13.107 0 01-1.872-.892.077.077 0 01-.008-.128 10.2 10.2 0 00.372-.292.074.074 0 01.077-.01c3.929 1.793 8.18 1.793 12.061 0a.074.074 0 01.078.01c.12.098.246.198.373.292a.077.077 0 01-.006.127 12.299 12.299 0 01-1.873.894.077.077 0 00-.041.107c.36.698.772 1.362 1.225 1.993a.076.076 0 00.084.028 19.839 19.839 0 006.002-3.03.077.077 0 00.032-.054c.5-5.177-.838-9.674-3.549-13.66a.061.061 0 00-.031-.028zM8.02 15.33c-1.183 0-2.157-1.085-2.157-2.419 0-1.333.956-2.419 2.157-2.419 1.21 0 2.176 1.096 2.157 2.42 0 1.333-.956 2.418-2.157 2.418zm7.975 0c-1.183 0-2.157-1.085-2.157-2.419 0-1.333.955-2.419 2.157-2.419 1.21 0 2.176 1.096 2.157 2.42 0 1.333-.946 2.418-2.157 2.418z"/>
+              </svg>
+              <span>Vào Nhóm Discord Hỗ Trợ</span>
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ========================================================
+         9. FAQ SECTION (#faq)
+         ======================================================== -->
+    <section class="section" id="faq">
+      <div class="landing-container">
+        <div style="max-width: 650px;">
+          <span class="eyebrow">Giải Đáp Thắc Mắc</span>
+          <h2 class="section-title">Câu Hỏi Thường Gặp (FAQ)</h2>
+          <p class="section-desc mt-2">
+            Mọi thông tin bạn cần biết về độ an toàn, cơ chế hoạt động và cách cập nhật bản mod.
+          </p>
+        </div>
+
+        <div class="faq-grid" id="faqGrid">
+          <!-- Populated dynamically by app.js -->
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- ========================================================
+       10. SITE FOOTER
+       ======================================================== -->
+  <footer class="site-footer">
+    <div class="landing-container">
+      <div class="footer-top-row">
+        <div class="footer-brand-wrap">
+          <div style="display: flex; align-items: center; gap: 10px;">
+            <div class="brand-icon-box" style="width: 34px; height: 34px; font-size: 1rem;">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor">
+                <path d="M12 2L1 21h22L12 2zm0 4.16L19.46 19H4.54L12 6.16z"/>
+              </svg>
+            </div>
+            <span style="font-family: var(--font-display); font-weight: 800; font-size: 1.2rem; color: var(--text-white);">Hoàng Tấn Mods</span>
+          </div>
+          <p class="footer-disclaimer">
+            Hoàng Tấn Mods là dự án phát triển công cụ tiện ích độc lập và không liên kết trực tiếp với nhà phát hành game gốc. Tất cả bản mod chỉ phục vụ mục đích nghiên cứu học hỏi kỹ thuật reverse engineering.
+          </p>
+        </div>
+
+        <div style="display: flex; flex-direction: column; gap: 10px;">
+          <span style="font-size: 0.85rem; font-weight: 700; color: var(--text-primary); text-transform: uppercase;">Liên Kết Nhanh</span>
+          <div style="display: flex; flex-wrap: wrap; gap: 14px; font-size: 0.88rem;">
+            <a href="#download" style="color: var(--text-muted); text-decoration: none;">Tải Về</a>
+            <a href="#demo" style="color: var(--text-muted); text-decoration: none;">Video Demo</a>
+            <a href="#features" style="color: var(--text-muted); text-decoration: none;">Tính Năng</a>
+            <a href="#roadmap" style="color: var(--text-muted); text-decoration: none;">Lộ Trình</a>
+            <a href="#faq" style="color: var(--text-muted); text-decoration: none;">Câu Hỏi Thường Gặp</a>
+          </div>
         </div>
       </div>
 
-      <div class="footer-bottom">
-        <p class="disclaimer-text">
-          Tuyên bố miễn trừ trách nhiệm: Trang web được phát triển cho mục đích giáo dục, thử nghiệm và trải nghiệm game. 
-          Bản quyền trò chơi thuộc về nhà phát triển gốc.
-        </p>
-        <p>© 2026 Hoàng Tấn Mods. All rights reserved. Sẵn sàng triển khai trên Vercel.</p>
+      <div class="footer-bottom-row">
+        <div>© 2026 Hoàng Tấn Mods. All rights reserved. Sẵn sàng triển khai Vercel.</div>
+        <div style="display: flex; align-items: center; gap: 16px;">
+          <button id="footerEditLinksBtn" style="background: none; border: none; color: var(--gold-light); cursor: pointer; font-size: 0.82rem; font-weight: 600;">
+            ⚙ Cấu Hình Direct Link
+          </button>
+          <span>v1.0.10 Midnight</span>
+        </div>
       </div>
     </div>
   </footer>
 
+  <!-- ========================================================
+       11. STICKY MOBILE BOTTOM BAR
+       ======================================================== -->
+  <div class="mobile-bottom-bar" id="mobileBottomBar">
+    <div class="mobile-bar-info">
+      <span class="mobile-bar-title" id="mobileBarTitle">Magic NTE Android</span>
+      <span class="mobile-bar-sub" id="mobileBarSub">v1.0.10 · 122.4 MB · No Root</span>
+    </div>
+    <a href="#" class="btn-mobile-download" id="mobileBarDownloadBtn">Tải Về APK</a>
+  </div>
+
+  <!-- ========================================================
+       12. DIRECT LINK CONFIG MODAL
+       Cho phép Hoàng Tấn dễ dàng dán direct link video & download mới
+       ======================================================== -->
+  <div class="config-modal-overlay" id="configModal">
+    <div class="config-modal-box">
+      <div class="config-modal-header">
+        <h3 class="config-modal-title">Cấu Hình Direct Link & Nội Dung</h3>
+        <button class="config-modal-close" id="btnCloseConfigModal">
+          <svg width="22" height="22" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12" />
+          </svg>
+        </button>
+      </div>
+
+      <form id="configForm">
+        <div class="config-form-group">
+          <label class="config-label">Tên Bản Mod</label>
+          <input type="text" class="config-input" id="cfgModTitle" required>
+        </div>
+
+        <div class="config-form-group">
+          <label class="config-label">Tên Game</label>
+          <input type="text" class="config-input" id="cfgGameName" required>
+        </div>
+
+        <div class="config-form-group">
+          <label class="config-label">Direct Link Video Demo (MP4 / WebM)</label>
+          <input type="url" class="config-input" id="cfgVideoUrl" placeholder="https://domain.com/video.mp4" required>
+          <small style="display:block; margin-top:4px; font-size:0.75rem; color:var(--text-muted)">
+            Link trực tiếp tới file video MP4. Trình phát trên web sẽ phát trực tiếp video từ link này.
+          </small>
+        </div>
+
+        <div class="config-form-group">
+          <label class="config-label">Direct Link Tải APK (Download URL)</label>
+          <input type="url" class="config-input" id="cfgDownloadUrl" placeholder="https://domain.com/mod.apk" required>
+        </div>
+
+        <div class="config-form-group">
+          <label class="config-label">Link Dự Phòng (Mirror URL)</label>
+          <input type="url" class="config-input" id="cfgMirrorUrl" placeholder="https://mega.nz/...">
+        </div>
+
+        <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 12px;">
+          <div class="config-form-group">
+            <label class="config-label">Phiên Bản (Version)</label>
+            <input type="text" class="config-input" id="cfgVersion" placeholder="1.0.10">
+          </div>
+          <div class="config-form-group">
+            <label class="config-label">Dung Lượng (File Size)</label>
+            <input type="text" class="config-input" id="cfgFileSize" placeholder="122.4 MB">
+          </div>
+        </div>
+
+        <div class="config-form-group">
+          <label class="config-label">Mã Kiểm Tra SHA256</label>
+          <input type="text" class="config-input" id="cfgSha256" placeholder="9218fe7fd5cdb14a5d7f...">
+        </div>
+
+        <div class="config-modal-footer">
+          <button type="button" class="btn-copy-sha" id="btnResetDefaultConfig" style="color: var(--accent-rose);">
+            Khôi Phục Mặc Định
+          </button>
+          <button type="submit" class="btn-download-primary" style="padding: 10px 24px; min-width: auto;">
+            Lưu Thay Đổi
+          </button>
+        </div>
+      </form>
+    </div>
+  </div>
+
   <!-- Scripts -->
   <script src="js/data.js"></script>
-  <script src="js/gallery.js"></script>
+  <script src="js/video-player.js"></script>
   <script src="js/app.js"></script>
 </body>
 </html>

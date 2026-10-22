@@ -11,7 +11,7 @@
  * 8. Tách Gốc (Chạy độc lập song song không cần gỡ game gốc)
  */
 
-const STORAGE_KEY_SINGLE_MOD = 'TAN_CUTOS_AOV_MOD_DATA_V7';
+const STORAGE_KEY_SINGLE_MOD = 'TAN_CUTOS_AOV_MOD_DATA_V8';
 
 const DEFAULT_SINGLE_MOD = {
   // Thương hiệu & Tiêu đề
@@ -50,8 +50,8 @@ const DEFAULT_SINGLE_MOD = {
   
   // Nhật ký cập nhật phiên bản (What changed in this release)
   changelog: [
+    "Tách Gốc Độc Lập (Clone Edition): Cài đặt và chạy độc lập trực tiếp trên máy mà không cần phải xóa hay gỡ cài đặt bản game Liên Quân gốc chính thức (chạy song song 2 bản mượt mà).",
     "Cập nhật tương thích phiên bản Liên Quân Mobile 1.64.1.7 Mùa mới nhất của Garena.",
-    "Bổ sung tính năng Tách Gốc Độc Lập: Cài đặt và chạy song song 2 bản Liên Quân trên cùng 1 máy không cần gỡ bản game gốc.",
     "Nâng cấp thuật toán Aim Chiêu tự động tính toán hướng di chuyển và tốc độ chạy của mục tiêu.",
     "Bổ sung Widget nghe nhạc SoundCloud nổi: Nghe nhạc remix, vinahouse, lofi trực tiếp trong game không giật lag.",
     "Tối ưu chạy nền mượt mà: Lưu ý nên chơi cẩn thận, tránh để bị người khác nghi ngờ và tố cáo nhiều."
@@ -238,14 +238,14 @@ const DEFAULT_SINGLE_MOD = {
     }
   ],
 
-  // Cộng đồng & Liên hệ
+  // Cộng đồng & Liên hệ (Chưa mở kênh Telegram và Discord)
   community: {
-    discordUrl: "https://discord.gg/SUSJ2UTqxq",
-    telegramUrl: "https://t.me/+iymwkzMj05g1MGI1",
+    discordUrl: "",
+    telegramUrl: "",
     zaloUrl: "https://zalo.me/g/hoangtanmods"
   },
 
-  // Câu hỏi thường gặp (FAQ)
+  // Câu hỏi thường gặp (FAQ) - Đúng 4 câu trọng tâm
   faqs: [
     {
       q: "Bản mod Liên Quân của Tấn Cutos có cần Root máy không?",
@@ -262,10 +262,6 @@ const DEFAULT_SINGLE_MOD = {
     {
       q: "Bản mod Tách Gốc có cần gỡ bản game Liên Quân gốc trên máy không?",
       a: "Hoàn toàn KHÔNG cần gỡ. Bản mod Tách Gốc hoạt động với mã gói độc lập (Clone Version), cho phép bạn cài đặt và chạy song song đồng thời bản game gốc chính thức của Garena và bản mod Tấn Cutos trên cùng 1 thiết bị Android mà không hề bị ghi đè hay xung đột dữ liệu."
-    },
-    {
-      q: "Video demo trên web có phải là video từ direct link không?",
-      a: "Chính xác! Video demo được nhúng và phát trực tiếp từ direct link MP4 tốc độ cao, không qua quảng cáo rút gọn, giúp bạn xem trước toàn bộ giao diện và thao tác thực tế trước khi tải về máy."
     }
   ]
 };

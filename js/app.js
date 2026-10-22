@@ -379,6 +379,15 @@ document.addEventListener('DOMContentLoaded', () => {
     }
   });
 
+  // 11. Xử lý nút kênh Telegram & Discord chưa mở
+  document.querySelectorAll('.btn-disabled, .btn-community-disabled').forEach(btn => {
+    btn.addEventListener('click', (e) => {
+      e.preventDefault();
+      e.stopPropagation();
+      showToast('Kênh cộng đồng đang được thiết lập và sẽ sớm mở đón toàn thể anh em!', 'info');
+    });
+  });
+
   // Khởi chạy render lần đầu
   renderAll();
 });

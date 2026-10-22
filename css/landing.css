@@ -671,6 +671,41 @@ body.landing-page {
   }
 }
 
+/* Disabled / Unopened Community Channels */
+.btn-social.btn-disabled,
+.btn-disabled,
+.btn-community-disabled {
+  opacity: 0.52;
+  cursor: not-allowed !important;
+  user-select: none;
+  filter: grayscale(0.25);
+  pointer-events: auto;
+}
+
+.btn-social.btn-disabled:hover,
+.btn-disabled:hover,
+.btn-community-disabled:hover {
+  transform: none !important;
+  box-shadow: none !important;
+  border-color: rgba(255, 255, 255, 0.12) !important;
+  opacity: 0.65;
+}
+
+.badge-channel-status {
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
+  padding: 3px 9px;
+  font-size: 0.72rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+  border-radius: var(--radius-full);
+  background: rgba(239, 68, 68, 0.12);
+  border: 1px solid rgba(239, 68, 68, 0.3);
+  color: #fca5a5;
+}
+
 /* ========================================================
    3. RELEASE & DOWNLOAD SECTION (#download)
    ======================================================== */

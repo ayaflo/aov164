@@ -253,6 +253,15 @@
             </div>
           </div>
 
+          <!-- Hộp thông tin tính năng tương ứng với ảnh chụp direct link đang xem -->
+          <div class="gallery-feature-spotlight" id="galleryFeatureSpotlight">
+            <div class="spotlight-top">
+              <span class="spotlight-badge" id="spotlightBadge">Tính Năng #1</span>
+              <h4 class="spotlight-title" id="spotlightTitle">Tên Tính Năng Mod</h4>
+            </div>
+            <p class="spotlight-desc" id="spotlightDesc">Lời mô tả chi tiết về tính năng mod đang được chụp thực tế trong ảnh trên.</p>
+          </div>
+
           <!-- Thumbnails Row -->
           <div class="gallery-thumbs-row" id="modalThumbsRow">
             <!-- Populated dynamically -->
@@ -349,7 +358,16 @@
   <div class="lightbox-modal" id="lightboxModal">
     <button class="lightbox-close" id="lightboxClose" title="Đóng phóng to">✕</button>
     <button class="lightbox-nav lightbox-prev" id="lightboxPrev" title="Ảnh trước">‹</button>
-    <img id="lightboxImg" class="lightboxImg" src="" alt="Fullscreen screenshot" />
+    <div class="lightbox-content-box">
+      <img id="lightboxImg" class="lightbox-img" src="" alt="Fullscreen screenshot" />
+      <div class="lightbox-caption-card" id="lightboxCaptionCard">
+        <div class="lightbox-caption-header">
+          <span class="lightbox-feat-badge" id="lightboxFeatBadge">Tính Năng #1</span>
+          <h4 class="lightbox-caption-title" id="lightboxCaptionTitle">Tên Tính Năng</h4>
+        </div>
+        <p class="lightbox-caption-desc" id="lightboxCaptionDesc">Lời mô tả chi tiết về tính năng chụp trong ảnh.</p>
+      </div>
+    </div>
     <button class="lightbox-nav lightbox-next" id="lightboxNext" title="Ảnh kế tiếp">›</button>
   </div>
 

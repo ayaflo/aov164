@@ -164,16 +164,24 @@ document.addEventListener('DOMContentLoaded', () => {
 
     modsGrid.innerHTML = filtered.map(mod => {
       const isFav = favoritesList.includes(mod.id);
-      const screenshotsCount = mod.screenshots ? mod.screenshots.length : 1;
-      const previewThumbnails = (mod.screenshots || [mod.coverImage]).slice(0, 4);
+      
+      // Lấy danh sách các tính năng kèm ảnh chụp mô tả
+      const showcaseItems = (mod.featuresShowcase && mod.featuresShowcase.length > 0)
+        ? mod.featuresShowcase
+        : (mod.screenshots || [mod.coverImage]).map((url, i) => ({
+            image: url,
+            title: `Tính Năng #${i + 1}`,
+            description: "Ảnh chụp mô tả tính năng"
+          }));
+      const firstFeat = showcaseItems[0] || { title: "Tính năng bản mod", image: mod.coverImage };
 
       return `
         <article class="mod-card" data-id="${mod.id}">
-          <!-- Cột bên trái: Ảnh bìa direct link + Dải ảnh chụp mô tả -->
+          <!-- Cột bên trái: Ảnh chụp tính năng direct link + Dải ảnh chụp mô tả -->
           <div class="card-media-col">
             <div class="card-media" data-open-id="${mod.id}">
               <img class="card-main-image" 
-                src="${mod.coverImage}" 
+                src="${firstFeat.image}" 
                 alt="${mod.title}" 
                 loading="lazy"
                 onerror="this.src='https://images.unsplash.com/photo-1542751371-adc38448a05e?auto=format&fit=crop&w=800&q=80'"
@@ -190,21 +198,31 @@ document.addEventListener('DOMContentLoaded', () => {
                 <svg width="14" height="14" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                   <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 16l4.586-4.586a2 2 0 012.828 0L16 16m-2-2l1.586-1.586a2 2 0 012.828 0L20 14m-6-6h.01M6 20h12a2 2 0 002-2V6a2 2 0 00-2-2H6a2 2 0 00-2 2v12a2 2 0 002 2z" />
                 </svg>
-                <span>${screenshotsCount} Ảnh</span>
+                <span>${showcaseItems.length} Ảnh tính năng</span>
+              </div>
+
+              <!-- Thanh hiển thị tên tính năng của ảnh đang xem -->
+              <div class="card-feature-preview-bar">
+                <span class="preview-feat-icon">🎯</span>
+                <span class="preview-feat-text">${firstFeat.title}</span>
               </div>
             </div>
 
             <!-- Dải thu nhỏ nhiều ảnh chụp direct link -->
             <div class="card-screenshots-strip">
-              ${previewThumbnails.map((imgUrl, i) => `
-                <img class="mini-thumb ${i === 0 ? 'active' : ''}" 
-                  src="${imgUrl}" 
-                  alt="Screenshot ${i + 1}" 
-                  loading="lazy"
-                  data-card-img="${imgUrl}"
-                  title="Xem trước ảnh chụp màn hình ${i + 1}"
-                  onerror="this.style.display='none'"
-                />
+              ${showcaseItems.map((item, i) => `
+                <div class="mini-thumb-wrapper ${i === 0 ? 'active' : ''}" 
+                  data-card-img="${item.image}"
+                  data-feat-title="${item.title}"
+                  title="${item.title}: ${item.description}">
+                  <img class="mini-thumb" 
+                    src="${item.image}" 
+                    alt="${item.title}" 
+                    loading="lazy"
+                    onerror="this.style.display='none'"
+                  />
+                  <span class="mini-thumb-num">${i + 1}</span>
+                </div>
               `).join('')}
             </div>
           </div>
@@ -297,22 +315,32 @@ document.addEventListener('DOMContentLoaded', () => {
   }
 
   function attachCardEvents() {
-    // Mini thumbnails switcher on card hover/click
+    // Chuyển ảnh và cập nhật tên tính năng khi rê chuột / chạm vào mini thumbnail
     document.querySelectorAll('.card-screenshots-strip').forEach(strip => {
       const card = strip.closest('.mod-card');
       const mainImg = card.querySelector('.card-main-image');
-      const miniThumbs = strip.querySelectorAll('.mini-thumb');
+      const featPreviewText = card.querySelector('.preview-feat-text');
+      const miniThumbs = strip.querySelectorAll('.mini-thumb-wrapper');
 
       miniThumbs.forEach(thumb => {
-        thumb.addEventListener('mouseenter', () => {
-          mainImg.src = thumb.getAttribute('data-card-img');
+        const updateThumb = () => {
+          const imgUrl = thumb.getAttribute('data-card-img');
+          const title = thumb.getAttribute('data-feat-title');
+          if (imgUrl) mainImg.src = imgUrl;
+          if (featPreviewText && title) featPreviewText.textContent = title;
           miniThumbs.forEach(t => t.classList.remove('active'));
           thumb.classList.add('active');
+        };
+
+        thumb.addEventListener('mouseenter', updateThumb);
+        thumb.addEventListener('click', (e) => {
+          e.stopPropagation();
+          updateThumb();
         });
       });
     });
 
-    // Detail modal openers
+    // Mở modal xem chi tiết
     document.querySelectorAll('[data-open-id]').forEach(btn => {
       btn.addEventListener('click', (e) => {
         e.preventDefault();
@@ -321,7 +349,7 @@ document.addEventListener('DOMContentLoaded', () => {
       });
     });
 
-    // Favorite buttons
+    // Nút lưu / bỏ lưu yêu thích
     document.querySelectorAll('[data-fav-id]').forEach(btn => {
       btn.addEventListener('click', (e) => {
         e.stopPropagation();
@@ -331,13 +359,13 @@ document.addEventListener('DOMContentLoaded', () => {
     });
   }
 
-  // 7. Mod Detail Modal Logic
+  // 7. Cửa sổ Chi Tiết Bản Mod (Tải tính năng kèm ảnh chụp thực tế)
   function openModDetail(modId) {
     const mod = modsList.find(m => m.id === modId);
     if (!mod) return;
     activeMod = mod;
 
-    // Header info
+    // Thông tin Header
     modalAppIcon.src = mod.coverImage;
     modalTitle.textContent = mod.title;
     modalDeveloper.textContent = mod.developer;
@@ -345,10 +373,10 @@ document.addEventListener('DOMContentLoaded', () => {
     modalRating.textContent = `${mod.rating} / 5.0`;
     modalDownloads.textContent = `${mod.downloads} lượt tải`;
 
-    // Multi-screenshot gallery loader
-    gallery.loadGallery(mod.screenshots, mod.coverImage);
+    // Nạp danh sách các tính năng mod kèm ảnh chụp thực tế vào Gallery
+    gallery.loadGallery(mod.featuresShowcase || mod.screenshots, mod.coverImage);
 
-    // Description
+    // Mô tả tổng quan
     modalDescription.textContent = mod.description;
 
     // Mod Features checklist
@@ -550,7 +578,7 @@ document.addEventListener('DOMContentLoaded', () => {
       e.preventDefault();
 
       const title = document.getElementById('newModTitle').value.trim();
-      const developer = document.getElementById('newModDev').value.trim() || 'Apex Studio';
+      const developer = document.getElementById('newModDev').value.trim() || 'Hoàng Tấn Mods';
       const category = document.getElementById('newModCategory').value;
       const version = document.getElementById('newModVersion').value.trim() || 'v1.0.0';
       const size = document.getElementById('newModSize').value.trim() || '500 MB';
@@ -562,17 +590,44 @@ document.addEventListener('DOMContentLoaded', () => {
       const featuresRaw = document.getElementById('newModFeatures').value.trim();
       const description = document.getElementById('newModDesc').value.trim() || 'Bản mod game Android chất lượng cao, an toàn và tối ưu mượt mà.';
 
-      // Parse screenshots from multiple direct links
-      let screenshots = rawScreenshots
-        .split(/[\n,]+/)
-        .map(u => u.trim())
-        .filter(u => u.length > 0);
+      // Phân tích danh sách ảnh chụp kèm tính năng
+      // Hỗ trợ định dạng: Link_Ảnh | Tên Tính Năng | Lời Mô Tả Tính Năng
+      let featuresShowcase = [];
+      let screenshots = [];
+
+      const lines = rawScreenshots
+        .split('\n')
+        .map(l => l.trim())
+        .filter(l => l.length > 0);
+
+      lines.forEach((line, idx) => {
+        if (line.includes('|')) {
+          const parts = line.split('|').map(p => p.trim());
+          const imgUrl = parts[0];
+          const fTitle = parts[1] || `Tính Năng Mod #${idx + 1}`;
+          const fDesc = parts[2] || `Mô tả chi tiết về tính năng chụp trong ảnh.`;
+          featuresShowcase.push({ image: imgUrl, title: fTitle, description: fDesc });
+          screenshots.push(imgUrl);
+        } else {
+          featuresShowcase.push({
+            image: line,
+            title: `Tính Năng Mod #${idx + 1}`,
+            description: `Ảnh chụp minh họa tính năng hoạt động thực tế trên bản mod Android.`
+          });
+          screenshots.push(line);
+        }
+      });
 
       if (screenshots.length === 0) {
         screenshots = [coverImage];
+        featuresShowcase = [{
+          image: coverImage,
+          title: "Tổng quan bản mod",
+          description: description
+        }];
       }
 
-      // Parse features
+      // Parse features list
       const features = featuresRaw 
         ? featuresRaw.split(/[\n,]+/).map(f => f.trim()).filter(f => f.length > 0)
         : ["Mod Menu VIP", "Vô hạn Tiền", "Anti-Ban 100%"];
@@ -603,6 +658,7 @@ document.addEventListener('DOMContentLoaded', () => {
         isHot: true,
         coverImage,
         screenshots,
+        featuresShowcase,
         description,
         features,
         downloadUrl,

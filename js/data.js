@@ -11,7 +11,7 @@
  * 8. Tách Gốc (Chạy độc lập song song không cần gỡ game gốc)
  */
 
-const STORAGE_KEY_SINGLE_MOD = 'TAN_CUTOS_AOV_MOD_DATA_V11';
+const STORAGE_KEY_SINGLE_MOD = 'TAN_CUTOS_AOV_MOD_DATA_V12';
 
 const DEFAULT_SINGLE_MOD = {
   // Thương hiệu & Tiêu đề
@@ -43,9 +43,9 @@ const DEFAULT_SINGLE_MOD = {
   changelogUrl: "#changelog",
 
   // Direct Link Video Demo
-  videoUrl: "https://youtu.be/aUE925m8jlU",
-  videoPoster: "https://img.youtube.com/vi/aUE925m8jlU/maxresdefault.jpg",
-  videoDuration: "01:30",
+  videoUrl: "https://youtu.be/ShAgSRHNQHk",
+  videoPoster: "https://img.youtube.com/vi/ShAgSRHNQHk/maxresdefault.jpg",
+  videoDuration: "02:00",
   videoDescription: "Video test Hack Map, Cam Xa x3.0, Mod Full Skin và mở nhạc SoundCloud quẩy cực mượt.",
 
   // Nhật ký cập nhật phiên bản (What changed in this release)
@@ -69,7 +69,7 @@ const DEFAULT_SINGLE_MOD = {
           tabLabel: "1. Hack Map",
           title: "1. Hack Map Toàn Bản Đồ (Hiển Thị Vị Trí Địch)",
           desc: "Hiển thị vị trí, biểu tượng avatar tướng, thanh máu và hướng di chuyển của toàn bộ 5 tướng địch trong bụi cỏ và sương mù theo thời gian thực.",
-          image: "https://file.garden/atbpnHNCfPVO2vdb/Screenshot_2026-10-22-19-08-08-38_8cc629c7e5f500a4ce672df3661b99b6.jpg",
+          image: "https://file.garden/atbpnHNCfPVO2vdb/Screenshot%202026-10-22%20232246.png",
           highlight: "Phát hiện ngay lập tức hướng gank của rừng và mid đối phương, không bao giờ bị bắt lẻ."
         },
         {
@@ -96,7 +96,7 @@ const DEFAULT_SINGLE_MOD = {
           tabLabel: "3. Aim Chiêu",
           title: "3. Aim Game (Tung Chiêu Tự Trúng 100%)",
           desc: "Hệ thống tự động khóa tâm và dẫn hướng chuẩn xác cho mọi kỹ năng định hướng: Elsu ngắm bắn viễn trình, Grakk kéo, Enzo Móc...",
-          image: "https://file.garden/atbpnHNCfPVO2vdb/Screenshot_2026-10-22-19-08-08-38_8cc629c7e5f500a4ce672df3661b99b6.jpg",
+          image: "https://file.garden/atbpnHNCfPVO2vdb/Screenshot%202026-10-22%20232518.png",
           highlight: "Tự tính toán trước bước chạy của kẻ địch để xả chiêu trúng đích tuyệt đối."
         },
         {
@@ -106,7 +106,7 @@ const DEFAULT_SINGLE_MOD = {
           tabLabel: "5. Hồi Chiêu Địch",
           title: "5. Hiển Thị Thời Gian Hồi Chiêu Của Địch",
           desc: "Đếm ngược chính xác từng giây thời gian hồi chiêu 1, chiêu 2, chiêu cuối (Ultimate) và các phép bổ trợ (Tốc biến, Bộc phá, Cấp cứu, Trừng trị) trên đầu tướng địch.",
-          image: "https://file.garden/atbpnHNCfPVO2vdb/Screenshot_2026-10-22-19-08-08-38_8cc629c7e5f500a4ce672df3661b99b6.jpg",
+          image: "https://file.garden/atbpnHNCfPVO2vdb/Screenshot%202026-10-22%20232347.png",
           highlight: "Biết rõ đối thủ có còn Tốc biến hay Ulti hay không để lao vào dồn sát thương an toàn."
         },
         {

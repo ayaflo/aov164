@@ -390,14 +390,14 @@ body.landing-page {
   }
 }
 
-/* Lớp ảnh nền direct link - Cân bằng độ sáng và độ tương phản */
+/* Lớp ảnh nền direct link - Cân bằng độ sáng 65% và độ tương phản */
 .hero-stage-bg {
   position: absolute;
   inset: 0;
   background-size: cover;
   background-position: center 25%;
   background-repeat: no-repeat;
-  filter: brightness(0.55) saturate(1.1) contrast(1.05);
+  filter: brightness(0.65) saturate(1.1) contrast(1.05);
   transform: scale(1.02);
   transition: background-image 0.5s ease;
   z-index: 0;

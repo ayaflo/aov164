@@ -127,6 +127,18 @@ document.addEventListener('DOMContentLoaded', () => {
     const specUpdatedDate = document.getElementById('specUpdatedDate');
     if (specUpdatedDate) specUpdatedDate.textContent = modData.updatedDate;
 
+    // Ảnh chụp icon app trên điện thoại (Direct Link Showcase)
+    const appIconImg = document.getElementById('appIconImg');
+    const appIconPreviewCard = document.getElementById('appIconPreviewCard');
+    if (appIconImg) {
+      if (modData.appIconImage) {
+        appIconImg.src = modData.appIconImage;
+        if (appIconPreviewCard) appIconPreviewCard.style.display = 'block';
+      } else if (appIconPreviewCard) {
+        appIconPreviewCard.style.display = 'none';
+      }
+    }
+
     // Changelog List
     const changelogList = document.getElementById('changelogList');
     if (changelogList && modData.changelog) {

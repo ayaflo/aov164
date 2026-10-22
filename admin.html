@@ -389,6 +389,49 @@
           </div>
         </div>
 
+        <!-- Direct Link Ảnh Chụp Icon App Trên Điện Thoại -->
+        <div class="admin-card">
+          <div class="admin-card-header">
+            <div>
+              <h3 class="admin-card-title">
+                <svg width="20" height="20" fill="none" viewBox="0 0 24 24" stroke="currentColor" style="color:var(--accent-cyan);">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 18h.01M8 21h8a2 2 0 002-2V5a2 2 0 00-2-2H8a2 2 0 00-2 2v14a2 2 0 002 2z" />
+                </svg>
+                <span>Ảnh Chụp Icon App Trên Điện Thoại (Direct Link)</span>
+              </h3>
+              <p class="admin-card-desc">Ảnh chụp màn hình thực tế hiển thị icon app Liên Quân Mod trên điện thoại, nằm ngay dưới mô tả bản Android sẵn sàng tải về.</p>
+            </div>
+          </div>
+
+          <div class="media-edit-grid">
+            <div class="form-group">
+              <label class="form-label" for="cfgAppIconImage">
+                <span>Direct Link Ảnh Chụp Icon App (URL)</span>
+                <span class="required">* Bắt buộc</span>
+              </label>
+              <input type="url" class="form-input" id="cfgAppIconImage" placeholder="https://file.garden/.../Screenshot.jpg" required>
+              <span class="form-hint">Dán direct link ảnh chụp màn hình icon app (hỗ trợ File Garden, Imgur, link direct .jpg/.png).</span>
+
+              <div style="margin-top: 14px; display: flex; gap: 10px;">
+                <button type="button" class="btn-thumb-action" id="btnReloadAppIcon">Thử Tải Lại Ảnh</button>
+                <a href="#" target="_blank" rel="noopener noreferrer" class="btn-thumb-action" id="btnOpenAppIconTab">Mở Ảnh Tab Mới ↗</a>
+              </div>
+            </div>
+
+            <!-- App Icon Live Preview -->
+            <div>
+              <label class="form-label">Xem Trước Trực Quan</label>
+              <div class="hero-preview-box" style="height: 180px;">
+                <img src="" alt="App icon preview" class="hero-preview-img" id="previewAppIcon">
+                <div class="hero-preview-overlay">
+                  <span class="hero-preview-label">ICON APP TRÊN ĐIỆN THOẠI</span>
+                  <span class="hero-preview-title">Bản Mod Android Độc Lập</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
         <!-- Release Specs -->
         <div class="admin-card">
           <div class="admin-card-header">

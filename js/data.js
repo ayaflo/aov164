@@ -11,7 +11,7 @@
  * 8. Tách Gốc (Chạy độc lập song song không cần gỡ game gốc)
  */
 
-const STORAGE_KEY_SINGLE_MOD = 'TAN_CUTOS_AOV_MOD_DATA_V12';
+const STORAGE_KEY_SINGLE_MOD = 'TAN_CUTOS_AOV_MOD_DATA_V13';
 
 const DEFAULT_SINGLE_MOD = {
   // Thương hiệu & Tiêu đề
@@ -24,6 +24,10 @@ const DEFAULT_SINGLE_MOD = {
 
   // Ảnh nền phần đầu tiên (Hero Background Direct Link)
   heroBackgroundImage: "https://i.ytimg.com/vi/6XAjI4qxjB0/maxresdefault.jpg",
+
+  // Direct Link Ảnh Chụp Icon App Trên Điện Thoại (Download Section Showcase)
+  appIconImage: "https://file.garden/atbpnHNCfPVO2vdb/Screenshot_2026-10-22-18-57-52-10_b783bf344239542886fee7b48fa4b892.jpg",
+  appIconTitle: "Icon Ứng Dụng Trên Màn Hình Điện Thoại",
 
   // Thông tin phiên bản & Phát hành (Release Status)
   version: "1.64.1.7 MOD",

@@ -284,6 +284,30 @@ document.addEventListener('DOMContentLoaded', () => {
     const cfgUpdatedDate = document.getElementById('cfgUpdatedDate');
     const cfgReleaseStatus = document.getElementById('cfgReleaseStatus');
 
+    const cfgDownloadUrl = document.getElementById('cfgDownloadUrl');
+    const cfgMirrorUrl = document.getElementById('cfgMirrorUrl');
+    const cfgAppIconImage = document.getElementById('cfgAppIconImage');
+    const previewAppIcon = document.getElementById('previewAppIcon');
+    const btnOpenAppIconTab = document.getElementById('btnOpenAppIconTab');
+    const btnReloadAppIcon = document.getElementById('btnReloadAppIcon');
+
+    if (cfgAppIconImage) {
+      cfgAppIconImage.value = currentModData.appIconImage || '';
+      updateAppIconPreview(currentModData.appIconImage);
+      cfgAppIconImage.oninput = () => updateAppIconPreview(cfgAppIconImage.value.trim());
+    }
+
+    function updateAppIconPreview(url) {
+      if (previewAppIcon && url) {
+        previewAppIcon.src = url;
+        if (btnOpenAppIconTab) btnOpenAppIconTab.href = url;
+      }
+    }
+
+    if (btnReloadAppIcon && cfgAppIconImage) {
+      btnReloadAppIcon.onclick = () => updateAppIconPreview(cfgAppIconImage.value.trim());
+    }
+
     if (cfgDownloadUrl) cfgDownloadUrl.value = currentModData.downloadUrl || '';
     if (cfgMirrorUrl) cfgMirrorUrl.value = currentModData.mirrorDownloadUrl || '';
     if (cfgVersion) cfgVersion.value = currentModData.version || '';
@@ -547,6 +571,11 @@ document.addEventListener('DOMContentLoaded', () => {
 
     const cfgMirrorUrl = document.getElementById('cfgMirrorUrl');
     if (cfgMirrorUrl) currentModData.mirrorDownloadUrl = cfgMirrorUrl.value.trim();
+
+    const cfgAppIconImage = document.getElementById('cfgAppIconImage');
+    if (cfgAppIconImage && cfgAppIconImage.value.trim()) {
+      currentModData.appIconImage = cfgAppIconImage.value.trim();
+    }
 
     const cfgVersion = document.getElementById('cfgVersion');
     if (cfgVersion && cfgVersion.value.trim()) currentModData.version = cfgVersion.value.trim();

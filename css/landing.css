@@ -740,6 +740,103 @@ body.landing-page {
   }
 }
 
+/* App Icon Phone Screenshot Direct Link Card */
+.app-icon-preview-card {
+  margin-top: 20px;
+  margin-bottom: 22px;
+  background: rgba(13, 19, 33, 0.75);
+  border: 1px solid rgba(245, 158, 11, 0.28);
+  border-radius: var(--radius-lg);
+  padding: 14px;
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+  box-shadow: 0 10px 30px -10px rgba(0, 0, 0, 0.6), 0 0 20px rgba(245, 158, 11, 0.08);
+  transition: transform 0.3s ease, border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.app-icon-preview-card:hover {
+  transform: translateY(-2px);
+  border-color: rgba(6, 182, 212, 0.45);
+  box-shadow: 0 14px 34px -8px rgba(0, 0, 0, 0.7), 0 0 24px rgba(6, 182, 212, 0.15);
+}
+
+.app-icon-card-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 10px;
+  margin-bottom: 12px;
+}
+
+.app-icon-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 7px;
+  font-size: 0.82rem;
+  font-weight: 700;
+  color: var(--gold-light);
+  letter-spacing: 0.3px;
+}
+
+.app-icon-badge svg {
+  color: var(--gold-primary);
+  flex-shrink: 0;
+}
+
+.app-icon-sub {
+  font-size: 0.74rem;
+  font-weight: 700;
+  color: var(--accent-cyan);
+  background: rgba(6, 182, 212, 0.12);
+  border: 1px solid rgba(6, 182, 212, 0.25);
+  padding: 3px 10px;
+  border-radius: var(--radius-full);
+}
+
+.app-icon-img-wrap {
+  position: relative;
+  border-radius: var(--radius-md);
+  overflow: hidden;
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  background: #05070c;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  max-height: 290px;
+}
+
+.app-icon-img-wrap img {
+  width: 100%;
+  height: auto;
+  max-height: 290px;
+  object-fit: cover;
+  display: block;
+  transition: transform 0.4s ease, filter 0.3s ease;
+}
+
+.app-icon-preview-card:hover .app-icon-img-wrap img {
+  transform: scale(1.02);
+}
+
+.app-icon-caption {
+  margin-top: 10px;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 0.82rem;
+  color: var(--text-secondary);
+  line-height: 1.45;
+}
+
+.app-icon-caption .dot-online {
+  width: 7px;
+  height: 7px;
+  border-radius: 50%;
+  background: var(--accent-emerald);
+  box-shadow: 0 0 8px var(--accent-emerald);
+  flex-shrink: 0;
+}
+
 .security-checklist {
   margin-top: 24px;
   display: flex;

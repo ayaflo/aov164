@@ -1,0 +1,17 @@
+{
+  "name": "apex-mods-android-web",
+  "version": "1.0.0",
+  "description": "Trang web giới thiệu các bản Mod Game Android chuyên nghiệp, sang trọng với nhiều ảnh mô tả direct link và link tải trực tiếp.",
+  "scripts": {
+    "start": "npx serve . -l 3000",
+    "dev": "npx serve . -l 3000"
+  },
+  "keywords": [
+    "mod-game",
+    "android-mods",
+    "apk-mod",
+    "vercel"
+  ],
+  "author": "Apex Mods",
+  "license": "MIT"
+}

@@ -10,7 +10,7 @@
  * 7. Nghe nhạc (chọn nhạc trên SoundCloud và mở vừa chơi vừa nghe)
  */
 
-const STORAGE_KEY_SINGLE_MOD = 'TAN_CUTOS_AOV_MOD_DATA_V5';
+const STORAGE_KEY_SINGLE_MOD = 'TAN_CUTOS_AOV_MOD_DATA_V6';
 
 const DEFAULT_SINGLE_MOD = {
   // Thương hiệu & Tiêu đề
@@ -19,14 +19,14 @@ const DEFAULT_SINGLE_MOD = {
   modTitle: "AOV VIP MENU",
   gameName: "Liên Quân Mobile (Arena of Valor)",
   tagline: "Bản Mod Menu Liên Quân Mobile Độc Quyền Số 1 Android",
-  subtitle: "Trọn bộ 7 tính năng VIP: Hack Map, Cam Xa, Aim Chiêu Tự Trúng, Mod Full Skin, Hồi Chiêu Địch, Tự Động Bộc Phá và Nghe Nhạc SoundCloud. Antiban Bypass v5.0 an toàn tuyệt đối 100% không cần Root máy.",
+  subtitle: "Trọn bộ 7 tính năng VIP: Hack Map, Cam Xa, Aim Chiêu Tự Trúng, Mod Full Skin, Hồi Chiêu Địch, Tự Động Bộc Phá và Nghe Nhạc SoundCloud. Hỗ trợ Android nguyên bản không cần Root máy, tối ưu mượt mà 60-120 FPS.",
   
   // Ảnh nền phần đầu tiên (Hero Background Direct Link)
   heroBackgroundImage: "https://images.unsplash.com/photo-1542751371-adc38448a05e?auto=format&fit=crop&w=2000&q=85",
   
   // Thông tin phiên bản & Phát hành (Release Status)
   version: "1.64.1.7 VIP",
-  versionBuild: "v1.64.1.7-aov-byteguard-antiban",
+  versionBuild: "v1.64.1.7-aov-elite-edition",
   releaseStatus: "Bản phát hành chính thức (Public Release)",
   supportedGameVersion: "Liên Quân Mobile 1.64.1.7 (Bản Garena Mới Nhất)",
   androidReq: "Android 8.0 – 15+ (No Root)",
@@ -52,7 +52,7 @@ const DEFAULT_SINGLE_MOD = {
     "Cập nhật tương thích phiên bản Liên Quân Mobile 1.64.1.7 Mùa mới nhất của Garena.",
     "Nâng cấp thuật toán Aim Chiêu tự động tính toán hướng di chuyển và tốc độ chạy của mục tiêu.",
     "Bổ sung Widget nghe nhạc SoundCloud nổi: Nghe nhạc remix, vinahouse, lofi trực tiếp trong game không giật lag.",
-    "Tối ưu Antiban Bypass v5.0: Tự động làm sạch log báo cáo trận đấu, chống khóa acc 1 ngày / 3 tháng / 10 năm tuyệt đối."
+    "Tối ưu chạy nền mượt mà: Lưu ý nên chơi cẩn thận, tránh để bị người khác nghi ngờ và tố cáo nhiều."
   ],
 
   // 7 TÍNH NĂNG ĐỘC QUYỀN ĐƯỢC CHIA THÀNH 3 MODULE TƯƠNG TÁC
@@ -241,7 +241,7 @@ const DEFAULT_SINGLE_MOD = {
     },
     {
       q: "Chơi bản mod này có bị khóa tài khoản (Ban nick) không?",
-      a: "Bản mod tích hợp hệ thống ByteGuard Antiban Bypass v5.0 độc quyền của Tấn Cutos. Cơ chế này tự động làm sạch gói tin dữ liệu gửi về server Garena, giúp bạn leo rank an toàn tuyệt đối mà không sợ bị quét mã độc hay ban acc."
+      a: "Bản mod không can thiệp sâu hệ thống, tuy nhiên nếu bạn chơi quá lộ liễu và bị người chơi khác nghi ngờ, bấm tố cáo nhiều lần thì tài khoản vẫn có thể bị khóa tạm thời (cùng lắm 7 ngày). Nếu bạn chơi cẩn thận, biết diễn và giữ kín kẽ thì hoàn toàn yên tâm leo rank."
     },
     {
       q: "Tính năng nghe nhạc SoundCloud trong game hoạt động ra sao?",

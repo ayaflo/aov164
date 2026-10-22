@@ -1,69 +1,86 @@
-/* Mod Cards Styling */
+/* ========================================================
+   HOÀNG TẤN MODS - HORIZONTAL CARDS & MOBILE OPTIMIZATION
+   Bố cục hàng ngang dài: Ảnh bên trái, Mô tả & Nút tải bên phải
+   ======================================================== */
+
 .mod-card {
   background: var(--bg-card);
   border: 1px solid var(--border-subtle);
   border-radius: var(--radius-lg);
   overflow: hidden;
-  display: flex;
-  flex-direction: column;
+  display: grid;
+  grid-template-columns: 360px 1fr;
   transition: all var(--transition-normal);
   position: relative;
   backdrop-filter: blur(16px);
   -webkit-backdrop-filter: blur(16px);
+  box-shadow: var(--shadow-sm);
 }
 
 .mod-card:hover {
-  transform: translateY(-6px);
+  transform: translateY(-4px);
   background: var(--bg-card-hover);
   border-color: var(--border-gold-subtle);
-  box-shadow: 0 20px 40px -15px rgba(0, 0, 0, 0.7), 0 0 25px rgba(245, 158, 11, 0.15);
+  box-shadow: 0 16px 36px -10px rgba(0, 0, 0, 0.75), 0 0 25px rgba(245, 158, 11, 0.15);
 }
 
-/* Card Visual Media Area */
+/* ========================================================
+   CỘT BÊN TRÁI: ẢNH VÀ DẢI SCREENSHOTS DIRECT LINK
+   ======================================================== */
+.card-media-col {
+  display: flex;
+  flex-direction: column;
+  background: #06080d;
+  border-right: 1px solid var(--border-subtle);
+  position: relative;
+  overflow: hidden;
+}
+
 .card-media {
   position: relative;
   width: 100%;
-  aspect-ratio: 16 / 9;
-  background: var(--bg-secondary);
+  aspect-ratio: 16 / 10;
+  background: #000;
   overflow: hidden;
+  cursor: pointer;
 }
 
 .card-main-image {
   width: 100%;
   height: 100%;
   object-fit: cover;
-  transition: transform 0.6s cubic-bezier(0.16, 1, 0.3, 1), filter var(--transition-normal);
+  transition: transform 0.5s cubic-bezier(0.16, 1, 0.3, 1), opacity 0.2s ease;
 }
 
 .mod-card:hover .card-main-image {
-  transform: scale(1.06);
+  transform: scale(1.05);
 }
 
 .card-media-overlay {
   position: absolute;
   inset: 0;
-  background: linear-gradient(180deg, rgba(7, 9, 14, 0.2) 0%, rgba(7, 9, 14, 0.85) 100%);
+  background: linear-gradient(180deg, rgba(7, 9, 14, 0.25) 0%, rgba(7, 9, 14, 0.75) 100%);
   pointer-events: none;
 }
 
-/* Badges on Media */
+/* Badges trên ảnh */
 .card-badges {
   position: absolute;
-  top: 14px;
-  left: 14px;
+  top: 12px;
+  left: 12px;
   display: flex;
-  gap: 8px;
+  gap: 6px;
   z-index: 2;
   flex-wrap: wrap;
 }
 
 .badge {
-  font-size: 0.72rem;
-  font-weight: 700;
-  padding: 4px 10px;
+  font-size: 0.7rem;
+  font-weight: 800;
+  padding: 4px 9px;
   border-radius: var(--radius-sm);
   text-transform: uppercase;
-  letter-spacing: 0.8px;
+  letter-spacing: 0.6px;
   backdrop-filter: blur(8px);
 }
 
@@ -74,64 +91,27 @@
 }
 
 .badge-update {
-  background: rgba(16, 185, 129, 0.85);
-  color: #fff;
-}
-
-.badge-hot {
-  background: rgba(244, 63, 94, 0.85);
+  background: rgba(16, 185, 129, 0.9);
   color: #fff;
 }
 
 .badge-category {
-  background: rgba(15, 23, 42, 0.75);
+  background: rgba(15, 23, 42, 0.85);
   color: var(--text-primary);
   border: 1px solid var(--border-medium);
 }
 
-/* Favorite Button */
-.card-fav-btn {
-  position: absolute;
-  top: 14px;
-  right: 14px;
-  z-index: 3;
-  width: 36px;
-  height: 36px;
-  border-radius: 50%;
-  background: rgba(10, 14, 23, 0.75);
-  border: 1px solid var(--border-subtle);
-  color: var(--text-muted);
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  cursor: pointer;
-  transition: all var(--transition-fast);
-  backdrop-filter: blur(8px);
-}
-
-.card-fav-btn:hover {
-  color: var(--accent-rose);
-  transform: scale(1.1);
-  border-color: rgba(244, 63, 94, 0.4);
-}
-
-.card-fav-btn.active {
-  color: var(--accent-rose);
-  background: rgba(244, 63, 94, 0.15);
-  border-color: var(--accent-rose);
-}
-
-/* Screenshot count indicator */
+/* Đếm số ảnh chụp mô tả */
 .card-screenshots-count {
   position: absolute;
-  bottom: 12px;
-  right: 14px;
+  bottom: 10px;
+  right: 12px;
   z-index: 2;
   display: inline-flex;
   align-items: center;
   gap: 5px;
-  padding: 4px 9px;
-  background: rgba(0, 0, 0, 0.75);
+  padding: 4px 8px;
+  background: rgba(0, 0, 0, 0.8);
   border: 1px solid rgba(255, 255, 255, 0.15);
   border-radius: var(--radius-sm);
   color: var(--text-secondary);
@@ -140,15 +120,15 @@
   backdrop-filter: blur(6px);
 }
 
-/* Screenshot Mini Thumbnails Preview strip */
+/* Dải ảnh chụp thu nhỏ direct link */
 .card-screenshots-strip {
   display: flex;
   gap: 6px;
-  padding: 8px 14px;
-  background: rgba(10, 14, 23, 0.6);
-  border-bottom: 1px solid var(--border-subtle);
+  padding: 8px 12px;
+  background: rgba(10, 14, 23, 0.7);
   overflow-x: auto;
   scrollbar-width: none;
+  -webkit-overflow-scrolling: touch;
 }
 
 .card-screenshots-strip::-webkit-scrollbar {
@@ -156,8 +136,8 @@
 }
 
 .mini-thumb {
-  width: 48px;
-  height: 30px;
+  width: 52px;
+  height: 32px;
   border-radius: 4px;
   object-fit: cover;
   border: 1px solid transparent;
@@ -170,28 +150,46 @@
 .mini-thumb:hover, .mini-thumb.active {
   opacity: 1;
   border-color: var(--gold-light);
-  transform: scale(1.05);
+  transform: scale(1.06);
 }
 
-/* Card Content */
+/* ========================================================
+   CỘT BÊN PHẢI: MÔ TẢ, TÍNH NĂNG VÀ NÚT TẢI VỀ
+   ======================================================== */
 .card-body {
-  padding: 20px;
+  padding: 22px 26px;
   display: flex;
   flex-direction: column;
-  flex: 1;
+  justify-content: space-between;
+  gap: 14px;
 }
 
-.card-title-row {
+/* Tiêu đề & Thông tin bổ trợ */
+.card-header-row {
   display: flex;
   align-items: flex-start;
   justify-content: space-between;
-  gap: 12px;
-  margin-bottom: 8px;
+  gap: 16px;
+}
+
+.card-title-group {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  flex: 1;
+}
+
+.card-title-line {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  flex-wrap: wrap;
 }
 
 .card-title {
-  font-size: 1.18rem;
-  font-weight: 700;
+  font-family: var(--font-display);
+  font-size: 1.28rem;
+  font-weight: 800;
   color: var(--text-white);
   line-height: 1.3;
   cursor: pointer;
@@ -205,40 +203,100 @@
 .card-version-pill {
   font-size: 0.72rem;
   font-family: var(--font-code);
-  font-weight: 600;
+  font-weight: 700;
   padding: 2px 8px;
   background: rgba(6, 182, 212, 0.12);
-  border: 1px solid rgba(6, 182, 212, 0.3);
+  border: 1px solid rgba(6, 182, 212, 0.35);
   color: var(--accent-cyan);
   border-radius: var(--radius-sm);
   white-space: nowrap;
 }
 
-.card-desc {
-  font-size: 0.88rem;
+.card-dev-meta {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 0.8rem;
+  color: var(--text-muted);
+  flex-wrap: wrap;
+}
+
+.dev-name {
   color: var(--text-secondary);
-  line-height: 1.5;
-  margin-bottom: 16px;
+  font-weight: 500;
+}
+
+.category-name {
+  color: var(--gold-light);
+  font-weight: 600;
+}
+
+.card-rating-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
+  color: var(--gold-light);
+  font-weight: 700;
+}
+
+.meta-dot {
+  opacity: 0.4;
+}
+
+/* Nút Yêu thích */
+.card-fav-btn {
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  background: rgba(255, 255, 255, 0.04);
+  border: 1px solid var(--border-subtle);
+  color: var(--text-muted);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: all var(--transition-fast);
+  flex-shrink: 0;
+}
+
+.card-fav-btn:hover {
+  color: var(--accent-rose);
+  border-color: rgba(244, 63, 94, 0.4);
+  background: rgba(244, 63, 94, 0.1);
+  transform: scale(1.08);
+}
+
+.card-fav-btn.active {
+  color: var(--accent-rose);
+  background: rgba(244, 63, 94, 0.15);
+  border-color: var(--accent-rose);
+}
+
+/* Đoạn mô tả */
+.card-desc {
+  font-size: 0.9rem;
+  color: var(--text-secondary);
+  line-height: 1.6;
   display: -webkit-box;
   -webkit-line-clamp: 2;
   -webkit-box-orient: vertical;
   overflow: hidden;
 }
 
-/* Mod Highlights / Key Features */
+/* Danh sách tính năng mod */
 .card-mod-features {
   display: flex;
   flex-wrap: wrap;
   gap: 6px;
-  margin-bottom: 18px;
 }
 
 .mod-feature-pill {
   font-size: 0.74rem;
+  font-weight: 600;
   color: var(--text-primary);
   background: rgba(245, 158, 11, 0.08);
-  border: 1px solid rgba(245, 158, 11, 0.2);
-  padding: 3px 9px;
+  border: 1px solid rgba(245, 158, 11, 0.22);
+  padding: 4px 10px;
   border-radius: var(--radius-sm);
   display: inline-flex;
   align-items: center;
@@ -249,20 +307,25 @@
   width: 12px;
   height: 12px;
   color: var(--gold-light);
+  flex-shrink: 0;
 }
 
-/* Specs Bar */
-.card-specs-bar {
+/* Hàng dưới cùng: Thông số & Nút hành động */
+.card-bottom-row {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 10px 14px;
-  background: rgba(10, 14, 23, 0.6);
-  border: 1px solid var(--border-subtle);
-  border-radius: var(--radius-md);
-  margin-top: auto;
-  margin-bottom: 16px;
-  font-size: 0.78rem;
+  gap: 16px;
+  padding-top: 14px;
+  border-top: 1px solid rgba(255, 255, 255, 0.06);
+  flex-wrap: wrap;
+}
+
+.card-specs-bar {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  font-size: 0.8rem;
   color: var(--text-muted);
 }
 
@@ -272,58 +335,173 @@
   gap: 6px;
 }
 
-.spec-cell strong {
-  color: var(--text-primary);
-  font-weight: 600;
+.spec-cell svg {
+  color: var(--text-secondary);
 }
 
-/* Card Footer / Action Button */
-.card-footer {
+.safe-badge-pill {
+  padding: 2px 8px;
+  border-radius: var(--radius-sm);
+  background: rgba(16, 185, 129, 0.12);
+  border: 1px solid rgba(16, 185, 129, 0.3);
+  color: var(--accent-emerald);
+  font-size: 0.72rem;
+  font-weight: 700;
+}
+
+/* Các nút hành động (Xem chi tiết & Nút Tải Về APK) */
+.card-action-buttons {
   display: flex;
+  align-items: center;
   gap: 10px;
 }
 
 .btn-card-detail {
-  flex: 1;
   display: inline-flex;
   align-items: center;
-  justify-content: center;
   gap: 8px;
-  padding: 12px 18px;
+  padding: 11px 18px;
   border-radius: var(--radius-md);
-  background: var(--gold-gradient);
-  color: #000;
+  background: rgba(255, 255, 255, 0.05);
+  border: 1px solid var(--border-medium);
+  color: var(--text-white);
   font-weight: 700;
-  font-size: 0.9rem;
-  border: none;
+  font-size: 0.86rem;
   cursor: pointer;
-  box-shadow: 0 4px 15px rgba(245, 158, 11, 0.25);
   transition: all var(--transition-fast);
+  white-space: nowrap;
 }
 
 .btn-card-detail:hover {
-  transform: translateY(-2px);
-  box-shadow: 0 6px 22px rgba(245, 158, 11, 0.45);
-}
-
-.btn-card-quick {
-  width: 44px;
-  height: 44px;
-  border-radius: var(--radius-md);
-  background: rgba(255, 255, 255, 0.05);
-  border: 1px solid var(--border-subtle);
-  color: var(--text-primary);
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  cursor: pointer;
-  transition: all var(--transition-fast);
-  text-decoration: none;
-}
-
-.btn-card-quick:hover {
   background: rgba(255, 255, 255, 0.12);
-  border-color: var(--border-medium);
+  border-color: var(--gold-light);
   color: var(--gold-light);
+}
+
+.btn-card-download {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  padding: 11px 22px;
+  border-radius: var(--radius-md);
+  background: var(--gold-gradient);
+  color: #000;
+  font-weight: 800;
+  font-size: 0.88rem;
+  text-decoration: none;
+  cursor: pointer;
+  border: none;
+  box-shadow: 0 4px 15px rgba(245, 158, 11, 0.3);
+  transition: all var(--transition-fast);
+  white-space: nowrap;
+}
+
+.btn-card-download:hover {
   transform: translateY(-2px);
+  box-shadow: 0 6px 22px rgba(245, 158, 11, 0.55);
+}
+
+.btn-card-download:active, .btn-card-detail:active {
+  transform: scale(0.97);
+}
+
+/* ========================================================
+   TỐI ƯU HÓA CHO ĐIỆN THOẠI & THIẾT BỊ DI ĐỘNG (MOBILE-FIRST)
+   ======================================================== */
+@media (max-width: 900px) {
+  .mod-card {
+    grid-template-columns: 300px 1fr;
+  }
+  .card-body {
+    padding: 18px 20px;
+  }
+}
+
+@media (max-width: 768px) {
+  /* Chuyển card sang dạng khối dọc tối ưu tuyệt đối cho màn hình điện thoại */
+  .mod-card {
+    display: flex;
+    flex-direction: column;
+    border-radius: var(--radius-lg);
+  }
+
+  .card-media-col {
+    width: 100%;
+    border-right: none;
+    border-bottom: 1px solid var(--border-subtle);
+  }
+
+  .card-media {
+    aspect-ratio: 16 / 9;
+  }
+
+  .mini-thumb {
+    width: 58px;
+    height: 36px;
+  }
+
+  .card-body {
+    padding: 16px;
+    gap: 12px;
+  }
+
+  .card-title {
+    font-size: 1.15rem;
+  }
+
+  .card-desc {
+    -webkit-line-clamp: 3;
+    font-size: 0.86rem;
+  }
+
+  .card-bottom-row {
+    flex-direction: column;
+    align-items: stretch;
+    gap: 12px;
+  }
+
+  .card-specs-bar {
+    justify-content: space-between;
+    width: 100%;
+  }
+
+  /* Trên điện thoại: nút to, dễ bấm ngón tay cái */
+  .card-action-buttons {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 10px;
+    width: 100%;
+  }
+
+  .btn-card-detail, .btn-card-download {
+    width: 100%;
+    justify-content: center;
+    padding: 13px 12px;
+    font-size: 0.88rem;
+    min-height: 46px;
+  }
+}
+
+@media (max-width: 480px) {
+  .card-action-buttons {
+    grid-template-columns: 1fr;
+  }
+
+  .btn-card-download {
+    order: -1; /* Đưa nút Tải APK lên ưu tiên hàng đầu trên màn hình rất nhỏ */
+    padding: 14px 16px;
+    font-size: 0.95rem;
+  }
+
+  .card-header-row {
+    flex-direction: row;
+  }
+
+  .card-title {
+    font-size: 1.08rem;
+  }
+
+  .card-dev-meta {
+    font-size: 0.75rem;
+  }
 }

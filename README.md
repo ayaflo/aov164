@@ -1,6 +1,6 @@
-# 💎 APEX MODS - KHO MOD GAME ANDROID ĐẲNG CẤP & SANG TRỌNG
+# 💎 HOÀNG TẤN MODS - KHO MOD GAME ANDROID ĐẲNG CẤP & SANG TRỌNG
 
-Trang web giới thiệu và chia sẻ các bản **Mod Game Android** chuyên nghiệp, phong cách sang trọng (Luxury VIP Dark Theme) với hiệu ứng ánh sáng vàng gold, kính mờ (glassmorphism) hiện đại, hỗ trợ hiển thị nhiều ảnh chụp mô tả sắc nét lấy từ direct link, kèm thông tin chi tiết và nút tải về trực tiếp.
+Trang web giới thiệu và chia sẻ các bản **Mod Game Android** chuyên nghiệp, phong cách sang trọng bởi **Hoàng Tấn Mods** (Luxury VIP Dark Theme) với hiệu ứng ánh sáng vàng gold, bố cục thẻ hàng ngang hiện đại (ảnh bên trái, mô tả và nút tải bên phải), tối ưu mượt mà cho điện thoại di động, hỗ trợ hiển thị nhiều ảnh chụp mô tả sắc nét lấy từ direct link, kèm thông tin chi tiết và nút tải về trực tiếp.
 
 ---
 

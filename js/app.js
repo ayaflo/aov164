@@ -169,58 +169,81 @@ document.addEventListener('DOMContentLoaded', () => {
 
       return `
         <article class="mod-card" data-id="${mod.id}">
-          <div class="card-media">
-            <img class="card-main-image" 
-              src="${mod.coverImage}" 
-              alt="${mod.title}" 
-              loading="lazy"
-              onerror="this.src='https://images.unsplash.com/photo-1542751371-adc38448a05e?auto=format&fit=crop&w=800&q=80'"
-            />
-            <div class="card-media-overlay"></div>
-
-            <div class="card-badges">
-              ${mod.isVip ? '<span class="badge badge-vip">VIP MOD</span>' : ''}
-              ${mod.isUpdated ? '<span class="badge badge-update">UPDATE</span>' : ''}
-              <span class="badge badge-category">${mod.categoryLabel}</span>
-            </div>
-
-            <button class="card-fav-btn ${isFav ? 'active' : ''}" data-fav-id="${mod.id}" title="${isFav ? 'Bỏ lưu' : 'Lưu vào yêu thích'}">
-              <svg width="18" height="18" fill="${isFav ? 'currentColor' : 'none'}" viewBox="0 0 24 24" stroke="currentColor">
-                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z" />
-              </svg>
-            </button>
-
-            <div class="card-screenshots-count">
-              <svg width="14" height="14" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 16l4.586-4.586a2 2 0 012.828 0L16 16m-2-2l1.586-1.586a2 2 0 012.828 0L20 14m-6-6h.01M6 20h12a2 2 0 002-2V6a2 2 0 00-2-2H6a2 2 0 00-2 2v12a2 2 0 002 2z" />
-              </svg>
-              <span>${screenshotsCount} Ảnh mô tả</span>
-            </div>
-          </div>
-
-          <!-- Dải thu nhỏ nhiều ảnh chụp direct link -->
-          <div class="card-screenshots-strip">
-            ${previewThumbnails.map((imgUrl, i) => `
-              <img class="mini-thumb ${i === 0 ? 'active' : ''}" 
-                src="${imgUrl}" 
-                alt="preview" 
+          <!-- Cột bên trái: Ảnh bìa direct link + Dải ảnh chụp mô tả -->
+          <div class="card-media-col">
+            <div class="card-media" data-open-id="${mod.id}">
+              <img class="card-main-image" 
+                src="${mod.coverImage}" 
+                alt="${mod.title}" 
                 loading="lazy"
-                data-card-img="${imgUrl}"
-                onerror="this.style.display='none'"
+                onerror="this.src='https://images.unsplash.com/photo-1542751371-adc38448a05e?auto=format&fit=crop&w=800&q=80'"
               />
-            `).join('')}
+              <div class="card-media-overlay"></div>
+
+              <div class="card-badges">
+                ${mod.isVip ? '<span class="badge badge-vip">VIP MOD</span>' : ''}
+                ${mod.isUpdated ? '<span class="badge badge-update">UPDATE</span>' : ''}
+                <span class="badge badge-category">${mod.categoryLabel}</span>
+              </div>
+
+              <div class="card-screenshots-count">
+                <svg width="14" height="14" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 16l4.586-4.586a2 2 0 012.828 0L16 16m-2-2l1.586-1.586a2 2 0 012.828 0L20 14m-6-6h.01M6 20h12a2 2 0 002-2V6a2 2 0 00-2-2H6a2 2 0 00-2 2v12a2 2 0 002 2z" />
+                </svg>
+                <span>${screenshotsCount} Ảnh</span>
+              </div>
+            </div>
+
+            <!-- Dải thu nhỏ nhiều ảnh chụp direct link -->
+            <div class="card-screenshots-strip">
+              ${previewThumbnails.map((imgUrl, i) => `
+                <img class="mini-thumb ${i === 0 ? 'active' : ''}" 
+                  src="${imgUrl}" 
+                  alt="Screenshot ${i + 1}" 
+                  loading="lazy"
+                  data-card-img="${imgUrl}"
+                  title="Xem trước ảnh chụp màn hình ${i + 1}"
+                  onerror="this.style.display='none'"
+                />
+              `).join('')}
+            </div>
           </div>
 
+          <!-- Cột bên phải: Tiêu đề, Mô tả, Tính năng Mod và Nút tải về -->
           <div class="card-body">
-            <div class="card-title-row">
-              <h3 class="card-title" data-open-id="${mod.id}">${mod.title}</h3>
-              <span class="card-version-pill">${mod.version}</span>
+            <div class="card-header-row">
+              <div class="card-title-group">
+                <div class="card-title-line">
+                  <h3 class="card-title" data-open-id="${mod.id}">${mod.title}</h3>
+                  <span class="card-version-pill">${mod.version}</span>
+                </div>
+                <div class="card-dev-meta">
+                  <span class="dev-name">${mod.developer}</span>
+                  <span class="meta-dot">•</span>
+                  <span class="category-name">${mod.categoryLabel}</span>
+                  <span class="meta-dot">•</span>
+                  <span class="card-rating-badge">
+                    <svg width="14" height="14" fill="currentColor" viewBox="0 0 20 20" style="color: var(--gold-light)">
+                      <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
+                    </svg>
+                    ${mod.rating}
+                  </span>
+                  <span class="meta-dot">•</span>
+                  <span class="card-dls-text">${mod.downloads} lượt tải</span>
+                </div>
+              </div>
+
+              <button class="card-fav-btn ${isFav ? 'active' : ''}" data-fav-id="${mod.id}" title="${isFav ? 'Bỏ lưu' : 'Lưu vào yêu thích'}">
+                <svg width="18" height="18" fill="${isFav ? 'currentColor' : 'none'}" viewBox="0 0 24 24" stroke="currentColor">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z" />
+                </svg>
+              </button>
             </div>
 
             <p class="card-desc">${mod.description}</p>
 
             <div class="card-mod-features">
-              ${(mod.features || []).slice(0, 3).map(f => `
+              ${(mod.features || []).slice(0, 4).map(f => `
                 <span class="mod-feature-pill">
                   <svg viewBox="0 0 20 20" fill="currentColor">
                     <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd" />
@@ -230,39 +253,39 @@ document.addEventListener('DOMContentLoaded', () => {
               `).join('')}
             </div>
 
-            <div class="card-specs-bar">
-              <div class="spec-cell">
-                <svg width="15" height="15" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 18h.01M8 21h8a2 2 0 002-2V5a2 2 0 00-2-2H8a2 2 0 00-2 2v14a2 2 0 002 2z" />
-                </svg>
-                <span>${mod.androidReq}</span>
+            <div class="card-bottom-row">
+              <div class="card-specs-bar">
+                <div class="spec-cell" title="Yêu cầu Android">
+                  <svg width="15" height="15" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 18h.01M8 21h8a2 2 0 002-2V5a2 2 0 00-2-2H8a2 2 0 00-2 2v14a2 2 0 002 2z" />
+                  </svg>
+                  <span>${mod.androidReq}</span>
+                </div>
+                <div class="spec-cell" title="Dung lượng tải">
+                  <svg width="15" height="15" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-4l-4 4m0 0l-4-4m4 4V4" />
+                  </svg>
+                  <span>${mod.size}</span>
+                </div>
+                <div class="spec-cell spec-cell-noroot" title="Không cần Root">
+                  <span class="safe-badge-pill">No Root</span>
+                </div>
               </div>
-              <div class="spec-cell">
-                <svg width="15" height="15" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-4l-4 4m0 0l-4-4m4 4V4" />
-                </svg>
-                <span>${mod.size}</span>
-              </div>
-              <div class="spec-cell">
-                <svg width="15" height="15" fill="currentColor" viewBox="0 0 20 20" style="color: var(--gold-light)">
-                  <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
-                </svg>
-                <strong>${mod.rating}</strong>
-              </div>
-            </div>
 
-            <div class="card-footer">
-              <button class="btn-card-detail" data-open-id="${mod.id}">
-                <svg width="18" height="18" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-4l-4 4m0 0l-4-4m4 4V4" />
-                </svg>
-                Xem Chi Tiết & Tải Về
-              </button>
-              <a href="${mod.downloadUrl}" target="_blank" rel="noopener noreferrer" class="btn-card-quick" title="Tải nhanh APK">
-                <svg width="20" height="20" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14" />
-                </svg>
-              </a>
+              <div class="card-action-buttons">
+                <button class="btn-card-detail" data-open-id="${mod.id}">
+                  <svg width="18" height="18" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 12a3 3 0 11-6 0 3 3 0 016 0z" />
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M2.458 12C3.732 7.943 7.523 5 12 5c4.478 0 8.268 2.943 9.542 7-1.274 4.057-5.064 7-9.542 7-4.477 0-8.268-2.943-9.542-7z" />
+                  </svg>
+                  Xem Chi Tiết & Ảnh
+                </button>
+                <a href="${mod.downloadUrl}" target="_blank" rel="noopener noreferrer" class="btn-card-download" title="Tải trực tiếp file APK">
+                  <svg width="18" height="18" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-4l-4 4m0 0l-4-4m4 4V4" />
+                  </svg>
+                  <span>Tải Về APK</span>
+                </a>
             </div>
           </div>
         </article>

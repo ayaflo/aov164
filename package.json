@@ -1,17 +1,18 @@
 {
-  "name": "apex-mods-android-web",
+  "name": "hoang-tan-mods-android",
   "version": "1.0.0",
-  "description": "Trang web giới thiệu các bản Mod Game Android chuyên nghiệp, sang trọng với nhiều ảnh mô tả direct link và link tải trực tiếp.",
+  "description": "Kho Mod Game Android Hoàng Tấn Mods - Hiển thị ảnh chụp direct link hàng ngang, mô tả và tải trực tiếp.",
   "scripts": {
     "start": "npx serve . -l 3000",
     "dev": "npx serve . -l 3000"
   },
   "keywords": [
+    "hoang-tan-mods",
     "mod-game",
     "android-mods",
     "apk-mod",
     "vercel"
   ],
-  "author": "Apex Mods",
+  "author": "Hoàng Tấn Mods",
   "license": "MIT"
 }

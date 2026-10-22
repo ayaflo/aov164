@@ -523,9 +523,9 @@ body {
 }
 
 .mods-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
-  gap: 28px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
 }
 
 /* Empty State */
@@ -678,23 +678,109 @@ body {
 }
 
 @media (max-width: 640px) {
+  .container {
+    padding: 0 14px;
+  }
   .nav-wrapper {
-    height: 70px;
+    height: 64px;
+  }
+  .brand-logo {
+    gap: 8px;
+  }
+  .logo-icon {
+    width: 36px;
+    height: 36px;
   }
   .brand-name {
-    font-size: 1.15rem;
+    font-size: 1.05rem;
+    letter-spacing: 0.5px;
   }
   .brand-tagline {
     display: none;
   }
-  .mods-grid {
-    grid-template-columns: 1fr;
+  .nav-btn {
+    padding: 8px 12px;
+    font-size: 0.8rem;
+  }
+  .hero-section {
+    padding: 35px 0 20px;
+  }
+  .hero-badge {
+    font-size: 0.72rem;
+    padding: 5px 12px;
+    margin-bottom: 16px;
+  }
+  .hero-title {
+    font-size: clamp(1.6rem, 7vw, 2.2rem);
+    line-height: 1.22;
+    margin-bottom: 14px;
+  }
+  .hero-subtitle {
+    font-size: 0.88rem;
+    margin-bottom: 24px;
+    line-height: 1.55;
+  }
+  .stats-row {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    padding: 16px 14px;
+    gap: 16px;
+    border-radius: var(--radius-lg);
+  }
+  .stat-number {
+    font-size: 1.35rem;
+  }
+  .stat-label {
+    font-size: 0.68rem;
+  }
+  .controls-section {
+    padding: 16px 0 10px;
+  }
+  .controls-card {
+    padding: 14px;
+    gap: 12px;
+    border-radius: var(--radius-md);
   }
   .search-row {
     flex-direction: column;
     align-items: stretch;
+    gap: 10px;
+  }
+  .search-input {
+    padding: 12px 14px 12px 42px;
+    font-size: 0.88rem;
+  }
+  .search-icon {
+    left: 14px;
+    width: 18px;
+    height: 18px;
   }
   .sort-box {
     justify-content: space-between;
+    width: 100%;
+  }
+  .sort-select {
+    padding: 10px 14px;
+    font-size: 0.85rem;
+  }
+  .categories-bar {
+    gap: 8px;
+    -webkit-overflow-scrolling: touch;
+  }
+  .category-chip {
+    padding: 7px 14px;
+    font-size: 0.8rem;
+  }
+  .mods-section {
+    padding: 15px 0 50px;
+  }
+  .section-title {
+    font-size: 1.4rem;
+  }
+  .mods-grid {
+    gap: 16px;
+  }
+  .site-footer {
+    padding: 40px 0 24px;
   }
 }

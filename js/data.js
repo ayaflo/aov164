@@ -1,152 +1,150 @@
 /**
- * TẤN CUTOS - Dữ Liệu Bản Mod Game Độc Quyền Duy Nhất
- * Tham khảo phong cách chuẩn: https://magicnte.com/
- * Hỗ trợ Video Demo từ Direct Link, Download APK Direct Link, và các tính năng chi tiết.
+ * TẤN CUTOS - Dữ Liệu Bản Mod Game Liên Quân Mobile (Arena of Valor)
+ * Tích hợp đầy đủ 7 tính năng VIP độc quyền theo yêu cầu:
+ * 1. Hack map (hiển thị vị trí địch)
+ * 2. Cam xa (mở rộng tầm nhìn)
+ * 3. Aim Game (Tung chiêu tự trúng)
+ * 4. Mod Full skin (mở khóa full trang phục SSS)
+ * 5. Hiển thị thời gian hồi chiêu của địch
+ * 6. Tự động bộc phá (tự động xài bổ trợ khi địch còn yếu máu)
+ * 7. Nghe nhạc (chọn nhạc trên SoundCloud và mở vừa chơi vừa nghe)
  */
 
-const STORAGE_KEY_SINGLE_MOD = 'TAN_CUTOS_SINGLE_MOD_DATA_V1';
+const STORAGE_KEY_SINGLE_MOD = 'TAN_CUTOS_AOV_MOD_DATA_V2';
 
 const DEFAULT_SINGLE_MOD = {
   // Thương hiệu & Tiêu đề
   brandName: "Tấn Cutos",
-  brandKicker: "Tấn Cutos VIP · Midnight Release",
-  modTitle: "Magic NTE",
-  gameName: "Neverness to Everness",
-  tagline: "Bản Mod NTE Độc Quyền Số 1 Trên Android",
-  subtitle: "Bản mod Android độc quyền đầu tiên hỗ trợ đầy đủ Teleport, God Mode, ESP và Antiban Bypass. Được phát triển và kiểm định bởi Tấn Cutos.",
+  brandKicker: "Tấn Cutos VIP · Mùa Giải Mới 2026",
+  modTitle: "AOV VIP MENU",
+  gameName: "Liên Quân Mobile (Arena of Valor)",
+  tagline: "Bản Mod Menu Liên Quân Mobile Độc Quyền Số 1 Android",
+  subtitle: "Trọn bộ 7 tính năng VIP: Hack Map, Cam Xa, Aim Chiêu Tự Trúng, Mod Full Skin, Hồi Chiêu Địch, Tự Động Bộc Phá và Nghe Nhạc SoundCloud. Antiban Bypass v5.0 an toàn tuyệt đối 100% không cần Root máy.",
+  
+  // Ảnh nền phần đầu tiên (Hero Background Direct Link)
+  heroBackgroundImage: "https://images.unsplash.com/photo-1542751371-adc38448a05e?auto=format&fit=crop&w=2000&q=85",
   
   // Thông tin phiên bản & Phát hành (Release Status)
-  version: "1.0.10",
-  versionBuild: "1.0.10-api36-runtime-profile",
+  version: "5.2.0 VIP",
+  versionBuild: "v5.2.0-aov-byteguard-antiban",
   releaseStatus: "Bản phát hành chính thức (Public Release)",
-  supportedGameVersion: "NTE 1.4.1.88728 (Mới nhất)",
-  androidReq: "Android 11 – 15+ (No Root)",
+  supportedGameVersion: "Liên Quân Mobile 1.55.1 (Bản Garena Mới Nhất)",
+  androidReq: "Android 8.0 – 15+ (No Root)",
   updatedDate: "22/10/2026",
-  fileSize: "122.4 MB",
-  fileName: "com.multi.appspace-1.0.10-api36-runtime-profile-aosp-byteguard-release-20261010.apk",
-  sha256: "9218fe7fd5cdb14a5d7f276d220f7a005fb6b89665fa7015d05bad0bf44cfd72",
+  fileSize: "98.5 MB",
+  fileName: "tan-cutos-aov-menu-vip-v5.2.0.apk",
+  sha256: "e4d9b28a8f15c327914e6b5d983416a048a127bc0f7112d8479e0134bc582a99",
   virusTotalScore: "0/72 Clean (Sạch 100%)",
   
   // Direct Link Download & Video
-  downloadUrl: "https://dl.magicnte.com/releases/hypernte/v1.0.10/com.multi.appspace-1.0.10-api36-runtime-profile-aosp-byteguard-release-20261010.apk",
-  mirrorDownloadUrl: "https://mega.nz/file/tancutos-magic-nte-v1010-vip",
+  downloadUrl: "https://dl.tancutos.vip/releases/aov/tan-cutos-aov-menu-vip-v5.2.0.apk",
+  mirrorDownloadUrl: "https://mega.nz/file/tancutos-aov-vip-v520",
   changelogUrl: "#changelog",
   
   // Direct Link Video Demo
-  // Hỗ trợ link video MP4/WebM direct link. Có thể đổi link trực tiếp bất cứ lúc nào qua modal cài đặt!
   videoUrl: "https://commondatastorage.googleapis.com/gtv-videos-bucket/sample/ForBiggerBlazes.mp4",
-  videoPoster: "https://images.unsplash.com/photo-1542751371-adc38448a05e?auto=format&fit=crop&w=1600&q=85",
-  videoDuration: "01:45",
-  videoDescription: "Video quay trực tiếp từ thiết bị Android thực tế, hiển thị Map TP, Quest TP và God Mode hoạt động mượt mà 60 FPS không giật lag.",
+  videoPoster: "https://images.unsplash.com/photo-1511512578047-dfb367046420?auto=format&fit=crop&w=1600&q=85",
+  videoDuration: "01:30",
+  videoDescription: "Video quay trực tiếp từ điện thoại Android thực tế trong trận đấu hạng Liên Quân Mobile: Test Hack Map, Cam Xa x3.0, Elsu Aim vẩy súng trúng 100%, Tự Bộc Phá và mở nhạc SoundCloud quẩy cực mượt.",
   
   // Nhật ký cập nhật phiên bản (What changed in this release)
   changelog: [
-    "Tương thích hoàn toàn phiên bản game NTE 1.4.1 mới nhất và sửa lỗi crash khi khởi động.",
-    "Bổ sung hệ thống Quest Teleport tự động nhận diện mục tiêu nhiệm vụ với khoảng cách bù an toàn.",
-    "Nâng cấp công nghệ ByteGuard Antiban Bypass v4.2 chống quét bộ nhớ và bảo vệ tài khoản.",
-    "Tối ưu mức tiêu thụ RAM và chống nóng máy khi bật ESP toàn bản đồ liên tục trong nhiều giờ."
+    "Cập nhật tương thích phiên bản Liên Quân Mobile 1.55.1 Mùa mới nhất của Garena.",
+    "Nâng cấp thuật toán Aim Chiêu tự động tính toán hướng di chuyển và tốc độ chạy của mục tiêu.",
+    "Bổ sung Widget nghe nhạc SoundCloud nổi: Nghe nhạc remix, vinahouse, lofi trực tiếp trong game không giật lag.",
+    "Tối ưu Antiban Bypass v5.0: Tự động làm sạch log báo cáo trận đấu, chống khóa acc 1 ngày / 3 tháng / 10 năm tuyệt đối."
   ],
 
-  // Các Module Tính Năng Tương Tác (Features Modules - phong cách Magic NTE)
+  // 7 TÍNH NĂNG ĐỘC QUYỀN ĐƯỢC CHIA THÀNH 3 MODULE TƯƠNG TÁC
   featureModules: [
     {
-      id: "tp",
-      eyebrow: "DỊCH CHUYỂN (TP MODULE)",
-      title: "Dịch chuyển thần tốc qua nhiệm vụ, điểm đánh dấu hoặc tọa độ tùy chỉnh.",
+      id: "vision",
+      eyebrow: "MODULE 1: THỊ GIÁC & TẦM NHÌN TOÀN BẢN ĐỒ",
+      title: "1. Hack Map & 2. Cam Xa Siêu Rộng Bao Quát Chiến Trường",
       subfeatures: [
         {
-          id: "mapTp",
-          name: "Map TP",
-          badge: "Khả Dụng",
-          tabLabel: "Map TP",
-          title: "Dịch Chuyển Theo Bản Đồ (Map TP)",
-          desc: "Chạm chọn bất kỳ vị trí hoặc điểm đánh dấu nào trên bản đồ in-game để lập tức bay tới điểm đến mà không phải chạy bộ.",
-          image: "https://images.unsplash.com/photo-1511512578047-dfb367046420?auto=format&fit=crop&w=1200&q=85",
-          highlight: "Nhấp chuột trên mini-map -> Tự động tính toán độ cao an toàn để tránh rơi vào hư không."
-        },
-        {
-          id: "questTp",
-          name: "Quest TP",
-          badge: "Khả Dụng",
-          tabLabel: "Quest TP",
-          title: "Dịch Chuyển Nhiệm Vụ Tự Động (Quest TP)",
-          desc: "Tự động phân tích mục tiêu nhiệm vụ chính tuyến / phụ bản đang kích hoạt và dịch chuyển thẳng tới NPC hoặc quái vật mục tiêu.",
+          id: "hackMap",
+          name: "1. Hack Map",
+          badge: "Cốt Lõi",
+          tabLabel: "1. Hack Map",
+          title: "1. Hack Map Toàn Bản Đồ (Hiển Thị Vị Trí Địch)",
+          desc: "Hiển thị vị trí, biểu tượng avatar tướng, thanh máu và hướng di chuyển của toàn bộ 5 tướng địch trong bụi cỏ và sương mù theo thời gian thực.",
           image: "https://images.unsplash.com/photo-1542751371-adc38448a05e?auto=format&fit=crop&w=1200&q=85",
-          highlight: "Giải quyết chuỗi nhiệm vụ dài 30 phút chỉ trong vòng 3 phút."
+          highlight: "Phát hiện ngay lập tức hướng gank của rừng và mid đối phương, không bao giờ bị bắt lẻ."
         },
         {
-          id: "manualTp",
-          name: "Manual TP",
+          id: "camXa",
+          name: "2. Cam Xa",
           badge: "Khả Dụng",
-          tabLabel: "Manual TP",
-          title: "Dịch Chuyển Tọa Độ Thủ Công (Manual TP)",
-          desc: "Nhập chính xác tọa độ trục X, Y, Z để dịch chuyển vào các hang động bí mật, đỉnh núi cao hoặc các khu vực rương ẩn.",
-          image: "https://images.unsplash.com/photo-1550745165-9bc0b252726f?auto=format&fit=crop&w=1200&q=85",
-          highlight: "Hỗ trợ lưu danh sách điểm đánh dấu yêu thích (Waypoints Bookmark)."
+          tabLabel: "2. Cam Xa",
+          title: "2. Cam Xa Siêu Rộng (Drone View / Mở Rộng Tầm Nhìn)",
+          desc: "Thanh trượt tùy chỉnh góc nhìn camera trên cao từ x1.5, x2.0, x2.5 đến x4.0, phóng tầm nhìn bao quát toàn bộ đường lane, hang Rồng và hang Tà Thần César.",
+          image: "https://images.unsplash.com/photo-1511512578047-dfb367046420?auto=format&fit=crop&w=1200&q=85",
+          highlight: "Quan sát toàn bộ giao tranh từ khoảng cách xa, kiểm soát thế trận dễ dàng."
         }
       ]
     },
     {
       id: "combat",
-      eyebrow: "CHIẾN ĐẤU (COMBAT MODULE)",
-      title: "Bảo hộ chiến đấu tuyệt đối & Xả chiêu không giới hạn trong bản Android.",
+      eyebrow: "MODULE 2: KỸ NĂNG & CHIẾN ĐẤU ĐỈNH CAO",
+      title: "3. Aim Game, 5. Hồi Chiêu Địch & 6. Tự Động Bộc Phá",
       subfeatures: [
         {
-          id: "godMode",
-          name: "God Mode",
-          badge: "Khả Dụng",
-          tabLabel: "God Mode",
-          title: "Bất Tử Tuyệt Đối (God Mode)",
-          desc: "Kích hoạt chế độ vô địch, miễn nhiễm hoàn toàn mọi sát thương nhận vào từ boss, quái vật tinh anh và bẫy môi trường.",
+          id: "aimGame",
+          name: "3. Aim Game",
+          badge: "VIP PRO",
+          tabLabel: "3. Aim Chiêu",
+          title: "3. Aim Game (Tung Chiêu Tự Trúng 100%)",
+          desc: "Hệ thống tự động khóa tâm và dẫn hướng chuẩn xác cho mọi kỹ năng định hướng: Elsu ngắm bắn viễn trình, Grakk kéo, Tulen Lôi Quang, Hayate phi tiêu...",
           image: "https://images.unsplash.com/photo-1538481199705-c710c4e965fc?auto=format&fit=crop&w=1200&q=85",
-          highlight: "Khóa thanh máu ở mức 100%, không bị hiệu ứng choáng hay hất tung."
+          highlight: "Tự tính toán trước bước chạy của kẻ địch để xả chiêu trúng đích tuyệt đối."
         },
         {
-          id: "noCooldown",
-          name: "No Cooldown",
-          badge: "Khả Dụng",
-          tabLabel: "No Cooldown",
-          title: "Hồi Chiêu 0 Giây (No Cooldown)",
-          desc: "Xóa bỏ thời gian hồi chiêu của kỹ năng thường, kỹ năng nguyên tố và chiêu nộ, cho phép tung combo liên hoàn không ngừng nghỉ.",
+          id: "enemyCd",
+          name: "5. Hồi Chiêu Địch",
+          badge: "Chiến Thuật",
+          tabLabel: "5. Hồi Chiêu Địch",
+          title: "5. Hiển Thị Thời Gian Hồi Chiêu Của Địch",
+          desc: "Đếm ngược chính xác từng giây thời gian hồi chiêu 1, chiêu 2, chiêu cuối (Ultimate) và các phép bổ trợ (Tốc biến, Bộc phá, Cấp cứu, Trừng trị) trên đầu tướng địch.",
           image: "https://images.unsplash.com/photo-1563089145-599997674d42?auto=format&fit=crop&w=1200&q=85",
-          highlight: "Kỹ năng hồi tức thì ngay sau khi kích hoạt."
+          highlight: "Biết rõ đối thủ có còn Tốc biến hay Ulti hay không để lao vào dồn sát thương an toàn."
         },
         {
-          id: "damageMulti",
-          name: "Damage Multiplier",
-          badge: "Khả Dụng",
-          tabLabel: "Damage Multiplier",
-          title: "Tùy Chỉnh Sát Thương (Damage Multiplier)",
-          desc: "Thanh trượt điều chỉnh sát thương xuất chiêu linh hoạt từ x1, x2, x5 cho đến x50 để cân bằng giữa tốc độ dọn phó bản và độ an toàn.",
+          id: "autoBocPha",
+          name: "6. Tự Bộc Phá",
+          badge: "Tự Động",
+          tabLabel: "6. Tự Bộc Phá",
+          title: "6. Tự Động Bộc Phá (Auto Execute Khi Địch Yếu Máu)",
+          desc: "Máy tự động quét lượng máu thực tế của kẻ địch so với sát thương chuẩn của Bộc Phá. Ngay khi máu đối thủ chạm ngưỡng chết, hệ thống tự động giật Bộc Phá ăn mạng tức thì.",
           image: "https://images.unsplash.com/photo-1518709268805-4e9042af9f23?auto=format&fit=crop&w=1200&q=85",
-          highlight: "Tùy chỉnh hệ số sát thương thực tế, không bị phát hiện bất thường."
+          highlight: "Tốc độ kích hoạt trong mili-giây, không bỏ lỡ bất kỳ mạng hạ gục nào."
         }
       ]
     },
     {
-      id: "visuals",
-      eyebrow: "THỊ GIÁC & TỰ ĐỘNG (ESP & UTILITY)",
-      title: "X-Ray định vị xuyên địa hình và mở rộng tầm hút vật phẩm.",
+      id: "utility",
+      eyebrow: "MODULE 3: TRANG PHỤC & GIẢI TRÍ SOUNDCLOUD",
+      title: "4. Mod Full Skin SSS & 7. Trình Nghe Nhạc SoundCloud In-Game",
       subfeatures: [
         {
-          id: "chestLocator",
-          name: "Chest Locator",
-          badge: "Khả Dụng",
-          tabLabel: "Chest Locator",
-          title: "Định Vị Rương Báu & Vật Phẩm (Chest ESP)",
-          desc: "Vẽ đường định vị xuyên tường, hiển thị khoảng cách bằng mét tới từng rương báu, quặng quý và điểm thu thập trên màn hình.",
-          image: "https://images.unsplash.com/photo-1552824796-7c98031d7986?auto=format&fit=crop&w=1200&q=85",
-          highlight: "Hiển thị màu sắc phân loại độ hiếm: Trắng, Xanh lục, Tím, Vàng kim."
+          id: "fullSkin",
+          name: "4. Mod Full Skin",
+          badge: "Mở Khóa",
+          tabLabel: "4. Full Skin",
+          title: "4. Mod Full Skin (Mở Khóa Mọi Trang Phục SSS)",
+          desc: "Trải nghiệm miễn phí toàn bộ kho skin đắt giá nhất Liên Quân: Thứ Nguyên Vệ Thần, Tuyệt Sắc, Anime Collab (Sailor Moon, Bleach, Sword Art Online), đầy đủ hiệu ứng biến về và voice âm thanh.",
+          image: "https://images.unsplash.com/photo-1550745165-9bc0b252726f?auto=format&fit=crop&w=1200&q=85",
+          highlight: "Hiển thị mượt mà trên máy bạn, tăng cảm hứng leo rank Thách Đấu."
         },
         {
-          id: "pickupRange",
-          name: "Pickup Range",
-          badge: "Khả Dụng",
-          tabLabel: "Pickup Range",
-          title: "Hút Vật Phẩm Tầm Xa (Vacuum Pickup)",
-          desc: "Tăng bán kính nhặt vật phẩm rơi ra từ quái và rương lên gấp 5 lần, tự động thu gom toàn bộ chiến lợi phẩm xung quanh.",
-          image: "https://images.unsplash.com/photo-1579373903781-fd5c0c30c4cd?auto=format&fit=crop&w=1200&q=85",
-          highlight: "Tiết kiệm 80% thời gian nhặt đồ khi vượt phụ bản."
+          id: "soundCloud",
+          name: "7. Nhạc SoundCloud",
+          badge: "HOT VIP",
+          tabLabel: "7. SoundCloud",
+          title: "7. Nghe Nhạc SoundCloud (Vừa Chơi Vừa Nghe Nhạc)",
+          desc: "Tích hợp cửa sổ widget nổi SoundCloud ngay trong trận: Cho phép gõ tìm kiếm bài hát, nghe playlist Remix, Vinahouse, Phonk, Lofi không giới hạn mà không bị văng game hay giảm FPS.",
+          image: "https://images.unsplash.com/photo-1552824796-7c98031d7986?auto=format&fit=crop&w=1200&q=85",
+          highlight: "Tùy chỉnh âm lượng độc lập với âm thanh game, phím điều khiển mini tiện lợi."
         }
       ]
     }
@@ -156,51 +154,51 @@ const DEFAULT_SINGLE_MOD = {
   roadmap: [
     {
       id: "01",
-      tag: "Automation",
+      tag: "Rừng & Mục Tiêu",
       status: "Incoming",
       statusText: "Đang phát triển",
-      title: "Auto Fishing (Câu Cá Tự Động)",
-      desc: "Tự động thả câu, bấm nhịp giật cá chuẩn xác và tự động bỏ vào túi đồ mà không cần người chơi phải canh màn hình."
+      title: "Auto Trừng Trị Ăn Rồng & Tà Thần Caesar",
+      desc: "Tự động đo máu quái rừng lớn và trừng trị chuẩn xác 100% trong mili-giây, chống bị cướp rồng."
     },
     {
       id: "02",
-      tag: "Combat",
+      tag: "Né Kỹ Năng",
       status: "Incoming",
       statusText: "Đang phát triển",
-      title: "No Cooldown V2 (Hồi Chiêu Nâng Cao)",
-      desc: "Tối ưu hóa thời gian hồi chiêu cho các nhân vật mới ra mắt trong bản update sắp tới của NTE."
+      title: "Auto Dodge (Tự Động Né Kỹ Năng Nguy Hiểm)",
+      desc: "Tự động lách người né kéo của Grakk, chiêu cuối Điêu Thuyền và đạn viễn trình Elsu."
     },
     {
       id: "03",
-      tag: "Combat",
+      tag: "Thị Giác",
       status: "Researching",
       statusText: "Đang nghiên cứu",
-      title: "One-Hit Kill Boss Selector",
-      desc: "Đánh giá tính năng tiêu diệt mục tiêu chỉ định tức thì kết hợp cơ chế bypass chống quét chỉ số sát thương đột biến."
+      title: "Soi Tướng Tàng Hình (Anti-Invisibility)",
+      desc: "Hiện bóng mờ rõ ràng cho Ngộ Không, Batman, Quillen và Sinestrea khi chúng đang tàng hình."
     },
     {
       id: "04",
-      tag: "World",
+      tag: "Hiệu Năng",
       status: "Researching",
       statusText: "Đang nghiên cứu",
-      title: "Fly Mode & No Clip (Bay Xuyên Tường)",
-      desc: "Cho phép nhân vật bay tự do trên không trung và đi xuyên qua các chướng ngại vật địa hình phức tạp."
+      title: "Mở Khóa 120 FPS Siêu Mượt",
+      desc: "Mở khóa giới hạn khung hình cao nhất cho các dòng máy Xiaomi, Samsung, Realme, Oppo màn 120Hz."
     },
     {
       id: "05",
-      tag: "Performance",
+      tag: "Giao Diện",
       status: "Researching",
       statusText: "Đang nghiên cứu",
-      title: "FPS Unlocker 120 FPS",
-      desc: "Mở khóa giới hạn 60 FPS để chơi mượt mà với tốc độ 90 FPS và 120 FPS trên các màn hình tần số quét cao."
+      title: "Menu Nổi Trong Suốt Thu Gọn 1 Chạm",
+      desc: "Thu nhỏ biểu tượng bảng điều khiển thành 1 chấm nhỏ trong suốt, tránh bị đối phương phát hiện khi quay màn hình."
     },
     {
       id: "06",
-      tag: "Exploration",
+      tag: "Giải Trí",
       status: "Researching",
       statusText: "Đang nghiên cứu",
-      title: "Auto Collect Oculus (Thu Thập Thần Đồng)",
-      desc: "Tự động bay đến và nhặt toàn bộ các mảnh thần đồng / vật phẩm thám hiểm còn sót lại trên toàn cõi thế giới mở."
+      title: "Tích Hợp Thêm Playlist Nhạc ZingMP3 & YouTube Audio",
+      desc: "Hỗ trợ dán link bài hát trực tiếp từ YouTube và ZingMP3 để phát song song cùng SoundCloud."
     }
   ],
 
@@ -208,23 +206,23 @@ const DEFAULT_SINGLE_MOD = {
   installSteps: [
     {
       step: "01",
-      title: "Tải Bản Cài Đặt APK",
-      desc: "Nhấn nút 'Tải APK Trực Tiếp' ở phía trên để tải file cài đặt đã được Tấn Cutos xác thực sạch mã độc 100%."
+      title: "Tải File Cài Đặt APK",
+      desc: "Nhấn nút 'Tải APK Trực Tiếp' ở phía trên để tải bản mod Tấn Cutos AOV Menu VIP mới nhất."
     },
     {
       step: "02",
       title: "Bật Cài Đặt Nguồn Không Xác Định",
-      desc: "Mở Cài đặt điện thoại > Ứng dụng & Bảo mật > Cho phép trình duyệt hoặc trình quản lý tệp cài đặt file APK ngoài."
+      desc: "Vào Cài đặt máy > Bảo mật > Cho phép trình duyệt hoặc ứng dụng quản lý tệp cài đặt file APK."
     },
     {
       step: "03",
-      title: "Cấp Quyền Hiển Thị Cửa Sổ Nổi (Overlay)",
-      desc: "Khởi động ứng dụng, cấp quyền 'Xuất hiện trên cùng' (Display over other apps) để bảng Mod Menu hiển thị nổi trong game."
+      title: "Cấp Quyền Cửa Sổ Nổi (Overlay)",
+      desc: "Mở ứng dụng mod, cấp quyền 'Hiển thị trên ứng dụng khác' để logo menu mod có thể nổi trong game."
     },
     {
       step: "04",
-      title: "Khởi Động Game & Thưởng Thức",
-      desc: "Vào game, chạm vào biểu tượng logo nổi của Tấn Cutos để bật/tắt các tính năng VIP theo ý muốn."
+      title: "Vào Game & Kích Hoạt Tính Năng",
+      desc: "Mở Liên Quân Mobile, chạm vào logo Tấn Cutos để bật Hack Map, Cam Xa, Aim Chiêu và mở nhạc SoundCloud quẩy trận!"
     }
   ],
 
@@ -238,24 +236,24 @@ const DEFAULT_SINGLE_MOD = {
   // Câu hỏi thường gặp (FAQ)
   faqs: [
     {
-      q: "Bản mod Magic NTE có yêu cầu Root máy không?",
-      a: "Hoàn toàn KHÔNG cần Root. Bản build Android được thiết kế trên môi trường container ảo (App Space Container) tối tân, cài đặt trực tiếp như một file APK thông thường trên mọi máy Android 11 đến Android 15+."
+      q: "Bản mod Liên Quân của Tấn Cutos có cần Root máy không?",
+      a: "Hoàn toàn KHÔNG cần Root. Bản mod chạy độc lập trên môi trường Android nguyên bản (hỗ trợ Android 8 đến Android 15+), không can thiệp sâu hệ thống, cài đặt dễ dàng như một ứng dụng bình thường."
     },
     {
-      q: "Sử dụng mod này có bị khóa tài khoản (Ban nick) không?",
-      a: "Bản mod được tích hợp hệ thống ByteGuard Antiban Bypass v4.2 độc quyền từ Tấn Cutos. Cơ chế này tự động làm sạch gói tin gửi về máy chủ game, giúp bạn an tâm trải nghiệm mà không lo bị hệ thống phát hiện."
+      q: "Chơi bản mod này có bị khóa tài khoản (Ban nick) không?",
+      a: "Bản mod tích hợp hệ thống ByteGuard Antiban Bypass v5.0 độc quyền của Tấn Cutos. Cơ chế này tự động làm sạch gói tin dữ liệu gửi về server Garena, giúp bạn leo rank an toàn tuyệt đối mà không sợ bị quét mã độc hay ban acc."
     },
     {
-      q: "Tại sao bản cập nhật của game có thể làm hỏng tính năng mod?",
-      a: "Một số tính năng như Teleport hay God Mode phụ thuộc vào địa chỉ bộ nhớ (Memory Offsets) của game. Khi game có bản vá mới, các vị trí này sẽ thay đổi. Tấn Cutos luôn cập nhật bản patch tương thích mới chỉ trong vòng 2 - 4 tiếng sau khi game phát hành cập nhật."
+      q: "Tính năng nghe nhạc SoundCloud trong game hoạt động ra sao?",
+      a: "Tính năng này mở một widget audio siêu nhẹ chạy nền song song với game. Bạn có thể tìm kiếm bài hát theo tên hoặc mở danh sách phát Remix/Vinahouse/Phonk trên SoundCloud mà không bị xung đột âm thanh hay giảm FPS."
     },
     {
-      q: "Video demo trên web có phải là video từ direct link không?",
-      a: "Chính xác! Video demo được nhúng và phát trực tiếp từ direct link MP4 tốc độ cao, không qua quảng cáo rút gọn, giúp bạn xem trước toàn bộ giao diện và thao tác thực tế trước khi tải về máy."
+      q: "Khi Liên Quân Mobile có bản cập nhật mùa mới thì làm thế nào?",
+      a: "Tấn Cutos luôn theo dõi lịch bảo trì của Garena và phát hành bản vá tương thích mới chỉ trong vòng 1-2 tiếng sau khi bảo trì hoàn tất. Bạn chỉ cần tải đè bản APK mới mà không mất cài đặt cũ."
     },
     {
-      q: "Tôi có thể tự đổi link video và link tải APK của riêng mình không?",
-      a: "Có! Bạn chỉ cần nhấn vào nút 'Cấu Hình Link' ở góc phải màn hình hoặc chân trang để dán direct link video MP4 và link tải APK của riêng bạn. Hệ thống sẽ lưu và áp dụng ngay lập tức."
+      q: "Làm sao để đổi link ảnh nền phần đầu hoặc direct link video/download?",
+      a: "Bạn chỉ cần bấm nút bánh răng ⚙ ở góc phải thanh menu hoặc nút 'Cấu Hình Direct Link' ở chân trang. Bạn có thể dán link ảnh nền mới, link video MP4 mới hoặc link tải APK mới và bấm Lưu là áp dụng ngay!"
     }
   ]
 };

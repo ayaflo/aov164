@@ -1,51 +1,48 @@
-# 💎 TẤN CUTOS - TRANG QUẢNG BÁ BẢN MOD GAME ANDROID VIP
+# 💎 TẤN CUTOS - TRANG QUẢNG BÁ BẢN MOD LIÊN QUÂN MOBILE VIP (AOV)
 
-Website quảng bá chuyên nghiệp & sang trọng dành riêng cho **1 bản mod game Android độc quyền duy nhất**, được sáng tạo bởi **Tấn Cutos** và lấy cảm hứng tiêu chuẩn từ **[magicnte.com](https://magicnte.com/)** với tông màu đen không gian Midnight Obsidian, ánh sáng vàng kim sang trọng (Gold Amber Glow) và hiệu ứng Cyber Cyan.
+Website quảng bá chuyên nghiệp & sang trọng dành riêng cho **Bản Mod Menu Liên Quân Mobile (Arena of Valor)** độc quyền bởi **Tấn Cutos**, được lấy cảm hứng tiêu chuẩn từ **[magicnte.com](https://magicnte.com/)** với tông màu đen không gian Midnight Obsidian, ánh sáng vàng kim sang trọng (Gold Amber Glow) và hiệu ứng Cyber Cyan.
 
-Giao diện đã được tối ưu hóa đặc biệt cho **mọi thiết bị di động & điện thoại thông minh (Android, iOS)**, đảm bảo thao tác vuốt chạm mượt mà, cỡ chữ chuẩn không tràn màn hình và nút tải APK luôn nổi thuận tiện.
+Giao diện tích hợp **Ảnh nền phần đầu tiên lấy từ direct link**, tối ưu hóa đặc biệt cho **mọi thiết bị di động & điện thoại thông minh (Android, iOS)**, thao tác vuốt chạm mượt mà, cỡ chữ chuẩn và nút tải APK luôn nổi thuận tiện.
 
 ---
 
-## ✨ CÁC TÍNH NĂNG NỔI BẬT
+## ⚡ TRỌN BỘ 7 TÍNH NĂNG VIP LIÊN QUÂN MOBILE
 
-1. **Logo Thương Hiệu Tấn Cutos Thiết Kế Lại Đẳng Cấp**:
-   - Biểu tượng khiên không gian giác lục giác (Cyber-Shield Hexagon) đúc kim loại với hoa văn chữ ký lồng ghép **TC (Tấn Cutos)** và lõi năng lượng kim cương Cyan phát sáng.
-   - Kiểu chữ hiện đại kết hợp hai tông màu: Trắng bạch kim (`TẤN`) và Vàng kim vương giả (`CUTOS`), kèm vương miện **VIP**.
+1. 🗺️ **Hack Map (Hiển thị vị trí địch)**:
+   - Hiển thị vị trí, avatar tướng, thanh máu và hướng di chuyển của toàn bộ 5 tướng địch trong bụi cỏ và sương mù theo thời gian thực.
+2. 🔭 **Cam Xa (Mở rộng tầm nhìn)**:
+   - Drone View tùy chỉnh độ cao camera từ x1.5 đến x4.0, phóng tầm nhìn bao quát toàn bộ đường lane, hang Rồng và hang Tà Thần César.
+3. 🎯 **Aim Game (Tung chiêu tự trúng 100%)**:
+   - Thuật toán tự động khóa mục tiêu và dẫn hướng đón đầu đường chạy của kẻ địch: Elsu vẩy đạn viễn trình, Grakk kéo, Tulen Lôi quang, Hayate phi tiêu...
+4. 👗 **Mod Full Skin (Mở khóa full trang phục SSS)**:
+   - Trải nghiệm miễn phí kho trang phục đắt giá nhất: Thứ Nguyên Vệ Thần, Tuyệt Sắc, Anime Collab (Sailor Moon, Bleach, Sword Art Online), đầy đủ hiệu ứng biến về và giọng lồng tiếng.
+5. ⏱️ **Hiển Thị Thời Gian Hồi Chiêu Của Địch (Enemy CD Timer)**:
+   - Đếm ngược chính xác từng giây thời gian hồi chiêu 1, chiêu 2, chiêu cuối (Ultimate) và phép bổ trợ (Tốc biến, Bộc phá, Cấp cứu, Trừng trị) trên đầu tướng địch.
+6. ⚡ **Tự Động Bộc Phá (Auto Execute Khi Địch Yếu Máu)**:
+   - Tự động đo lường máu thực tế của kẻ địch so với sát thương chuẩn của Bộc Phá, tự bấm Bộc Phá kết liễu ngay khi địch chạm ngưỡng chết trong mili-giây.
+7. 🎵 **Nghe Nhạc SoundCloud (Vừa chơi vừa nghe nhạc)**:
+   - Tích hợp cửa sổ widget nổi SoundCloud ngay trong trận: Tìm kiếm bài hát, nghe playlist Remix, Vinahouse, Phonk, Lofi mượt mà không văng game và không giảm 1 FPS nào.
 
+---
+
+## 🌟 CÁC ĐIỂM SÁNG CÔNG NGHỆ KHÁC
+
+1. **Ảnh Nền Phần Đầu Lấy Từ Direct Link (Hero Direct Background)**:
+   - Phía sau phần đầu tiên (Hero Stage) được lồng ghép 1 bức ảnh nền direct link sắc nét, kết hợp lớp phủ chuyển màu tối Obsidian sang trọng giúp chữ luôn rõ nét và nổi khối.
 2. **Video Demo Phát Từ Direct Link (HTML5 Video Player)**:
    - Trình phát video chuyên nghiệp nhúng và phát trực tiếp từ đường link MP4 direct link tốc độ cao (không qua trang rút gọn hay quảng cáo).
-   - Nút Play to bản phát sáng ở giữa khung video với hiệu ứng xung nhịp.
-   - Thanh điều khiển sang trọng: Phát/Tạm dừng, tua video (interactive seekbar), hiển thị thời gian phát `mm:ss`, bật/tắt âm lượng, phóng to toàn màn hình Fullscreen.
-   - Thẻ hiển thị Direct Link video đang phát kèm nút **"Sao chép Link"** và nút **"Đổi Link Này"**.
-
-3. **Trạng Thái Phát Hành & Tải Về Trực Tiếp (Release Status & Download Section)**:
-   - Hiển thị phiên bản build APK, trạng thái phát hành Public Release.
-   - Bảng thông số: Phiên bản game hỗ trợ, phiên bản Android yêu cầu (No Root), ngày cập nhật.
-   - Hộp nhật ký thay đổi phiên bản mới (What changed in this release).
-   - Tên gói ứng dụng (Package Name) & Dung lượng tải thực tế.
-   - Khung mã băm xác thực bảo mật **SHA256 Checksum** kèm nút sao chép nhanh 1 chạm.
-   - Nút tải trực tiếp file APK tốc độ cao và nút tải từ server dự phòng (Mirror Download).
-
-4. **Hệ Thống Tiện Ích Tương Tác Độc Quyền (Interactive Feature Showcase)**:
-   - Thiết kế giao diện mô phỏng cửa sổ điều khiển với 3 chấm màu macOS/Midnight.
-   - Chia thành các Module chuyên sâu (Dịch chuyển Teleport, Bảo hộ chiến đấu God Mode, Thị giác X-Ray ESP & Hút đồ).
-   - Mỗi module có các tab con tương tác (`Map TP`, `Quest TP`, `Manual TP`, `God Mode`, `No Cooldown`, `Damage Multiplier`, `Chest Locator`, `Pickup Range`).
-   - Hỗ trợ vuốt ngang mượt mà trên điện thoại, nhấp vào từng tab sẽ tự động chuyển đổi ảnh chụp minh họa thực tế sắc nét từ direct link kèm giải thích chi tiết điểm nổi bật.
-
-5. **Lộ Trình Cập Nhật Tính Năng (Incoming Features & Roadmap)**:
-   - Các thẻ lộ trình đánh số mờ kích thước lớn (`01`, `02`, `03`, `04`, `05`, `06`).
-   - Phân loại rõ ràng trạng thái: `Đang phát triển (Incoming)` và `Đang nghiên cứu (Researching)`.
-
-6. **Hướng Dẫn Cài Đặt 4 Bước (Installation Guide)**:
-   - 4 bước trực quan hướng dẫn người chơi cài đặt file APK trên Android (Android 11 đến Android 15+) mà không cần Root máy.
-
-7. **Thanh Tải Nhanh Nổi Chân Màn Hình Điện Thoại (Mobile Bottom Sticky Bar)**:
-   - Thiết kế độc quyền cho điện thoại di động: thanh điều khiển nổi tự động xuất hiện khi cuộn trang, hỗ trợ safe-area-inset cho iPhone và Android tai thỏ / thanh điều hướng cử chỉ.
-
-8. **Bộ Cấu Hình Direct Link Trực Quan (Live Link Config Modal)**:
-   - Bấm vào biểu tượng bánh răng ⚙ trên góc phải hoặc chân trang để mở bảng cấu hình.
-   - Cho phép bạn tự do thay đổi: **Tên bản mod, Tên game, Direct Link Video MP4, Direct Link Tải APK, Link Dự Phòng, Phiên bản, Dung lượng, SHA256**.
-   - Lưu trữ tức thì vào `localStorage` của trình duyệt và cập nhật website ngay lập tức mà không cần chỉnh sửa code thủ công!
+   - Đầy đủ thanh điều khiển: Play/Pause, seekbar tua video, hiển thị thời lượng, bật/tắt âm lượng và toàn màn hình.
+3. **Thương Hiệu & Logo Tấn Cutos Thiết Kế Lại Đẳng Cấp**:
+   - Khiên lục giác Cyber-Shield vector SVG đúc kim loại với monogram chữ ký **TC (Tấn Cutos)** và lõi ngọc Cyan phát sáng.
+   - Kiểu chữ 2 tông màu: Trắng bạch kim (`TẤN`) kết hợp Vàng kim vương giả (`CUTOS`) và vương miện VIP.
+4. **Trạng Thái Phát Hành & Tải Về Trực Tiếp**:
+   - Phiên bản build APK, trạng thái phát hành Public Release.
+   - Bảng thông số: Bản game hỗ trợ (Liên Quân 1.55.1), yêu cầu Android (No Root), ngày cập nhật.
+   - Khung mã băm **SHA256 Checksum** kèm nút sao chép nhanh 1 chạm.
+5. **Thanh Tải Nhanh Nổi Chân Màn Hình Điện Thoại (Sticky Mobile Bottom Bar)**:
+   - Tự động trượt lên khi cuộn trang, hỗ trợ safe-area-inset cho iPhone và Android.
+6. **Bộ Cấu Hình Trực Quan (Live Config Modal)**:
+   - Bấm vào biểu tượng bánh răng ⚙ trên góc phải hoặc chân trang để thay đổi: **Tên bản mod, Tên game, Link Ảnh Nền Phần Đầu, Direct Link Video MP4, Direct Link Tải APK, Link Dự Phòng, Phiên bản, Dung lượng, SHA256**. Áp dụng tức thì mà không cần sửa code!
 
 ---
 
@@ -57,7 +54,7 @@ Dự án đã được cấu hình sẵn file `vercel.json` để triển khai t
 1. Đẩy thư mục mã nguồn này lên GitHub:
    ```bash
    git add .
-   git commit -m "Tan Cutos - Trang quang ba 1 ban mod Android toi uu dien thoai"
+   git commit -m "Tan Cutos - Mod Menu Lien Quan Mobile voi anh nen direct link va 7 tinh nang VIP"
    git push origin main
    ```
 2. Truy cập [vercel.com](https://vercel.com) và đăng nhập bằng tài khoản GitHub.
@@ -77,21 +74,3 @@ npx vercel
   ```bash
   npm run dev
   ```
-
----
-
-## 📂 CẤU TRÚC TỆP TIN
-```
-Web tool mod/
-├── css/
-│   ├── variables.css      # Hệ thống màu Gold Luxury, phông chữ, ánh sáng viền
-│   └── landing.css        # Giao diện Midnight phong cách magicnte.com, video player, tabs, responsive mobile
-├── js/
-│   ├── data.js            # Dữ liệu bản mod duy nhất của Tấn Cutos, direct link video & download APK
-│   ├── video-player.js    # Bộ điều khiển video direct link tùy biến chuyên nghiệp
-│   └── app.js             # Xử lý render dữ liệu, chuyển tab tương tác, popup đổi link
-├── index.html             # Khung HTML5 chuẩn SEO, VideoObject & OpenGraph
-├── vercel.json            # Cấu hình tối ưu tốc độ & cache trên Vercel
-├── package.json           # Lệnh khởi chạy server cục bộ
-└── README.md              # Tài liệu hướng dẫn sử dụng và triển khai
-```

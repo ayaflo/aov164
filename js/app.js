@@ -76,6 +76,12 @@ document.addEventListener('DOMContentLoaded', () => {
     const heroKickerText = document.getElementById('heroKickerText');
     if (heroKickerText) heroKickerText.textContent = modData.brandKicker;
 
+    // Ảnh nền direct link phía sau phần đầu tiên
+    const heroStageBg = document.getElementById('heroStageBg');
+    if (heroStageBg && modData.heroBackgroundImage) {
+      heroStageBg.style.backgroundImage = `url('${modData.heroBackgroundImage}')`;
+    }
+
     const heroModTitle = document.getElementById('heroModTitle');
     if (heroModTitle) heroModTitle.textContent = modData.modTitle;
 
@@ -389,6 +395,7 @@ document.addEventListener('DOMContentLoaded', () => {
   // Fields trong modal
   const cfgModTitle = document.getElementById('cfgModTitle');
   const cfgGameName = document.getElementById('cfgGameName');
+  const cfgHeroBgImage = document.getElementById('cfgHeroBgImage');
   const cfgVideoUrl = document.getElementById('cfgVideoUrl');
   const cfgDownloadUrl = document.getElementById('cfgDownloadUrl');
   const cfgMirrorUrl = document.getElementById('cfgMirrorUrl');
@@ -400,6 +407,7 @@ document.addEventListener('DOMContentLoaded', () => {
     if (!configModal) return;
     cfgModTitle.value = modData.modTitle || '';
     cfgGameName.value = modData.gameName || '';
+    if (cfgHeroBgImage) cfgHeroBgImage.value = modData.heroBackgroundImage || '';
     cfgVideoUrl.value = modData.videoUrl || '';
     cfgDownloadUrl.value = modData.downloadUrl || '';
     cfgMirrorUrl.value = modData.mirrorDownloadUrl || '';
@@ -439,6 +447,9 @@ document.addEventListener('DOMContentLoaded', () => {
       e.preventDefault();
       modData.modTitle = cfgModTitle.value.trim() || modData.modTitle;
       modData.gameName = cfgGameName.value.trim() || modData.gameName;
+      if (cfgHeroBgImage && cfgHeroBgImage.value.trim()) {
+        modData.heroBackgroundImage = cfgHeroBgImage.value.trim();
+      }
       modData.videoUrl = cfgVideoUrl.value.trim() || modData.videoUrl;
       modData.downloadUrl = cfgDownloadUrl.value.trim() || modData.downloadUrl;
       modData.mirrorDownloadUrl = cfgMirrorUrl.value.trim() || modData.mirrorDownloadUrl;

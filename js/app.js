@@ -59,6 +59,20 @@ document.addEventListener('DOMContentLoaded', () => {
     const navBrandName = document.getElementById('navBrandName');
     if (navBrandName) navBrandName.textContent = modData.brandName;
 
+    const brandTitleFirst = document.querySelector('.brand-title-first');
+    const brandTitleSecond = document.querySelector('.brand-title-second');
+    if (brandTitleFirst && brandTitleSecond && modData.brandName) {
+      const parts = modData.brandName.trim().split(' ');
+      if (parts.length >= 2) {
+        brandTitleFirst.textContent = parts[0].toUpperCase();
+        brandTitleSecond.textContent = parts.slice(1).join(' ').toUpperCase();
+      } else {
+        brandTitleFirst.textContent = modData.brandName.toUpperCase();
+        brandTitleSecond.textContent = '';
+      }
+    }
+
+
     const heroKickerText = document.getElementById('heroKickerText');
     if (heroKickerText) heroKickerText.textContent = modData.brandKicker;
 

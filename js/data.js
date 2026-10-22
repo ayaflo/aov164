@@ -1,19 +1,19 @@
 /**
- * HOÀNG TẤN MODS - Dữ Liệu Bản Mod Game Độc Quyền Duy Nhất
+ * TẤN CUTOS - Dữ Liệu Bản Mod Game Độc Quyền Duy Nhất
  * Tham khảo phong cách chuẩn: https://magicnte.com/
  * Hỗ trợ Video Demo từ Direct Link, Download APK Direct Link, và các tính năng chi tiết.
  */
 
-const STORAGE_KEY_SINGLE_MOD = 'HOANG_TAN_SINGLE_MOD_DATA_V1';
+const STORAGE_KEY_SINGLE_MOD = 'TAN_CUTOS_SINGLE_MOD_DATA_V1';
 
 const DEFAULT_SINGLE_MOD = {
   // Thương hiệu & Tiêu đề
-  brandName: "Hoàng Tấn Mods",
-  brandKicker: "Hoàng Tấn VIP · Midnight Release",
+  brandName: "Tấn Cutos",
+  brandKicker: "Tấn Cutos VIP · Midnight Release",
   modTitle: "Magic NTE",
   gameName: "Neverness to Everness",
   tagline: "Bản Mod NTE Độc Quyền Số 1 Trên Android",
-  subtitle: "Bản mod Android độc quyền đầu tiên hỗ trợ đầy đủ Teleport, God Mode, ESP và Antiban Bypass. Được phát triển và kiểm định bởi Hoàng Tấn Mods.",
+  subtitle: "Bản mod Android độc quyền đầu tiên hỗ trợ đầy đủ Teleport, God Mode, ESP và Antiban Bypass. Được phát triển và kiểm định bởi Tấn Cutos.",
   
   // Thông tin phiên bản & Phát hành (Release Status)
   version: "1.0.10",
@@ -29,7 +29,7 @@ const DEFAULT_SINGLE_MOD = {
   
   // Direct Link Download & Video
   downloadUrl: "https://dl.magicnte.com/releases/hypernte/v1.0.10/com.multi.appspace-1.0.10-api36-runtime-profile-aosp-byteguard-release-20261010.apk",
-  mirrorDownloadUrl: "https://mega.nz/file/hoangtan-magic-nte-v1010-vip",
+  mirrorDownloadUrl: "https://mega.nz/file/tancutos-magic-nte-v1010-vip",
   changelogUrl: "#changelog",
   
   // Direct Link Video Demo
@@ -209,7 +209,7 @@ const DEFAULT_SINGLE_MOD = {
     {
       step: "01",
       title: "Tải Bản Cài Đặt APK",
-      desc: "Nhấn nút 'Tải APK Trực Tiếp' ở phía trên để tải file cài đặt đã được Hoàng Tấn Mods xác thực sạch mã độc."
+      desc: "Nhấn nút 'Tải APK Trực Tiếp' ở phía trên để tải file cài đặt đã được Tấn Cutos xác thực sạch mã độc 100%."
     },
     {
       step: "02",
@@ -219,12 +219,12 @@ const DEFAULT_SINGLE_MOD = {
     {
       step: "03",
       title: "Cấp Quyền Hiển Thị Cửa Sổ Nổi (Overlay)",
-      desc: "Khởi động ứng dụng, cấp quyền 'Xuất hiện trên cùng' (Display over other apps) để bảng Mod Menu có thể hiển thị nổi trong game."
+      desc: "Khởi động ứng dụng, cấp quyền 'Xuất hiện trên cùng' (Display over other apps) để bảng Mod Menu hiển thị nổi trong game."
     },
     {
       step: "04",
       title: "Khởi Động Game & Thưởng Thức",
-      desc: "Vào game, chạm vào biểu tượng logo nổi của Hoàng Tấn Mods để bật/tắt các tính năng VIP theo ý muốn."
+      desc: "Vào game, chạm vào biểu tượng logo nổi của Tấn Cutos để bật/tắt các tính năng VIP theo ý muốn."
     }
   ],
 
@@ -243,11 +243,11 @@ const DEFAULT_SINGLE_MOD = {
     },
     {
       q: "Sử dụng mod này có bị khóa tài khoản (Ban nick) không?",
-      a: "Bản mod được tích hợp hệ thống ByteGuard Antiban Bypass v4.2 độc quyền từ Hoàng Tấn Mods. Cơ chế này tự động làm sạch gói tin gửi về máy chủ game, giúp bạn an tâm trải nghiệm mà không lo bị hệ thống phát hiện."
+      a: "Bản mod được tích hợp hệ thống ByteGuard Antiban Bypass v4.2 độc quyền từ Tấn Cutos. Cơ chế này tự động làm sạch gói tin gửi về máy chủ game, giúp bạn an tâm trải nghiệm mà không lo bị hệ thống phát hiện."
     },
     {
       q: "Tại sao bản cập nhật của game có thể làm hỏng tính năng mod?",
-      a: "Một số tính năng như Teleport hay God Mode phụ thuộc vào địa chỉ bộ nhớ (Memory Offsets) của game. Khi game có bản vá mới, các vị trí này sẽ thay đổi. Hoàng Tấn Mods luôn cập nhật bản patch tương thích mới chỉ trong vòng 2 - 4 tiếng sau khi game phát hành cập nhật."
+      a: "Một số tính năng như Teleport hay God Mode phụ thuộc vào địa chỉ bộ nhớ (Memory Offsets) của game. Khi game có bản vá mới, các vị trí này sẽ thay đổi. Tấn Cutos luôn cập nhật bản patch tương thích mới chỉ trong vòng 2 - 4 tiếng sau khi game phát hành cập nhật."
     },
     {
       q: "Video demo trên web có phải là video từ direct link không?",

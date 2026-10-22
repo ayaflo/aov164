@@ -10,7 +10,7 @@
  * 7. Nghe nhạc (chọn nhạc trên SoundCloud và mở vừa chơi vừa nghe)
  */
 
-const STORAGE_KEY_SINGLE_MOD = 'TAN_CUTOS_AOV_MOD_DATA_V2';
+const STORAGE_KEY_SINGLE_MOD = 'TAN_CUTOS_AOV_MOD_DATA_V4';
 
 const DEFAULT_SINGLE_MOD = {
   // Thương hiệu & Tiêu đề
@@ -248,12 +248,8 @@ const DEFAULT_SINGLE_MOD = {
       a: "Tính năng này mở một widget audio siêu nhẹ chạy nền song song với game. Bạn có thể tìm kiếm bài hát theo tên hoặc mở danh sách phát Remix/Vinahouse/Phonk trên SoundCloud mà không bị xung đột âm thanh hay giảm FPS."
     },
     {
-      q: "Khi Liên Quân Mobile có bản cập nhật mùa mới thì làm thế nào?",
-      a: "Tấn Cutos luôn theo dõi lịch bảo trì của Garena và phát hành bản vá tương thích mới chỉ trong vòng 1-2 tiếng sau khi bảo trì hoàn tất. Bạn chỉ cần tải đè bản APK mới mà không mất cài đặt cũ."
-    },
-    {
-      q: "Làm sao để đổi link ảnh nền phần đầu hoặc direct link video/download?",
-      a: "Bạn chỉ cần bấm nút bánh răng ⚙ ở góc phải thanh menu hoặc nút 'Cấu Hình Direct Link' ở chân trang. Bạn có thể dán link ảnh nền mới, link video MP4 mới hoặc link tải APK mới và bấm Lưu là áp dụng ngay!"
+      q: "Video demo trên web có phải là video từ direct link không?",
+      a: "Chính xác! Video demo được nhúng và phát trực tiếp từ direct link MP4 tốc độ cao, không qua quảng cáo rút gọn, giúp bạn xem trước toàn bộ giao diện và thao tác thực tế trước khi tải về máy."
     }
   ]
 };

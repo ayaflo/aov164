@@ -140,7 +140,7 @@ document.addEventListener('DOMContentLoaded', () => {
       `).join('');
     }
 
-    // File info & SHA256
+    // File info & SHA256 (nếu có phần tử hiển thị)
     const fileInfoLine = document.getElementById('fileInfoLine');
     if (fileInfoLine) {
       fileInfoLine.textContent = `${modData.fileSize} · ${modData.fileName}`;
@@ -156,8 +156,13 @@ document.addEventListener('DOMContentLoaded', () => {
     const mobileBarSub = document.getElementById('mobileBarSub');
     if (mobileBarSub) mobileBarSub.textContent = `v${modData.version} · ${modData.fileSize} · No Root`;
 
-    // Cập nhật Video Player Direct Link
+    // Cập nhật Video Player Direct Link & Mô tả Video
     videoPlayer.loadSource(modData.videoUrl, modData.videoPoster);
+
+    const videoSectionDesc = document.getElementById('videoSectionDesc');
+    if (videoSectionDesc && modData.videoDescription) {
+      videoSectionDesc.textContent = modData.videoDescription;
+    }
 
     const videoActiveUrlDisplay = document.getElementById('videoActiveUrlDisplay');
     if (videoActiveUrlDisplay) videoActiveUrlDisplay.textContent = modData.videoUrl;
@@ -167,9 +172,11 @@ document.addEventListener('DOMContentLoaded', () => {
       videoTimeDuration.textContent = modData.videoDuration;
     }
 
-    // Render Features, Roadmap, Guide, FAQ
+    // Render Features, Guide, FAQ (Roadmap nếu có container)
     renderFeatureModules();
-    renderRoadmap();
+    if (document.getElementById('roadmapGrid')) {
+      renderRoadmap();
+    }
     renderInstallGuide();
     renderFaq();
   }
@@ -341,17 +348,7 @@ document.addEventListener('DOMContentLoaded', () => {
     });
   }
 
-  // 9. Nút Sao Chép SHA256 & Video Link
-  const btnCopySha = document.getElementById('btnCopySha');
-  if (btnCopySha) {
-    btnCopySha.addEventListener('click', () => {
-      navigator.clipboard.writeText(modData.sha256).then(() => {
-        showToast('Đã sao chép mã SHA256 vào clipboard!', 'success');
-      }).catch(() => {
-        showToast('Vui lòng sao chép thủ công.', 'info');
-      });
-    });
-  }
+  // 9. Nút Sao Chép Video Link
 
   const btnCopyVideoLink = document.getElementById('btnCopyVideoLink');
   if (btnCopyVideoLink) {
@@ -413,7 +410,7 @@ document.addEventListener('DOMContentLoaded', () => {
     cfgMirrorUrl.value = modData.mirrorDownloadUrl || '';
     cfgVersion.value = modData.version || '';
     cfgFileSize.value = modData.fileSize || '';
-    cfgSha256.value = modData.sha256 || '';
+    if (cfgSha256) cfgSha256.value = modData.sha256 || '';
 
     configModal.classList.add('active');
     document.body.style.overflow = 'hidden';
@@ -455,7 +452,9 @@ document.addEventListener('DOMContentLoaded', () => {
       modData.mirrorDownloadUrl = cfgMirrorUrl.value.trim() || modData.mirrorDownloadUrl;
       modData.version = cfgVersion.value.trim() || modData.version;
       modData.fileSize = cfgFileSize.value.trim() || modData.fileSize;
-      modData.sha256 = cfgSha256.value.trim() || modData.sha256;
+      if (cfgSha256) {
+        modData.sha256 = cfgSha256.value.trim() || modData.sha256;
+      }
 
       saveSingleModData(modData);
       renderAll();
